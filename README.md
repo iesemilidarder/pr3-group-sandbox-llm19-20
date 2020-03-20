@@ -9,7 +9,6 @@ Fonts:
 - https://getbootstrap.com/docs/4.0/components/navbar/
 - https://www.semrush.com/blog/semantic-html5-guide/
 - https://reactjs.org/docs/state-and-lifecycle.html
-- https://reactjs.org/docs/state-and-lifecycle.html
 - https://www.w3schools.com/jsref/met_document_queryselector.asp
 
 Ayuda:
