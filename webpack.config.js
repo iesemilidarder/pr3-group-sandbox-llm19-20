@@ -21,7 +21,7 @@ module.exports = {
     entry:{
         index: __dirname + "/src/index.js",
         master:__dirname + "/src/std/_master-file.js",
-        miguel:__dirname + "/src/std/mexposito.js"
+        miguel:__dirname + "/src/std/mexposito.js",
     },
     output: {
         path: path.resolve(__dirname, 'dist'),
