@@ -21,11 +21,9 @@ module.exports = {
     entry:{
         index: __dirname + "/src/index.js",
         master:__dirname + "/src/std/_master-file.js",
-<<<<<<< HEAD
         miguel:__dirname + "/src/std/mexposito.js",
-=======
-        fcastell:__dirname + "/src/std/fcastell.js"
->>>>>>> 3a71876469b06c219d4ea9b9152efeaf93005fc5
+        fcastell:__dirname + "/src/std/fcastell.js",
+        jques:__dirname + "/src/std/jques.js"
     },
     output: {
         path: path.resolve(__dirname, 'dist'),
