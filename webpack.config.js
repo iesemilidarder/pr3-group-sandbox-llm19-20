@@ -23,8 +23,8 @@ module.exports = {
         master:__dirname + "/src/std/_master-file.js",
         miguel:__dirname + "/src/std/mexposito.js",
         fcastell:__dirname + "/src/std/fcastell.js",
-        jques:__dirname + "/src/std/jques.js"
-        jzarco:__dirname + "/src/std/jzarco.js"
+        jques:__dirname + "/src/std/jques.js",
+        jzarco:__dirname + "/src/std/jzarco.js",
     },
     output: {
         path: path.resolve(__dirname, 'dist'),
