@@ -3,3 +3,11 @@ node_modules
 package-lock.json
 master-bundle.js
 index-bundle.js
+/dist/dcastañeda-bundle.js
+/dist/dsalanova-bundle.js
+/dist/index-bundle.js
+/dist/jques-bundle.js
+/dist/jzarco-bundle.js
+/dist/master-bundle.js
+/dist/miguel-bundle.js
+/dist/tamer-bundle.js
