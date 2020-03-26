@@ -24,7 +24,11 @@ module.exports = {
         miguel:__dirname + "/src/std/mexposito.js",
         fcastell:__dirname + "/src/std/fcastell.js",
         jques:__dirname + "/src/std/jques.js",
+<<<<<<< HEAD
         jzarco:__dirname + "/src/std/jzarco.js",
+=======
+        dcastañeda:__dirname + "/src/std/dcastañeda.js",
+>>>>>>> 048e9914c3cb6b73d754895a0e6e7b780a670d46
     },
     output: {
         path: path.resolve(__dirname, 'dist'),
