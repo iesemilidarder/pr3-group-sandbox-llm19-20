@@ -27,7 +27,7 @@ module.exports = {
 <<<<<<< HEAD
         jzarco:__dirname + "/src/std/jzarco.js",
 =======
-        dcastañeda:__dirname + "/src/std/dcastañeda.js",
+        dcastañeda:__dirname + "/src/std/dcastaneda.js",
 >>>>>>> 048e9914c3cb6b73d754895a0e6e7b780a670d46
     },
     output: {
