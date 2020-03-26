@@ -29,6 +29,7 @@ module.exports = {
         dcastaneda:__dirname + "/src/std/dcastaneda.js",
         tamer:__dirname + "/src/std/tamer.js",
         dsalanova:__dirname + "/src/std/dsalanova.js",
+        kilianfuentes:__dirname + "/src/std/kilianfuentes.js",
     },
     output: {
         path: path.resolve(__dirname, 'dist'),
