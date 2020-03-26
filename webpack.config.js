@@ -30,6 +30,7 @@ module.exports = {
         tamer:__dirname + "/src/std/tamer.js",
         dsalanova:__dirname + "/src/std/dsalanova.js",
         kilianfuentes:__dirname + "/src/std/kilianfuentes.js",
+        msegui:__dirname + "/src/std/msegui.js"
     },
     output: {
         path: path.resolve(__dirname, 'dist'),
