@@ -1,8 +1,1 @@
-{
-    "key"
-:
-    "value",
-        "list"
-:
-    ["val1", "val2"]
-} 
+console.log("Hi! I'm Marta");

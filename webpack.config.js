@@ -21,6 +21,7 @@ module.exports = {
     entry:{
         index: __dirname + "/src/index.js",
         master:__dirname + "/src/std/_master-file.js",
+        pvillanueva:__dirname + "/src/std/pvillanueva.js",
         mexposito:__dirname + "/src/std/mexposito.js",
         fcastell:__dirname + "/src/std/fcastell.js",
         jques:__dirname + "/src/std/jques.js",
@@ -28,6 +29,8 @@ module.exports = {
         dcastaneda:__dirname + "/src/std/dcastaneda.js",
         tamer:__dirname + "/src/std/tamer.js",
         dsalanova:__dirname + "/src/std/dsalanova.js",
+        kilianfuentes:__dirname + "/src/std/kilianfuentes.js",
+        msegui:__dirname + "/src/std/msegui.js",
         mflores:__dirname + "/src/std/mflores.js",
     },
     output: {
