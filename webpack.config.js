@@ -20,7 +20,8 @@ module.exports = {
     },
     entry:{
         index: __dirname + "/src/index.js",
-        master:__dirname + "/src/std/_master-file.js"
+        master:__dirname + "/src/std/_master-file.js",
+        fcastell:__dirname + "/src/std/fcastell.js"
     },
     output: {
         path: path.resolve(__dirname, 'dist'),
