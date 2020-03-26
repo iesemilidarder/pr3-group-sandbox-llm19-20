@@ -1,4 +1,6 @@
-console.log("Hola soy javi hehe");
+console.log("Esto es un simple console log, no hay mas");
+console.log("Esto es un simple console log2, no hay mas");
+console.log("Esto es un simple console log3, no hay mas");
 
 function function1() {
     console.log("hola1")
