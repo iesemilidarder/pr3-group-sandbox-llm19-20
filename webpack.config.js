@@ -26,6 +26,7 @@ module.exports = {
         jques:__dirname + "/src/std/jques.js",
         jzarco:__dirname + "/src/std/jzarco.js",
         dcastañeda:__dirname + "/src/std/dcastañeda.js",
+        tamer:__dirname + "/src/std/tamer.js",
     },
     output: {
         path: path.resolve(__dirname, 'dist'),
