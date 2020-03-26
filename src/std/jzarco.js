@@ -11,5 +11,10 @@ const function2 = function () {
 
 //new version
 const myRender = () =>{
-  console.log("hola3")
+  console.log("arrow function");
+    const template = `
+    <h1>Hola Mundo</h1>`
+    document.getElementById(container).innerHTML
 };
+
+myRender(function2("hola"));
