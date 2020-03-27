@@ -7,7 +7,6 @@ function function1() {
 const function2 = function () {
     console.log("hola2");
 };
-// new version: arrow function 4 hooks
 const myRender = (container) => {
     console.log("arrow function");
     document.getElementById(container).innerHTML = `
@@ -20,3 +19,5 @@ const myRender = (container) => {
 };
 
 myRender("mainContainer");
+
+
