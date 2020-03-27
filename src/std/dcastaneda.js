@@ -25,4 +25,4 @@ const myRender = content => {
     document.getElementById(content).innerHTML = template;
 };
 
-myRender("cont");
+myRender(".cont");
