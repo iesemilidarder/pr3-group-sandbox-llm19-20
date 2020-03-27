@@ -7,14 +7,14 @@ const function2 = function () {
 
 const myRender = (container, title) => {
     console.log("arrow function");
-    const Playlists = getPlaylist();
-    const template = `
+    getPlaylist().then(results => {
+       const txt = results.toString();
+        const template = `
         <h1>${title}</h1>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
-        At dignissimos ea molestias. Ab ea error et eum eveniet illum 
-        impedit minima natus neque nesciunt numquam obcaecati officiis optio quasi, quo.</p>
+        <p>${txt}</p>
     `;
-    document.getElementById(container).innerHTML = template;
+        document.querySelector(container).innerHTML = template;
+    });
 };
 
 const mySidebar = (container) => {
