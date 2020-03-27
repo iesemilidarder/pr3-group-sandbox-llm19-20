@@ -1,5 +1,6 @@
-console.log("Hi! I'm Marta");
+console.log("Francesc Castell");
 
+//
 function function1() {
     console.log("hola1")
 }
