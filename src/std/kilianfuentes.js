@@ -1,7 +1,7 @@
 function function1() {
     console.log("hola")
 }
-cons function2 = function () {
+const function2 = function () {
     console.log("hola2");
 }
 //nueva forma de hacerlo, arrow function 4 hooks
