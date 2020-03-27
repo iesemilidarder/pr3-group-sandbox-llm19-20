@@ -21,3 +21,13 @@ const myRender = (container) => {
 };
 
 myRender("mainContainer");
+
+
+const mySidebar = (container) => {
+    const template = `
+        <h2>Js Aside</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis, fugit!</p>
+   `;
+    document.querySelector(container).innerHTML = template;
+};
+mySidebar();
