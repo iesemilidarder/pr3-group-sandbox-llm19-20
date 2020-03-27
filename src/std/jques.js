@@ -18,3 +18,14 @@ const myRender = (container) => {
     document.getElementById(container).innerHTML=template;
 };
 myRender("cont");
+
+const mySidebar = () =>  {
+    const template = `
+          <h2>Js Aside</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias autem commodi dolorum ducimus eaque est fugit
+                ipsum laboriosam porro voluptate! Aspernatur aut impedit labore laborum nobis quae recusandae reprehenderit,
+                tempora.</p>
+    `;
+    document.querySelector(".sidebar").innerHTML=template;
+};
+mySidebar();
