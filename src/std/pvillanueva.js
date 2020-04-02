@@ -8,6 +8,7 @@ function function1() {
 const function2 = function () {
     console.log("Hi! Im Pablo");
 };
+//Arrow functions
 const myRender = (container, title) => {
     console.log("arrow function");
     getPlaylist().then(results => {
