@@ -2,23 +2,40 @@ console.log("Esto es un simple console log, no hay mas");
 console.log("Esto es un simple console log2, no hay mas");
 console.log("Esto es un simple console log3, no hay mas");
 
-function function1() {
-    console.log("hola1")
+function component() {
+    let cont = document.getElementById("cont");
+    let btn= document.createElement("button");
+    btn.innerHTML="Test";
+    cont.appendChild(btn);
 }
+component();
 
-const function2 = function () {
-    console.log("hola2");
-};
-// new version: arrow function 4 hooks
 const myRender = (container) => {
-    console.log("arrow function");
-    document.getElementById(container).innerHTML = `
-        <article id"myRender"class="col-12">
-            <h1>Hola mundo</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid aspernatur atque aut, autem dignissimos distinctio error ex facere fugiat id natus nemo nostrum quisquam quod repudiandae rerum sed velit voluptatibus?</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo qui, ullam? A accusantium, animi corporis est eum harum id ipsam maiores modi natus nobis numquam perferendis, reprehenderit, rerum voluptate voluptatibus!</p>
-        </article>
+    const template = `
+    <section>
+    <h3>Titulo</h3>
+    <p>He intentado algo</p></p>
+    </section>
     `;
+    document.getElementById(container).innerHTML=template;
 };
+myRender("cont");
 
-myRender("mainContainer");
+const mySidebar = () =>  {
+    const template = `
+          <h2>El conchudo del aside</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias autem commodi dolorum ducimus eaque est fugit
+                ipsum laboriosam porro voluptate! Aspernatur aut impedit labore laborum nobis quae recusandae reprehenderit,
+                tempora.</p>
+    `;
+    document.querySelector(".sidebar").innerHTML=template;
+
+};
+const getplaylist = async () => {
+  let data = await fetch( "https://sandbox-mongo.herokuapp.com/api/rest/v1/playlists")
+      let jsonData = data.json()
+        .then(data=>{
+            console.log(data)
+        })
+    return "";
+}

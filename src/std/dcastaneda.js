@@ -14,15 +14,15 @@ const func2 = function () {
 
 
 
-const myRender = content => {
+const myRender = (content) => {
     console.log("arrow function");
     const template = `
         <article class="col-md">
             <h1>Adios mundo cruel :(</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid aspernatur atque aut, autem dignissimos distinctio error ex facere fugiat id natus nemo nostrum quisquam quod repudiandae rerum sed velit voluptatibus?</p>
+            <p>Esto saldrá bieen</p>
         </article>
         `;
-    document.getElementById(content).innerHTML = template;
+    document.querySelector(content).innerHTML = template;
 };
 
-myRender("cont");
+myRender("#cont");
