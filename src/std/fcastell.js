@@ -1,3 +1,6 @@
+import ReactDOM from "react-dom";
+import React from "react";
+import f_castell from "./components/f_castell";
 console.log("Francesc Castell");
 
 //
@@ -41,3 +44,5 @@ const mySidebar = (container) => {
 };
 myRender("mainContainer");
 mySidebar(".sidebar");
+
+ReactDOM.render(<header/>, document.getElementById("mainContainer"));
