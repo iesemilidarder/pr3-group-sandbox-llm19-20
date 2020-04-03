@@ -1,7 +1,11 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import MasterHeader from "./Components/MasterHeader"
+import PabloApp from "./Components/PabloApp";
 
+const wrapper = document.getElementById("main");
+wrapper ? ReactDOM.render(<PabloApp/>, wrapper) : false;
+
+/*
 function function1() {
     console.log("Hi! Im Pablo");
 }
@@ -39,16 +43,16 @@ const getPlaylist = async () => {
         titles.push(elem.title);
     });
     return titles;
-    /*Sin esperar
+    /!*Sin esperar
     fetch("https://sandbox-mongo.herokuapp.com/api/rest/v1/playlists");
         .then(data => data.json())
         .then(data =>  {
             console.log(data);
         });
-     */
+     *!/
     return "";
 };
 myRender("#myArticle", "Pruebas de clase");
 mySidebar(".sidebar");
 
-ReactDOM.render(<MasterHeader/>, document.getElementById("react-MainContainer"));
+ReactDOM.render(<MasterHeader/>, document.getElementById("react-MainContainer"));*/

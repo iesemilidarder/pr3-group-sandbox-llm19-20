@@ -1,7 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import StudentListLink from "./components/StudentListLink";
-function IndexHeader() {
+function MyStudentsFirstReactApp() {
     return <div>
         <header className="row">
             <div className="col-sm-2">
@@ -12,7 +12,7 @@ function IndexHeader() {
                 <button className="navbar-toggler" type="button" data-toggle="collapse"
                         data-target="#navbarSupportedContent"
                         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span className="navbar-toggler-icon"></span>
+                    <span className="navbar-toggler-icon">&#160;</span>
                 </button>
                 <div className="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul className="navbar-nav mr-auto">
@@ -49,5 +49,11 @@ function IndexHeader() {
     </div>
 }
 
+//TODO check: Aquí tenéis una forma chula de evitar el error mediante "bicondicional" (es un if)
 const wrapper = document.getElementById("main");
-wrapper ? ReactDOM.render(<IndexHeader/>, wrapper) : false;
+wrapper ? ReactDOM.render(<MyStudentsFirstReactApp/>, wrapper) : false;
+/*idem que wrapper no sea nulo. ES decir, que exista el ID.
+if (wrapper){
+    ReactDOM.render(<IndexHeader/>, wrapper)
+}
+*/
