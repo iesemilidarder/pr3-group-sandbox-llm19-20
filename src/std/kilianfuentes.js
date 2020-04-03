@@ -33,7 +33,7 @@ function kheader() {
     return <div>
         <header className="row">
             <div className="col-md-2">
-                <img src="/logo.png" alt="Logo molon" width="50">
+                <img src="/logo.png" alt="Logo molon" width="50"/>
             </div>
             <nav className="col-md-6 navbar navbar-expand-lg navbar-light bg-light">
                 <a className="navbar-brand" href="#">My web</a>
@@ -53,7 +53,7 @@ function kheader() {
                 </div>
             </nav>
             <div className="col-sm-2">Contact 555-333210</div>
-            <div className="col-sm-2"><img src="assets/images/callus.jpg" alt="call us" width="40"></div>
+            <div className="col-sm-2"><img src="assets/images/callus.jpg" alt="call us" width="40"/></div>
         </header>
     </div>
 }
