@@ -48,6 +48,6 @@ function IndexHeader() {
         </footer>
     </div>
 }
-
+//TODO check: Aquí tenéis una forma chula de evitar el error mediante "bicondicional" (es un if)
 const wrapper = document.getElementById("main");
 wrapper ? ReactDOM.render(<IndexHeader/>, wrapper) : false;
