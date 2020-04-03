@@ -45,9 +45,11 @@ const MyPage = () => {
                     <div className="col-md-5">
                         <aside>
                             <h4>SOMETHING HERE</h4>
+                            <p>Hola</p>
                         </aside>
                         <aside>
                             <h5>something here</h5>
+                            <p>Caracola</p>
                         </aside>
                     </div>
                 </div>
