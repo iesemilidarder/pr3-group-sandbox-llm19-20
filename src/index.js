@@ -1,7 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import StudentListLink from "./components/StudentListLink";
-function IndexHeader() {
+function MyStudentsFirstReactApp() {
     return <div>
         <header className="row">
             <div className="col-sm-2">
@@ -48,6 +48,12 @@ function IndexHeader() {
         </footer>
     </div>
 }
+
 //TODO check: Aquí tenéis una forma chula de evitar el error mediante "bicondicional" (es un if)
 const wrapper = document.getElementById("main");
-wrapper ? ReactDOM.render(<IndexHeader/>, wrapper) : false;
+wrapper ? ReactDOM.render(<MyStudentsFirstReactApp/>, wrapper) : false;
+/*idem que wrapper no sea nulo. ES decir, que exista el ID.
+if (wrapper){
+    ReactDOM.render(<IndexHeader/>, wrapper)
+}
+*/
