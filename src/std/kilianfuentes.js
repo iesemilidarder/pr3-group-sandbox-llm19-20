@@ -20,9 +20,10 @@ myRender("");
 //Funcion sincro (las convencionales) realiza toda la operacion y al terminar todos los procesos envia el resultado
 //Funcion asincrona
 
+/*
 function header () {
     return (<h1>Hola mundo</h1>
     );
 }
 
-ReactDOM.render(<header/>, document.getElementById("mainContainer"));
+ReactDOM.render(<header/>, document.getElementById("mainContainer"));*/
