@@ -1,14 +1,19 @@
+import React from "react";
+import ReactDOM from "react-dom";
+import MasterHeader from "./Components/MasterHeader"
+
 function function1() {
     console.log("Hi! Im Pablo");
 }
+
 const function2 = function () {
     console.log("Hi! Im Pablo");
 };
-
+//Arrow functions
 const myRender = (container, title) => {
     console.log("arrow function");
     getPlaylist().then(results => {
-       const txt = results.toString();
+        const txt = results.toString();
         const template = `
         <h1>${title}</h1>
         <p>${txt}</p>
@@ -16,7 +21,6 @@ const myRender = (container, title) => {
         document.querySelector(container).innerHTML = template;
     });
 };
-
 const mySidebar = (container) => {
     const template = `
         <h1>Title</h1>
@@ -26,13 +30,12 @@ const mySidebar = (container) => {
     `;
     document.querySelector(container).innerHTML = template;
 };
-
 const getPlaylist = async () => {
     //Esperando a que acabe
     let data = await fetch("https://sandbox-mongo.herokuapp.com/api/rest/v1/playlists");
     let jsonData = await data.json();
-    let titles =[];
-    jsonData.map(elem =>{
+    let titles = [];
+    jsonData.map(elem => {
         titles.push(elem.title);
     });
     return titles;
@@ -45,5 +48,7 @@ const getPlaylist = async () => {
      */
     return "";
 };
-myRender("#myArticle","Pruebas de clase");
+myRender("#myArticle", "Pruebas de clase");
 mySidebar(".sidebar");
+
+ReactDOM.render(<MasterHeader/>, document.getElementById("react-MainContainer"));

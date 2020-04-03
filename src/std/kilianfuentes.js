@@ -16,3 +16,14 @@ const myRender = () => {
 };
 //inserta entre las comillas una id en un HTML para que genere en esa parte del HTML el contenido de la funcion a la que llamamos myRender , myRender es el nombre de esta, a cada una tu le pones el que quieras
 myRender("");
+
+//Funcion sincro (las convencionales) realiza toda la operacion y al terminar todos los procesos envia el resultado
+//Funcion asincrona
+
+/*
+function header () {
+    return (<h1>Hola mundo</h1>
+    );
+}
+
+ReactDOM.render(<header/>, document.getElementById("mainContainer"));*/
