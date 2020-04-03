@@ -103,3 +103,5 @@ function IndexHeader() {
         </footer>
     </div>
 }
+const wrapper = document.getElementById("main");
+wrapper ? ReactDOM.render(<IndexHeader/>, wrapper) : false;
