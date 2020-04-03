@@ -4,7 +4,7 @@ const StudentListLink = () => {
     const studentList = [
         {link: "/master.html",title:"Master file"},
         {link: "/pvillanueva.html",title:"Pablo"},
-        {link: "/#",title:"Andrea"},//TODO Andrea
+        {link: "/aalonso.html",title:"Andrea"},
         {link: "/mexposito.html",title:"Miguel"},
         {link: "/fcastell.html",title:"Francesc Castell"},
         {link: "/jques.html",title:"Joan"},

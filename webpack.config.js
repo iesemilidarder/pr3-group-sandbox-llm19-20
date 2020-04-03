@@ -48,6 +48,9 @@ module.exports = {
         kilianfuentes: "./src/std/kilianfuentes.js",
         msegui: "./src/std/msegui.js",
         mflores: "./src/std/mflores.js",
+        aalonso: "./src/std/aalonso.js",
+
+
     },
     plugins: [
         new HtmlWebPackPlugin({
@@ -115,6 +118,14 @@ module.exports = {
             chunks: ['mflores'],
             filename: "./mflores.html"
         })
+
+        new HtmlWebPackPlugin({
+            template: "./src/std/aalonso.html",
+            chunks: ['aalonso'],
+            filename: "./aalonso.html"
+        })
+
+
     ],
     devServer: {
         hot: true,
