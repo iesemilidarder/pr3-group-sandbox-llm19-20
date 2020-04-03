@@ -152,7 +152,13 @@ const MyFooter = () => {
         </footer>
     </div>
 };
-const wrapper = document.getElementById("body");
-wrapper ? ReactDOM.render(<MyHeader/>, document.getElementById("header")) : false;
-wrapper ? ReactDOM.render(<MyMain/>, document.getElementById("main")) : false;
-wrapper ? ReactDOM.render(<MyFooter/>, document.getElementById("footer")) : false;
+
+const MyApp = () => {
+    return <div>
+        <MyHeader/>
+        <MyMain/>
+        <MyFooter/>
+    </div>
+};
+const wrapper = document.getElementById("root");
+wrapper ? ReactDOM.render(<MyApp/>, wrapper) : false;
