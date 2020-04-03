@@ -1,13 +1,14 @@
 import React from "react";
 import ReactDOM from "react-dom";
+/*import "./fcastell.css";*/
 
 console.log("Francesc Castell");
 
 const MyMain = () => {
     return <div>
-        <header className="row">
+        <header className="row" style={{'backgroundColor': 'blue'}}>
             <div className="col-sm-2">
-                <img src="/assets/images/logo.png" alt="Logo" width="50"/>
+                <img src="/images/logo.png" alt="Logo" width="50"/>
             </div>
             <nav className="col-md-6 navbar navbar-expand-lg navbar-light bg-light">
                 <a className="navbar-brand" href="#">My web</a>
@@ -28,7 +29,7 @@ const MyMain = () => {
                 </div>
             </nav>
             <div className="col-sm-2">Contact 555-333210</div>
-            <div className="col-sm-2"><img src="/assets/images/callus.jpg" alt="call us" width="40"/></div>
+            <div className="col-sm-2"><img src="/images/callus.jpg" alt="call us" width="40"/></div>
         </header>
         <main className="row">
             <article className="col-9">
