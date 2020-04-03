@@ -1,10 +1,9 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import StudentListLink from "./components/StudentListLink";
 
 console.log("Francesc Castell");
 
-function IndexHeader() {
+const MyMain = () => {
     return <div>
         <header className="row">
             <div className="col-sm-2">
@@ -33,8 +32,11 @@ function IndexHeader() {
         </header>
         <main className="row">
 
-            <article id="react-MainContainer"></article>
-            <article className="col-12" id="mainContainer"></article>
+            <article id="react-MainContainer">
+            </article>
+
+            <article className="col-12" id="mainContainer">
+            </article>
 
             <article className="col-9">
                 <div className="row">
@@ -64,22 +66,17 @@ function IndexHeader() {
                                 illo nulla quidem recusandae repudiandae vero.</p>
                         </section>
                     </div>
-
-
                     <div className="col-4">
                         <aside>
                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci blanditiis
                                 earum magnam maxime
                                 neque nostrum quo rem sequi vero vitae.</p>
                         </aside>
-
                         <aside className="sidebar">
                         </aside>
                     </div>
                 </div>
             </article>
-
-
         </main>
         <footer className="row">
             <div className="col-md-6 navbar navbar-expand-lg navbar-light bg-light">
@@ -107,4 +104,4 @@ function IndexHeader() {
 }
 
 const wrapper = document.getElementById("main");
-wrapper ? ReactDOM.render(<IndexHeader/>, wrapper) : false;
+wrapper ? ReactDOM.render(<MyMain/>, wrapper) : false;
