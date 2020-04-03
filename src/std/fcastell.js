@@ -1,6 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import StudentListLink from "./components/StudentListLink";
+import f_castell from "./components/f_castell";
+console.log("Francesc Castell");
 
 function IndexHeader() {
     return <div>
