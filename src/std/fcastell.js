@@ -1,6 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import f_castell from "./components/f_castell";
+import StudentListLink from "./components/StudentListLink";
+
 console.log("Francesc Castell");
 
 function IndexHeader() {
@@ -104,5 +105,6 @@ function IndexHeader() {
         </footer>
     </div>
 }
+
 const wrapper = document.getElementById("main");
 wrapper ? ReactDOM.render(<IndexHeader/>, wrapper) : false;
