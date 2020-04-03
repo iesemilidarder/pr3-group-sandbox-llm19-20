@@ -36,7 +36,7 @@ const mySidebar = (container) => {
 mySidebar(".sidebar");
 */
 
-const MyMain = () => {
+const MyHeader = () => {
     return <div>
         <header className="row">
             <div className="col-md-2">
@@ -62,6 +62,10 @@ const MyMain = () => {
             <div className="col-sm-2">Contact 555-333210</div>
             <div className="col-sm-2"><img src="/images/callus.jpg" height="40" width="40" alt="callus"/></div>
         </header>
+    </div>
+};
+const MyMain = () => {
+    return <div>
         <main className="row">
             <article className="col-10">
                 <div className="row">
@@ -121,6 +125,10 @@ const MyMain = () => {
                 <aside className="sidebar">&#160;</aside>
             </div>
         </main>
+    </div>
+};
+const MyFooter = () => {
+    return <div>
         <footer className="row">
             <nav className="col-md-6 navbar navbar-expand-lg navbar-light bg-light">
                 <a className="navbar-brand" href="#">My web</a>
@@ -144,5 +152,7 @@ const MyMain = () => {
         </footer>
     </div>
 };
-const wrapper = document.getElementById("main");
-wrapper ? ReactDOM.render(<MyMain/>, wrapper) : false;
+const wrapper = document.getElementById("body");
+wrapper ? ReactDOM.render(<MyHeader/>, document.getElementById("header")) : false;
+wrapper ? ReactDOM.render(<MyMain/>, document.getElementById("main")) : false;
+wrapper ? ReactDOM.render(<MyFooter/>, document.getElementById("footer")) : false;
