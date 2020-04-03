@@ -31,35 +31,28 @@ const MyMain = () => {
             <div className="col-sm-2"><img src="/assets/images/callus.jpg" alt="call us" width="40"/></div>
         </header>
         <main className="row">
-
-            <article id="react-MainContainer">
-            </article>
-
-            <article className="col-12" id="mainContainer">
-            </article>
-
             <article className="col-9">
                 <div className="row">
                     <div className="col-8">
-                        <div style="background-color:rgb(255,165,0);" id="title">
+                        <div id="title">
                             <h2> All About Our Products </h2>
                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi eaque earum fuga iusto
                                 magnam
                                 molestiae quidem unde vel veritatis voluptatibus.</p>
                         </div>
-                        <section style="background-color:rgb(255,165,0);">
+                        <section>
                             <h2>Use 1 For Our Products</h2>
                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias beatae esse illum
                                 maiores neque,
                                 nostrum officiis pariatur perspiciatis quam quasi.</p>
                         </section>
-                        <section style="background-color:rgb(255,165,0);">
+                        <section>
                             <h2>Use 2 For Our Products</h2>
                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam at cupiditate
                                 enim
                                 exercitationem illo illum mollitia, porro sunt vitae voluptates.</p>
                         </section>
-                        <section style="background-color:rgb(255,165,0);">
+                        <section>
                             <h2>Use 3 For Our Products</h2>
                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A ab architecto
                                 eius expedita fugiat
