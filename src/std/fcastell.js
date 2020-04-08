@@ -32,7 +32,7 @@ const MyHeader = () => {
             <div className="col-sm-2"><img src="/images/callus.jpg" alt="call us" width="40"/></div>
         </header>
     </div>
-}
+};
 
 const MyMain = () => {
     return <div>
@@ -78,7 +78,7 @@ const MyMain = () => {
             </article>
         </main>
     </div>
-}
+};
 
 const MyFooter = () => {
     return <div>
@@ -105,13 +105,14 @@ const MyFooter = () => {
             <div className="col-sm-2"><img src="/callus.jpg" alt="call us" width="40"/></div>
         </footer>
     </div>
-}
+};
 
-const wrapper1 = document.getElementById("header");
-wrapper1 ? ReactDOM.render(<MyHeader/>, wrapper1) : false;
-
-const wrapper2 = document.getElementById("main");
-wrapper2 ? ReactDOM.render(<MyMain/>, wrapper2) : false;
-
-const wrapper3 = document.getElementById("footer");
-wrapper3 ? ReactDOM.render(<MyFooter/>, wrapper3) : false;
+const MyWeb = () => {
+    return <div>
+        <MyHeader/>
+        <MyMain/>
+        <MyFooter/>
+    </div>
+};
+const wrapper = document.getElementById("page");
+wrapper ? ReactDOM.render(<MyWeb/>, wrapper) : false;
