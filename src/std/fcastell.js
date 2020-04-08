@@ -8,7 +8,7 @@ const MyHeader = () => {
     return <div>
         <header className="row" style={{'backgroundColor': 'blue'}}>
             <div className="col-sm-2">
-                <img src="/images/logo.png" alt="Logo" width="50"/>
+                <img src="assets/images/logo.png" alt="Logo" width="50"/>
             </div>
             <nav className="col-md-6 navbar navbar-expand-lg navbar-light bg-light">
                 <a className="navbar-brand" href="#">My web</a>
@@ -29,7 +29,7 @@ const MyHeader = () => {
                 </div>
             </nav>
             <div className="col-sm-2">Contact 555-333210</div>
-            <div className="col-sm-2"><img src="/images/callus.jpg" alt="call us" width="40"/></div>
+            <div className="col-sm-2"><img src="assets/images/callus.jpg" alt="call us" width="40"/></div>
         </header>
     </div>
 };
@@ -102,7 +102,7 @@ const MyFooter = () => {
                 </div>
             </div>
             <div className="col-sm-2">Contact 555-333210</div>
-            <div className="col-sm-2"><img src="/callus.jpg" alt="call us" width="40"/></div>
+            <div className="col-sm-2"><img src="/assets/images/callus.jpg" alt="call us" width="40"/></div>
         </footer>
     </div>
 };
