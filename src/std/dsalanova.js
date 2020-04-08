@@ -1,5 +1,6 @@
 console.log("Soy Dani Salanova ");
 
+/*
 function create (){
         let boton = document.createElement("BUTTON");
     boton.innerHTML = "ME HAN CREADO";
@@ -44,7 +45,7 @@ const getPlayList = async () => {
     return titles;
 
 
-    /**
+    /!**
 const playList = () => {
 
     fetch("https://sandbox-mongo.herokuapp.com/api/rest/v1/playlists")
@@ -55,7 +56,8 @@ const playList = () => {
     return "";
 };
 TODO: Dani salanova: tienes codigo huerfano aqui
- **/
+ **!/
 
 };
 
+*/
