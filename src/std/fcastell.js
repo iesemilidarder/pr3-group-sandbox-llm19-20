@@ -1,6 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom";
-/*import "./fcastell.css";*/
+//import "./fcastell.css";
 
 console.log("Francesc Castell");
 
@@ -107,7 +107,7 @@ const MyFooter = () => {
     </div>
 };
 
-const MyWeb = () => {
+const WebPage = () => {
     return <div>
         <MyHeader/>
         <MyMain/>
@@ -115,4 +115,4 @@ const MyWeb = () => {
     </div>
 };
 const wrapper = document.getElementById("page");
-wrapper ? ReactDOM.render(<MyWeb/>, wrapper) : false;
+wrapper ? ReactDOM.render(<WebPage/>, wrapper) : false;
