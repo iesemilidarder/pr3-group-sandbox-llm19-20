@@ -4,7 +4,7 @@ import ReactDOM from "react-dom";
 
 console.log("Francesc Castell");
 
-const MyMain = () => {
+const MyHeader = () => {
     return <div>
         <header className="row" style={{'backgroundColor': 'blue'}}>
             <div className="col-sm-2">
@@ -31,6 +31,11 @@ const MyMain = () => {
             <div className="col-sm-2">Contact 555-333210</div>
             <div className="col-sm-2"><img src="/images/callus.jpg" alt="call us" width="40"/></div>
         </header>
+    </div>
+}
+
+const MyMain = () => {
+    return <div>
         <main className="row">
             <article className="col-9">
                 <div className="row">
@@ -72,6 +77,11 @@ const MyMain = () => {
                 </div>
             </article>
         </main>
+    </div>
+}
+
+const MyFooter = () => {
+    return <div>
         <footer className="row">
             <div className="col-md-6 navbar navbar-expand-lg navbar-light bg-light">
                 <a className="navbar-brand" href="#">My web</a>
@@ -97,5 +107,11 @@ const MyMain = () => {
     </div>
 }
 
-const wrapper = document.getElementById("main");
-wrapper ? ReactDOM.render(<MyMain/>, wrapper) : false;
+const wrapper1 = document.getElementById("header");
+wrapper1 ? ReactDOM.render(<MyHeader/>, wrapper1) : false;
+
+const wrapper2 = document.getElementById("main");
+wrapper2 ? ReactDOM.render(<MyMain/>, wrapper2) : false;
+
+const wrapper3 = document.getElementById("footer");
+wrapper3 ? ReactDOM.render(<MyFooter/>, wrapper3) : false;
