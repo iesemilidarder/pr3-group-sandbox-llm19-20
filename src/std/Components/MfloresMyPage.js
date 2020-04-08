@@ -1,11 +1,12 @@
 import React from "react";
 
-const MfloresHeader = () =>{
+const MfloresHeader = () => {
     return <header className="row">
         <div className="col-md-2">
         </div>
         <nav className="col-md-6 navbar navbar-expand-lg navbar-light bg-light">
             <a className="navbar-brand" href="#">My web</a>
+            <span>Esta web mola mogollon</span>
             <button className="navbar-toggler" type="button" data-toggle="collapse"
                     data-target="#navbarSupportedContent"
                     aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -25,7 +26,7 @@ const MfloresHeader = () =>{
     </header>
 };
 const MfloresBody = () => {
-    return  <main className="row">
+    return <main className="row">
         <article className="col-md-10">
             <div className="row">
                 <div className="col-md-7">
@@ -65,9 +66,5 @@ const MfloresFooter = () => {
     </footer>
 };
 
-//export default {MfloresHeader, MfloresBody, MfloresFooter};
-module.exports = {
-    MfloresHeader : MfloresHeader,
-    MfloresBody: MfloresBody,
-    MfloresFooter: MfloresFooter
-};
+export {MfloresHeader, MfloresBody, MfloresFooter};
+

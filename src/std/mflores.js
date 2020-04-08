@@ -4,10 +4,10 @@ import ReactDOM from "react-dom";
 import {MfloresBody, MfloresFooter, MfloresHeader} from "./Components/MfloresMyPage";
 
 const MyFloresPage = () => {
-    return <div className="">
-       <MfloresHeader/>
-       <MfloresBody/>
-       <MfloresFooter/>
+    return <div>
+        <MfloresHeader/>
+        <MfloresBody/>
+        <MfloresFooter/>
     </div>
 };
 
