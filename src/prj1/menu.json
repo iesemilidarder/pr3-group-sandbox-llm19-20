@@ -10,7 +10,7 @@
   {
     "id": "002",
     "title": "Masa Empanadas",
-    "ingredientes": ["Harina", "Aceite", "Sal", “Azúcar”, “Agua”],
+    "ingredientes": ["Harina", "Aceite", "Sal", "Azúcar", "Agua"],
     "description" : "Mezclamos los productos secos en un recipiente antiadherente creando una forma de corona o volcan, a continuación depositamos en el centro de nuestra corona o volcán la mezcla calentada de aceite y agua, mezclando todo hasta obtener una masa homogenea."
   },
 
@@ -34,7 +34,7 @@
   {
     "id": "005",
     "title": "Tortilla Francesa",
-    "ingredients": ["Pan de molde", "Huevos", "Leche", “Azucar”],
+    "ingredients": ["Pan de molde", "Huevos", "Leche", "Azucar"],
     "description" : "Mezclamos los huevos con la leche y el azucar, undimos las rebanadas de pan en la mezcla y a continuacion los hacemos a la sartén a fuego lento"
   },
 
@@ -73,5 +73,5 @@
     "title": "Banana split",
     "ingredientes": ["Bananas”,”Helado de Vainilla"],
     "description" : "Ponemos dos bananas en un plato y le colocamos dos bolas de helado encima"
-  },
+  }
 ]
