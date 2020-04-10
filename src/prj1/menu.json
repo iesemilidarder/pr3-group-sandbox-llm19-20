@@ -1,12 +1,12 @@
 [
   {"id": "001",
-    "title": "titulo",
+    "title": "test",
     "ingredients": ["name1", "name2", "name3"],
     "description" : "descripcion1"
   },
   {
     "id": "001",
-    "title": "titulo",
+    "title": "prueba",
     "ingredients": ["name1", "name2", "name3"],
     "description" : "descripcion1"
   }
