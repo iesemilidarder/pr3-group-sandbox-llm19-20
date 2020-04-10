@@ -1,10 +1,7 @@
 import React from "react";
-import ReactDOM from "react-dom";
 
-function f_casell() {
-    return (<h1>Hola World</h1>
-    );
+function Fcastell() {
+    return <h2>K pasa</h2>;
 }
 
-export default Header;
-
+export default Fcastell;

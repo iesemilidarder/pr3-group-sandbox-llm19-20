@@ -1,18 +1,20 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import StudentListLink from "./components/StudentListLink";
-function IndexHeader() {
+import "./index.css";
+
+function MyStudentsFirstReactApp() {
     return <div>
-        <header className="row">
-            <div className="col-sm-2">
+        <header className="row ">
+            <div className="col-sm-2 myHeaderLogo">
                 <img src="/images/logo.png" alt="Logo molon" width="50"/>
             </div>
-            <nav className="col-sm-6 navbar navbar-expand-lg navbar-light bg-light">
+            <nav className="col-sm-6 navbar navbar-expand-lg navbar-light bg-light ">
                 <a className="navbar-brand" href="#">My web</a>
                 <button className="navbar-toggler" type="button" data-toggle="collapse"
                         data-target="#navbarSupportedContent"
                         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span className="navbar-toggler-icon"></span>
+                    <span className="navbar-toggler-icon">&#160;</span>
                 </button>
                 <div className="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul className="navbar-nav mr-auto">
@@ -48,6 +50,12 @@ function IndexHeader() {
         </footer>
     </div>
 }
+
 //TODO check: Aquí tenéis una forma chula de evitar el error mediante "bicondicional" (es un if)
 const wrapper = document.getElementById("main");
-wrapper ? ReactDOM.render(<IndexHeader/>, wrapper) : false;
+wrapper ? ReactDOM.render(<MyStudentsFirstReactApp/>, wrapper) : false;
+/*idem que wrapper no sea nulo. ES decir, que exista el ID.
+if (wrapper){
+    ReactDOM.render(<IndexHeader/>, wrapper)
+}
+*/
