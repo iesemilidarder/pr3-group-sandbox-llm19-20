@@ -37,4 +37,41 @@
     "ingredients": ["Pan de molde", "Huevos", "Leche", “Azucar”],
     "description" : "Mezclamos los huevos con la leche y el azucar, undimos las rebanadas de pan en la mezcla y a continuacion los hacemos a la sartén a fuego lento"
   },
-  ]
+
+  {
+    "id": "006",
+    "title": "Bocata con Jamon",
+    "ingredients": ["Bocata", "Jamon"],
+    "description" : "Vamos a comprar una barra de pan y después el jamón lo metemos y ya esta"
+  },
+
+
+  {
+    "id": "007",
+    "title": "Leche con Cereales",
+    "ingredients": ["Leche", "Cereales"],
+    "description" : "Cogemos un vaso de Leche y Cereales y lo mezclamos"
+  },
+
+
+  {
+    "id": "008",
+    "title": "Manzana",
+    "ingredientes": ["Manzana"],
+    "description" : "Vamos otra vez al Mercadona, esta vez compramos una manzana y la comemos"
+  },
+
+  {
+    "id": "009",
+    "title": "Salchipapa",
+    "ingredientes": ["Salchichas”, “Papas"],
+    "description" : "Freímos unas salchichas y le agregamos salchichas cortadas en pequeños trozos"
+  },
+
+  {
+    "id": "010",
+    "title": "Banana split",
+    "ingredientes": ["Bananas”,”Helado de Vainilla"],
+    "description" : "Ponemos dos bananas en un plato y le colocamos dos bolas de helado encima"
+  },
+]
