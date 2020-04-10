@@ -1,5 +1,8 @@
 {
-  "Menu": {
-    
+  "Receta1": {
+    "id": "001",
+    "title": "titulo",
+    "ingredients": ["name1", "name2", "name3"],
+    "description" : "descripcion1"
   }
 }
