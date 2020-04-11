@@ -16,7 +16,7 @@ const StudentListLink = () => {
         {id:12,link: "/msegui.html",title:"Marta"},
         {id:13,link: "/mflores.html",title:"Matias"},
         {id:14,link: "/#",title:"Francesc Gonzalez"},//TODO F. Gonzalez
-        {id:15,link: "/topics.html",title:"Topics"},
+
     ];
     return <ul>
         {studentList.map((item) => {
@@ -24,4 +24,5 @@ const StudentListLink = () => {
         })}
     </ul>
 };
+
 export default StudentListLink;
