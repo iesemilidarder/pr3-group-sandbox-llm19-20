@@ -4,6 +4,13 @@ module.exports = {
     module: {
         rules: [
             {
+                test: /\.css$/,
+                use: [
+                    'style-loader',
+                    'css-loader'
+                ]
+            },
+            {
                 test: /\.(js|jsx)$/,
                 exclude: /node_modules/,
                 use: {
@@ -48,6 +55,7 @@ module.exports = {
         kilianfuentes: "./src/std/kilianfuentes.js",
         msegui: "./src/std/msegui.js",
         mflores: "./src/std/mflores.js",
+        prj1: "./src/prj1/topics.js",
     },
     plugins: [
         new HtmlWebPackPlugin({
