@@ -6,17 +6,17 @@ import MyFooter from "./components/MyFooter";
 //import MyAside from "./components/MyAside";
 import 'babel-polyfill';
 
-
 const MyAside = async () => {
     let data = await fetch("menu.json");
     let jsonData = await data.json();
     for (let item of jsonData) {
         console.log(item.title)
     }
-    return<div>
+    /*return <div>
         <img src={item.image} alt="food"/>
         <h6>{item.title}</h6>
     </div>
+     */
 };
 
 function MyApp() {
@@ -26,6 +26,7 @@ function MyApp() {
         <MyFooter/>
     </div>
 }
+
 ReactDOM.render(
     <MyApp/>,
     document.getElementById('root')
