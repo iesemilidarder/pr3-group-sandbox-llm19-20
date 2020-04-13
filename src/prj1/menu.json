@@ -2,36 +2,36 @@
   {
     "id": "001",
     "title": "Arroz con Pollo",
-    "ingredientes": ["Arroz", "Pollo"],
+    "ingredients": ["Arroz", "Pollo"],
     "description" : "Ponemos el Arroz en el agua cuando esté hirviendo, mientras tanto cortamos el pollo a nuestro gusto, una vez el Arroz esté hecho mezclamos todo y listo.  ",
-    "imagen" : "src/prj1/img/arrozpollo.jpg"
+    "image": "src/prj1/img/arrozpollo.jpg"
   },
 
 
   {
     "id": "002",
     "title": "Masa Empanadas",
-    "ingredientes": ["Harina", "Aceite", "Sal", "Azúcar", "Agua"],
+    "ingredients": ["Harina", "Aceite", "Sal", "Azúcar", "Agua"],
     "description" : "Mezclamos los productos secos en un recipiente antiadherente creando una forma de corona o volcan, a continuación depositamos en el centro de nuestra corona o volcán la mezcla calentada de aceite y agua, mezclando todo hasta obtener una masa homogenea.",
-    "imagen" : "src/prj1/img/masa-para-empanadas-economica.jpg"
+    "image": "src/prj1/img/masa-para-empanadas-economica.jpg"
   },
 
 
   {
     "id": "003",
     "title": "Tortilla de Patatas",
-    "ingredientes": ["Huevos", "Patatas"],
+    "ingredients": ["Huevos", "Patatas"],
     "description" : "Cortamos las Patatas a nuestro gusto, después cogemos un par de huevos y los batimos en un bol, después, mezclamos todo en una sarten y vamos haciendo la tortilla ",
-    "imagen" : "src/prj1/img/tortilla-de-patatas-con-cebolla.jpg"
+    "image": "src/prj1/img/tortilla-de-patatas-con-cebolla.jpg"
   },
 
 
   {
     "id": "004",
     "title": "Macarrones con Queso",
-    "ingredientes": ["Macarrones", "Agua", "Queso"],
+    "ingredients": ["Macarrones", "Agua", "Queso"],
     "description" : "Ponemos los macarrones en agua al fuego, hasta que estos estén a nuestro gusto, posteriormente le agregamos el queso una vez estén en el plato",
-    "imagen" : "src/prj1/img/macarrones-con-queso-y-tomate-80-1290-742-nw.jpg"
+    "image": "src/prj1/img/macarrones-con-queso-y-tomate-80-1290-742-nw.jpg"
   },
 
 
@@ -40,7 +40,7 @@
     "title": "Tostada Francesa",
     "ingredients": ["Pan de molde", "Huevos", "Leche", "Azucar"],
     "description" : "Mezclamos los huevos con la leche y el azucar, undimos las rebanadas de pan en la mezcla y a continuacion los hacemos a la sartén a fuego lento",
-    "imagen" : "src/prj1/img/receta-tostadas-francesas.jpg"
+    "image": "src/prj1/img/receta-tostadas-francesas.jpg"
   },
 
   {
@@ -48,7 +48,7 @@
     "title": "Bocata con Jamon",
     "ingredients": ["Bocata", "Jamon"],
     "description" : "Vamos a comprar una barra de pan y después el jamón lo metemos y ya esta",
-    "imagen" : "src/prj1/img/BocataConJamon.jpg"
+    "image": "src/prj1/img/BocataConJamon.jpg"
   },
 
 
@@ -57,31 +57,31 @@
     "title": "Leche con Cereales",
     "ingredients": ["Leche", "Cereales"],
     "description" : "Cogemos un vaso de Leche y Cereales y lo mezclamos",
-    "imagen" : "src/prj1/img/LecheConCereales.jpg"
+    "image": "src/prj1/img/LecheConCereales.jpg"
   },
 
 
   {
     "id": "008",
     "title": "Manzana",
-    "ingredientes": ["Manzana"],
+    "ingredients": ["Manzana"],
     "description" : "Vamos otra vez al Mercadona, esta vez compramos una manzana y la comemos",
-    "imagen" : "src/prj1/img/Manzana.png"
+    "image": "src/prj1/img/Manzana.png"
   },
 
   {
     "id": "009",
     "title": "Salchipapa",
-    "ingredientes": ["Salchichas”, “Papas"],
+    "ingredients": ["Salchichas”, “Papas"],
     "description" : "Freímos unas salchichas y le agregamos salchichas cortadas en pequeños trozos",
-    "imagen" : "src/prj1/img/Salchipapa.jpg"
+    "image": "src/prj1/img/Salchipapa.jpg"
   },
 
   {
     "id": "010",
     "title": "Banana split",
-    "ingredientes": ["Bananas”,”Helado de Vainilla"],
+    "ingredients": ["Bananas”,”Helado de Vainilla"],
     "description" : "Ponemos dos bananas en un plato y le colocamos dos bolas de helado encima",
-    "imagen" : "src/prj1/img/BananaSplit.jpg"
+    "image": "src/prj1/img/BananaSplit.jpg"
   }
 ]
