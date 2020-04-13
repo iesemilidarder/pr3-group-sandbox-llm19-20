@@ -26,7 +26,7 @@ module.exports = {
                 ]
             },
             {
-                test: /\.(woff2?|jpe?g|png|gif|ico)$/,
+                test: /\.(woff2?|jpe?g|png|gif|ico|json)$/,
                 use: {
                     loader: 'file-loader',
                     options: {
