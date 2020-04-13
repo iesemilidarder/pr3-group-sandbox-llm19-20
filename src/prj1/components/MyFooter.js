@@ -4,7 +4,6 @@ const MyFooter = () => {
     return <div>
         <footer class="footer-copyright text-center py-3">
             <h5><font face="Comic Sans MS,arial,verdana" class="text-success">© 2020 Copyright - Topics Foot</font></h5>
-
             <div class="row">
                 <div class="col-2"></div>
 
