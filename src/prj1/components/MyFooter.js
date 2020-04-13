@@ -3,7 +3,7 @@ import React from "react";
 const MyFooter = () => {
     return <div>
         <footer className="footer-copyright text-center py-3">
-            <h5><font face="Comic Sans MS,arial,verdana" class="text-success">© 2020 Copyright - Topics Foot</font></h5>
+            <h5><font> face="Comic Sans MS,arial,verdana" className="text-success">© 2020 Copyright - Topics Foot</font></h5>
             <div className="row">
                 <div className="col-2">
                 </div>
