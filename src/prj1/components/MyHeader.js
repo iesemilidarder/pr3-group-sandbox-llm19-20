@@ -2,13 +2,13 @@ import React from "react";
 
 const MyHeader = () =>{
     return <div>
-        <header className="row">
+        <header style={{backgroundColor: "#6f42c1"} }className="row">
 
-            <h1 className="col-md-4">Topics Food</h1>
+            <h1 style={{fontColor: "#ffffff"} } className="col-md-4">Topics Food</h1>
 
-            <div  className="col-md-2">
-                <img src="/img/logo.png"  alt="logo" class="col-6"/>
-            </div>
+<input type="text" value="Buscador" className="col-3" />
+                <img src="/img/logo.png"  alt="logo" className="col-5"/>
+
         </header>
 
     </div>
