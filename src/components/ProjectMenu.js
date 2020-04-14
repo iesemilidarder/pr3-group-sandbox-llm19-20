@@ -28,4 +28,5 @@ class ProjectMenu extends React.Component {
         );
     }
 }
+
 export default ProjectMenu;

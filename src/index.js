@@ -2,6 +2,7 @@ import React from "react";
 import ReactDOM from "react-dom";
 import StudentListLink from "./components/StudentListLink";
 import ProjectMenu from "./components/ProjectMenu";
+import ProjectMenuAlternative from "./components/ProjectMenuAlternative";
 import "./index.css";
 
 function MyStudentsFirstReactApp() {
@@ -40,6 +41,8 @@ function MyStudentsFirstReactApp() {
                     <div className="col-6">
                         <h2>Projects</h2>
                         <ProjectMenu/>
+                        <h2>The gang</h2>
+                        <ProjectMenuAlternative/>
                     </div>
                 </div>
             </article>
