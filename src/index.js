@@ -1,13 +1,16 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import StudentListLink from "./components/StudentListLink";
+import ProjectMenu from "./components/ProjectMenu";
+import "./index.css";
+
 function MyStudentsFirstReactApp() {
     return <div>
-        <header className="row">
-            <div className="col-sm-2">
+        <header className="row ">
+            <div className="col-sm-2 myHeaderLogo">
                 <img src="/images/logo.png" alt="Logo molon" width="50"/>
             </div>
-            <nav className="col-sm-6 navbar navbar-expand-lg navbar-light bg-light">
+            <nav className="col-sm-6 navbar navbar-expand-lg navbar-light bg-light ">
                 <a className="navbar-brand" href="#">My web</a>
                 <button className="navbar-toggler" type="button" data-toggle="collapse"
                         data-target="#navbarSupportedContent"
@@ -30,9 +33,14 @@ function MyStudentsFirstReactApp() {
         </header>
         <main className="row">
             <article className="col-8">
-                <div id="menu">
-                    <h2>Student List</h2>
-                    <StudentListLink/>
+                <div id="menu" className="row">
+                    <div className="col-6">
+                        <h2>Student List</h2>
+                        <StudentListLink/></div>
+                    <div className="col-6">
+                        <h2>Projects</h2>
+                        <ProjectMenu/>
+                    </div>
                 </div>
             </article>
             <aside className="col-4">

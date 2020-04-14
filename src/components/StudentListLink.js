@@ -2,25 +2,27 @@ import React from "react";
 
 const StudentListLink = () => {
     const studentList = [
-        {link: "/master.html",title:"Master file"},
-        {link: "/pvillanueva.html",title:"Pablo"},
-        {link: "/#",title:"Andrea"},//TODO Andrea
-        {link: "/mexposito.html",title:"Miguel"},
-        {link: "/fcastell.html",title:"Francesc Castell"},
-        {link: "/jques.html",title:"Joan"},
-        {link: "/jzarco.html",title:"Javi"},
-        {link: "/dcastaneda.html",title:"Dani Castañeda"},
-        {link: "/tamer.html",title:"Toni"},
-        {link: "/dsalanova.html",title:"Dani Salanova"},
-        {link: "/kilianfuentes.html",title:"Kilian"},
-        {link: "/msegui.html",title:"Marta"},
-        {link: "/mflores.html",title:"Matias"},
-        {link: "/#",title:"Francesc Gonzalez"},//TODO F. Gonzalez
+        {id:1,link: "/master.html",title:"Master file"},
+        {id:2,link: "/pvillanueva.html",title:"Pablo"},
+        {id:3,link: "/#",title:"Andrea"},//TODO Andrea
+        {id:4,link: "/mexposito.html",title:"Miguel"},
+        {id:5,link: "/fcastell.html",title:"Francesc Castell"},
+        {id:6,link: "/jzarco.html",title:"Javi"},
+        {id:7,link: "/dcastaneda.html",title:"Dani Castañeda"},
+        {id:8,link: "/tamer.html",title:"Toni"},
+        {id:9,link: "/jques.html",title:"Joan"},
+        {id:10,link: "/dsalanova.html",title:"Dani Salanova"},
+        {id:11,link: "/kilianfuentes.html",title:"Kilian"},
+        {id:12,link: "/msegui.html",title:"Marta"},
+        {id:13,link: "/mflores.html",title:"Matias"},
+        {id:14,link: "/#",title:"Francesc Gonzalez"},//TODO F. Gonzalez
+
     ];
     return <ul>
         {studentList.map((item) => {
-            return <li><a href={item.link}>{item.title}</a></li>
+            return <li key={"stdlink"+item.id}><a href={item.link}>{item.title}</a></li>
         })}
     </ul>
 };
+
 export default StudentListLink;

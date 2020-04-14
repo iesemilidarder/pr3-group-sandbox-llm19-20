@@ -4,6 +4,13 @@ module.exports = {
     module: {
         rules: [
             {
+                test: /\.css$/,
+                use: [
+                    'style-loader',
+                    'css-loader'
+                ]
+            },
+            {
                 test: /\.(js|jsx)$/,
                 exclude: /node_modules/,
                 use: {
@@ -19,7 +26,7 @@ module.exports = {
                 ]
             },
             {
-                test: /\.(woff2?|jpe?g|png|gif|ico)$/,
+                test: /\.(woff2?|jpe?g|png|gif|ico|json)$/,
                 use: {
                     loader: 'file-loader',
                     options: {
@@ -48,6 +55,7 @@ module.exports = {
         kilianfuentes: "./src/std/kilianfuentes.js",
         msegui: "./src/std/msegui.js",
         mflores: "./src/std/mflores.js",
+        topics: "./src/prj1/topics.js",
     },
     plugins: [
         new HtmlWebPackPlugin({
@@ -114,6 +122,11 @@ module.exports = {
             template: "./src/std/mflores.html",
             chunks: ['mflores'],
             filename: "./mflores.html"
+        }),
+        new HtmlWebPackPlugin({
+            template: "./src/prj1/topics.html",
+            chunks: ['topics'],
+            filename: "./topics.html"
         })
     ],
     devServer: {
