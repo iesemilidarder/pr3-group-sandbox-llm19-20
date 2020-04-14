@@ -1,3 +1,4 @@
+const webpack = require('webpack');
 const HtmlWebPackPlugin = require("html-webpack-plugin");
 
 module.exports = {
@@ -26,7 +27,7 @@ module.exports = {
                 ]
             },
             {
-                test: /\.(woff2?|jpe?g|png|gif|ico)$/,
+                test: /\.(woff2?|jpe?g|png|gif|ico|json)$/,
                 use: {
                     loader: 'file-loader',
                     options: {
@@ -56,6 +57,7 @@ module.exports = {
         msegui: "./src/std/msegui.js",
         mflores: "./src/std/mflores.js",
         topics: "./src/prj1/topics.js",
+        viajes: "./src/prj2/viajes.js"
     },
     plugins: [
         new HtmlWebPackPlugin({

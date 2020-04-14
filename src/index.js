@@ -1,7 +1,8 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import StudentListLink from "./components/StudentListLink";
-import ProyectsListLink from "./components/ProyectsListLink";
+import ProjectMenu from "./components/ProjectMenu";
+import ProjectMenuAlternative from "./components/ProjectMenuAlternative";
 import "./index.css";
 
 function MyStudentsFirstReactApp() {
@@ -33,11 +34,16 @@ function MyStudentsFirstReactApp() {
         </header>
         <main className="row">
             <article className="col-8">
-                <div id="menu">
-                    <h2>Student List</h2>
-                    <StudentListLink/>
-                    <h2>Proyects List</h2>
-                    <ProyectsListLink/>
+                <div id="menu" className="row">
+                    <div className="col-6">
+                        <h2>Student List</h2>
+                        <StudentListLink/></div>
+                    <div className="col-6">
+                        <h2>Projects</h2>
+                        <ProjectMenu/>
+                        <h2>The gang</h2>
+                        <ProjectMenuAlternative/>
+                    </div>
                 </div>
             </article>
             <aside className="col-4">

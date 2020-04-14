@@ -1,0 +1,17 @@
+[
+  {
+    "id": 1,
+    "name": "JohnDoe",
+    "profile": "https://api.adorable.io/avatars/170/JohnDoe.png"
+  },
+  {
+    "id": 2,
+    "name": "Pepe Palo",
+    "profile": "https://api.adorable.io/avatars/170/PepitoPalotes.png"
+  },
+  {
+    "id": 3,
+    "name": "Holly Molly",
+    "profile": "https://api.adorable.io/avatars/170/HollyMolli.png"
+  }
+]
