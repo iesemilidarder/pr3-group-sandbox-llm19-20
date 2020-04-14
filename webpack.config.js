@@ -56,6 +56,7 @@ module.exports = {
         msegui: "./src/std/msegui.js",
         mflores: "./src/std/mflores.js",
         topics: "./src/prj1/topics.js",
+        viajes: "./src/prj2/viajes.js"
     },
     plugins: [
         new HtmlWebPackPlugin({

@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import aixos from 'aixos';
+//import aixos from 'aixos';
 
 function App() {
     const [data, setData] useState({ hits: [] });
@@ -16,7 +16,7 @@ function App() {
         <ul>
             {data.hits.map(item => (
                 <li key={{item.objectID}}>
-                    <a href={{item.url}>{item.tiltle}</a>
+                    <a href={{item.url}>{item.tiltle}}</a>
                 </li>
             ))}
         </ul>
