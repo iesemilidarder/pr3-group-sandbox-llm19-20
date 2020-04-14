@@ -31,5 +31,6 @@ const getPlayList = async () => {
     return "";
 };
 myRender("mainContainer", "Bienvenidos a mi mundo donde todo es un sueño!");
+
 const wrapper = document.getElementById("main");
 wrapper ? ReactDOM.render(<IndexHeader/>, wrapper) : false;
