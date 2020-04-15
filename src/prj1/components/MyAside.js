@@ -12,7 +12,6 @@ class MyAside extends React.Component {
         fetch("data/menu.json")
             .then(data => data.json())
             .then(data => {
-                console.log(data);
                 this.setState({projects: data});
             });
     }

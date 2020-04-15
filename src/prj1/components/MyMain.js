@@ -12,7 +12,6 @@ class MyMain extends React.Component {
         fetch("data/menu.json")
             .then(data => data.json())
             .then(data => {
-                console.log(data);
                 this.setState({projects: data});
             });
     }
@@ -20,7 +19,7 @@ class MyMain extends React.Component {
     render() {
         const projects = this.state.projects;
         return (
-            <div className="col-9">
+            <div className="col-9" >
                 {projects.map(item => {
                     return <div className="mt-3 mb-4 justify-content-center">
 
