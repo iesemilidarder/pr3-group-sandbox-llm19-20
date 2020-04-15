@@ -3,7 +3,7 @@ import ReactDOM from "react-dom";
 import MyHeader from "./components/MyHeader";
 import MyMain from "./components/MyMain";
 import MyFooter from "./components/MyFooter";
-//import MyAside from "./components/MyAside";
+import MyAside from "./components/MyAside";
 /*
 const MyAside = async () => {
     let data = await fetch("menu.json");
@@ -21,6 +21,7 @@ const MyAside = async () => {
 function MyApp() {
     return <div>
         <MyHeader/>
+        <MyAside/>
         <MyMain/>
         <MyFooter/>
     </div>
