@@ -6,8 +6,8 @@ const MyHeader = () => {
 
             <h1 style={{fontColor: "#ffffff"}} className="col-md-4">Topics Food</h1>
 
-            <input type="text" value="Buscador" className="col-3"/>
-            <img src="/images/imgPrj1/logo.png" alt="logo" className="col-5"/>
+            <input type="text" value="Buscador"  className="col-5"/>
+            <img src="/images/imgPrj1/logo.png" width="100" height="100" alt="logo" className="col-3"/>
 
         </header>
 
