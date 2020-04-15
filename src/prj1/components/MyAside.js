@@ -21,16 +21,22 @@ class MyAside extends React.Component {
         return (
             <aside className="col-3">
                 {projects.map(item => {
-                    return <button className="mt-3 mb-4">
+                    return <div key={item.id}>
+                    <button className="mt-3 mb-4" onClick={renderMain}>
                         <h5>{item.title}</h5>
                         <img src={item.image} alt="food" width="200" height="140"/>
                     </button>
+                    </div>
                 })}
             </aside>
         );
-
     }
 }
 
+const renderMain = () =>{
+    console.log("test");
+};
 
 export default MyAside;
+
+
