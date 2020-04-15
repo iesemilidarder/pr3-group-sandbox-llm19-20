@@ -31,7 +31,7 @@ class MyMain extends React.Component {
                                 return <li>{ing}</li>
                             })}
                         </ol>
-                        <a>{item.description} </a>
+                        <p>{item.description} </p>
                     </div>
                 })}
             </div>
