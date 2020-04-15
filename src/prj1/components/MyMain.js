@@ -19,7 +19,7 @@ class MyMain extends React.Component {
     render() {
         const projects = this.state.projects;
         return (
-            <div className="col-9" >
+            <div className="col-9">
                 {projects.map(item => {
                     return <div className="mt-3 mb-4 justify-content-center">
 
@@ -39,6 +39,5 @@ class MyMain extends React.Component {
 
     }
 }
-
 
 export default MyMain

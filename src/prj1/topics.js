@@ -20,5 +20,3 @@ ReactDOM.render(
     <MyApp/>,
     document.getElementById('root')
 );
-
-
