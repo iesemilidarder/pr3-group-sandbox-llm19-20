@@ -1,6 +1,6 @@
 [
   {
-    "id": "001",
+    "id": 100,
     "title": "Arroz con Pollo",
     "ingredients": ["Arroz", "Pollo"],
     "description" : "Ponemos el Arroz en el agua cuando esté hirviendo, mientras tanto cortamos el pollo a nuestro gusto, una vez el Arroz esté hecho mezclamos todo y listo.  ",
@@ -9,7 +9,7 @@
 
 
   {
-    "id": "002",
+    "id": 101,
     "title": "Masa Empanadas",
     "ingredients": ["Harina", "Aceite", "Sal", "Azúcar", "Agua"],
     "description" : "Mezclamos los productos secos en un recipiente antiadherente creando una forma de corona o volcan, a continuación depositamos en el centro de nuestra corona o volcán la mezcla calentada de aceite y agua, mezclando todo hasta obtener una masa homogenea.",
@@ -18,7 +18,7 @@
 
 
   {
-    "id": "003",
+    "id": 102,
     "title": "Tortilla de Patatas",
     "ingredients": ["Huevos", "Patatas"],
     "description" : "Cortamos las Patatas a nuestro gusto, después cogemos un par de huevos y los batimos en un bol, después, mezclamos todo en una sarten y vamos haciendo la tortilla ",
@@ -27,7 +27,7 @@
 
 
   {
-    "id": "004",
+    "id": 103,
     "title": "Macarrones con Queso",
     "ingredients": ["Macarrones", "Agua", "Queso"],
     "description" : "Ponemos los macarrones en agua al fuego, hasta que estos estén a nuestro gusto, posteriormente le agregamos el queso una vez estén en el plato",
@@ -36,7 +36,7 @@
 
 
   {
-    "id": "005",
+    "id": 104,
     "title": "Tostada Francesa",
     "ingredients": ["Pan de molde", "Huevos", "Leche", "Azucar"],
     "description" : "Mezclamos los huevos con la leche y el azucar, undimos las rebanadas de pan en la mezcla y a continuacion los hacemos a la sartén a fuego lento",
@@ -44,7 +44,7 @@
   },
 
   {
-    "id": "006",
+    "id": 105,
     "title": "Bocata con Jamon",
     "ingredients": ["Bocata", "Jamon"],
     "description" : "Vamos a comprar una barra de pan y después el jamón lo metemos y ya esta",
@@ -53,7 +53,7 @@
 
 
   {
-    "id": "007",
+    "id": 106,
     "title": "Leche con Cereales",
     "ingredients": ["Leche", "Cereales"],
     "description" : "Cogemos un vaso de Leche y Cereales y lo mezclamos",
@@ -62,7 +62,7 @@
 
 
   {
-    "id": "008",
+    "id": 107,
     "title": "Manzana",
     "ingredients": ["Manzana"],
     "description" : "Vamos otra vez al Mercadona, esta vez compramos una manzana y la comemos",
@@ -70,15 +70,15 @@
   },
 
   {
-    "id": "009",
+    "id": 108,
     "title": "Salchipapa",
     "ingredients": ["Salchichas", "Papas"],
-    "description" : "Freímos unas salchichas y le agregamos salchichas cortadas en pequeños trozos",
+    "description" : "Freímos unas papas y le agregamos salchichas cortadas en pequeños trozos",
     "image": "/images/imgPrj1/Salchipapa.jpg"
   },
 
   {
-    "id": "010",
+    "id": 109,
     "title": "Banana split",
     "ingredients": ["Bananas" , "Helado de Vainilla"],
     "description" : "Ponemos dos bananas en un plato y le colocamos dos bolas de helado encima",
