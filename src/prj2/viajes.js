@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import {useFetch} from "../components/hooks";
 //import aixos from 'aixos';
 
 /*
@@ -25,3 +26,23 @@ function App() {
 }
 
 export default App;*/
+
+function ProjectMenuAlternative() {
+    const [items, loading] = useFetch("assets/data/studentProjects.json");
+    return (
+        <div className="container">
+            <div className="row">
+                {loading ? ("Loading...") : (items.map(item => (
+                    <div className="card col-4" key={`card-${item.id}`}>
+                        <img className="card-img-top" src={item.profile} alt={`Card ${item.profile}`}/>
+                        <div className="card-body">
+                            <p className="card-text">{item.name}</p>
+                        </div>
+                    </div>
+                )))}
+            </div>
+        </div>
+    );
+}
+
+export default ProjectMenuAlternative;
