@@ -8,7 +8,7 @@ const MyFooter = () => {
                 <div className="col-2">
                 </div>
 
-                <div className="footer-copyright text-center py-3" className="col-8">
+                <div className="footer-copyright text-center py-3 col-8">
                     <p><b>C/</b> nidea hulio, 4 08004 Palma de Mallorca (+34) 93 164 80 41 </p>
                     <p><b>LUNES:</b> 20.00 A 23.30. <b>MARTES A SÁBADO:</b> 13.00-15.30 &
                         20:00-23:30. <b>DOMINGO:</b> CERRADO</p>

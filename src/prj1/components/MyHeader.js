@@ -12,6 +12,6 @@ const MyHeader = () => {
         </header>
 
     </div>
-}
+};
 //TODO (PR1: by berto) No subais errores al repositorio!!!!! Rompen a todos los que trabajan con el
 export default MyHeader;

@@ -1,8 +1,45 @@
 import React from "react";
 
-const MyMain = () =>{
-    return <div>
+class MyMain extends React.Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+            projects: []
+        };
+    }
 
-    </div>
-};
-export default MyMain;
+    componentDidMount() {
+        fetch("data/menu.json")
+            .then(data => data.json())
+            .then(data => {
+                console.log(data);
+                this.setState({projects: data});
+            });
+    }
+
+    render() {
+        const projects = this.state.projects;
+        return (
+            <div className="col-9">
+                {projects.map(item => {
+                    return <div className="mt-3 mb-4 justify-content-center">
+
+                        <img src={item.image} alt="food" width="400" height="220" className="center-block"/>
+
+                        <h2>{item.title}</h2>
+                        <ol>
+                            {item.ingredients.map(ing => {
+                                return <li>{ing}</li>
+                            })}
+                        </ol>
+                        <a>{item.description} </a>
+                    </div>
+                })}
+            </div>
+        );
+
+    }
+}
+
+
+export default MyMain
