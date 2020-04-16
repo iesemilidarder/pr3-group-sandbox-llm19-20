@@ -25,18 +25,19 @@ class MyMain extends React.Component {
         projects.map(item => {
             if (id === item.id) {
                 let Recipe = <div key={item.id} className="mt-3 mb-4">
-                        <img src={item.image} alt="food" width="400" height="220"/>
-                        <h2>{item.title}</h2>
-                        <ol>
-                            {item.ingredients.map(ing => {
-                                return <li>{ing}</li>
-                            })}
-                        </ol>
-                        <p>{item.description}</p>
-                    </div>;
+                    <img src={item.image} alt="food" width="840" height="540" className="mb-4"/>
+                    <h2 className="mb-3">{item.title}</h2>
+                    <ol>
+                        {item.ingredients.map(ing => {
+                            return <li>{ing}</li>
+                        })}
+                    </ol>
+                    <p className="mt-4">{item.description}</p>
+                </div>;
                 ReactDOM.render(Recipe, document.getElementById("content"))
             }
         });
+        window.scroll(0, 0);
     }
 
     render() {
