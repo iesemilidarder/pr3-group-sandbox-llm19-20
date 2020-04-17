@@ -15,9 +15,9 @@ let ConfirmDemo = () => {
 
 const MyHeader = () => {
     return <div>
-        <header style={{backgroundColor: "#28a745"}} className="row">
+        <header style={{backgroundColor: "#65AB9A"}} className="row">
 
-            <h1 style={{fontColor: "#ffffff"}} className="col-md-4">¡Que aproveche!</h1>
+            <h1 style={{color: "#FFFFFF"}} className="col-md-4">¡Que aproveche!</h1>
 
 
             <input  className="form-control" type="text" placeholder="Search" aria-label="Search" onClick={ConfirmDemo}  className="col-5"/>
