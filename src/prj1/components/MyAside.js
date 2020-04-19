@@ -1,3 +1,5 @@
+//Esto ya no sirve pa nah, ni lo mireis.
+
 import React from "react";
 
 class MyAside extends React.Component {

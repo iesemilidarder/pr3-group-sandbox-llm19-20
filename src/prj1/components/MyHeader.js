@@ -15,16 +15,16 @@ let ConfirmDemo = () => {
 
 const MyHeader = () => {
     return <div>
-        <header style={{backgroundColor: "#28a745"}} className="row">
+        <header style={{backgroundColor: "#65AB9A"}} className="row">
 
-            <h1 style={{fontColor: "#ffffff"}} className="col-md-4">Topics Food</h1>
+            <h1 style={{color: "#FFFFFF"}} className="col-md-4">¡Que aproveche!</h1>
 
 
             <input  className="form-control" type="text" placeholder="Search" aria-label="Search" onClick={ConfirmDemo}  className="col-5"/>
 
 
 
-            <img src="/images/imgPrj1/logo.png" width="100" height="100" alt="logo" className="col-3" />
+            <img src="/images/imgPrj1/logo2.png" width="50" height="150" alt="logo" className="col-3" />
 
         </header>
 
