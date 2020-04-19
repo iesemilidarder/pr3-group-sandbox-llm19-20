@@ -18,8 +18,8 @@ const myRender = (content) => {
     console.log("arrow function");
     const template = `
         <article class="col-md">
-            <h1>Adios mundo cruel :(</h1>
-            <p>Esto saldrá bieen</p>
+            <h1>Esto confirma que va bien</h1>
+            <p>Esto va bien en JS</p>
         </article>
         `;
     document.querySelector(content).innerHTML = template;
