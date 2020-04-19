@@ -54,6 +54,7 @@ function Recomendados() {
         });
 
         // EN CASO DE SIMPLEMENTE DARLE A RECOMENDADOS SIN HABER PULSADO NADA. Funciona mal RPG = Recomendados (funcionan igual)
+        //HAY  QUE CAMBIAR LAS CONDICIONES
         if (  max.num <= 1 ) {
 
             let arr = [];
