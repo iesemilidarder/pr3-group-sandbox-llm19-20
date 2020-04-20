@@ -130,6 +130,7 @@ module.exports = {
             chunks: ['topics'],
             filename: "./topics.html"
         })
+
     ],
     devServer: {
         hot: true,

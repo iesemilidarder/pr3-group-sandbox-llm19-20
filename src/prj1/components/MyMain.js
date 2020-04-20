@@ -17,6 +17,7 @@ class MyMain extends React.Component {
             .then(data => data.json())
             .then(data => {
                 this.setState({projects: data});
+                console.log(data)
             });
     }
 
@@ -42,7 +43,7 @@ class MyMain extends React.Component {
 
     render() {
         return (
-            <div className="row bg-light">
+            <main className="row">
                 <aside style={{backgroundColor: "#D3E6CF"}} className="col-3">
                     {this.state.projects.map(item => {
                         return <div key={item.id}>
@@ -56,7 +57,7 @@ class MyMain extends React.Component {
                 <div style={{backgroundColor: "#FDFDFA"}} id="content" className="col-9">
                     <h1 className="mt-5">Clicka en la Receta que más te guste!!</h1>
                 </div>
-            </div>
+            </main>
         );
 
     }
