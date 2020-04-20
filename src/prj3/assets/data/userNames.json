@@ -1,0 +1,23 @@
+[
+  {
+    "id": 1,
+    "username": "Cioran666",
+    "password": "987654",
+    "profile-picture": "https://api.adorable.io/avatars/200/Rodolfo Agusto.png",
+    "profile-name":"Rodolfo Agusto"
+  },
+  {
+    "id": 2,
+    "username": "Stoa33",
+    "password": "123987",
+    "profile-picture": "https://api.adorable.io/avatars/200/Pepito Palotes.png",
+    "profile-name":"Pepito Palotes"
+  },
+  {
+    "id": 3,
+    "username": "Lory00",
+    "password": "123456",
+    "profile-picture": "https://api.adorable.io/avatars/200/Lory Money.png",
+    "profile-name":"Lory Money"
+  }
+]

@@ -1,3 +1,4 @@
+console.log("hey que onda");
 import React from "react";
 import ReactDOM from "react-dom";
 import MyFooter from "/src/prj3/components/MyFooter";
