@@ -1,6 +1,19 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import Myfooter from "./components/Myfooter";
+import Recomendados from "./components/Recomendados";
 
-const wrapper = document.getElementById("main");
-wrapper ? ReactDOM.render(<Myfooter/>, wrapper) : false;
+function App(){
+    return(
+        <div>
+            <Recomendados/>
+            <Myfooter/>
+        </div>
+    )
+}
+
+
+ReactDOM.render(
+    <App/>,
+    document.getElementById('main')
+);
