@@ -1,0 +1,12 @@
+[
+  {
+    "id": 1,
+    "name": "Project 1",
+    "link": "/topics.html",
+    "students": [
+      "Joan Ques",
+      "Miguel Expósito",
+      "No me acuerdo quien mas!"
+    ]
+  }
+]
