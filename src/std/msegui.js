@@ -22,7 +22,8 @@ const myRender = (container) => {
 };
 myRender("mainContainer");
 
-
+/*
+TODO: Marta no subas codigo que no funciona! 21/04/2020
 const MyBody() {
     return <div>
         <header className="row">
@@ -96,4 +97,4 @@ const MyBody() {
     </div>
 }
 const wrapper = document.getElementById("main");
-wrapper ? ReactDOM.render(<MyMain/>, wrapper) : false;
+wrapper ? ReactDOM.render(<MyMain/>, wrapper) : false;*/
