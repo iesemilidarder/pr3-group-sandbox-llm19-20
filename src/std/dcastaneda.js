@@ -1,8 +1,8 @@
-console.log("Daniel Castañedas");
+console.log("Hola perola");
 
 
 function func1() {
-    console.log("Funcion 1")
+    console.log("Funcion 1");
 
     //¿Para que sirve return?
     return func1;
