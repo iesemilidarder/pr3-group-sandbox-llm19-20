@@ -22,27 +22,27 @@ function Recomendados() {
     let images = [{
         name: "rpg",
         img: [{
-            id: "../img/destiny.png",
+            id: "/prj3/img/destiny.png",
             name: "Destiny",
-            plataformas: "PS3,PS4,XBOX360, XBOX ONE",
+            plataformas: "PS3",
             price: "19.99$",
             gen: "MMORPG"
         }, {
-            id: "../img/pokemon.jpg",
+            id: "/prj3/img/pokemon.jpg",
             name: "Pokemon",
-            plataformas: "PS3,PS4,XBOX360, XBOX ONE",
+            plataformas: "Switch",
             price: "19.99$",
             gen: "RPG"
         }, {
-            id: "../img/inazuma.jpg",
+            id: "/prj3/img/inazuma.jpg",
             name: "Inazum",
-            plataformas: "PS3,PS4,XBOX360, XBOX ONE",
+            plataformas: "3ds",
             price: "19.99$",
             gen: "RPG"
         }, {
-            id: "../img/radiant.jpg",
+            id: "/prj3/img/radiant.jpg",
             name: "Radiant Historia",
-            plataformas: "PS3,PS4,XBOX360, XBOX ONE",
+            plataformas: "DS,3DS",
             price: "19.99$",
             gen: "RPG"
         }]
@@ -50,68 +50,68 @@ function Recomendados() {
         {
             name: "mmo",
             img: [{
-                id: "../img/black.jpg",
+                id: "/prj3/img/black.jpg",
                 name: "BlackDesert",
-                plataformas: "PS3,PS4,XBOX360, XBOX ONE",
+                plataformas: "PC,PS4",
                 price: "19.99$",
                 gen: "MMO"
             }, {
-                id: "../img/wow.jpg",
+                id: "/prj3/img/wow.jpg",
                 name: "WOW",
-                plataformas: "PS3,PS4,XBOX360, XBOX ONE",
+                plataformas: "PC",
                 price: "19.99$",
                 gen: "MMO"
             }, {
-                id: "../img/tera.jpg",
+                id: "/prj3/img/tera.jpg",
                 name: "Tera",
-                plataformas: "PS3,PS4,XBOX360, XBOX ONE",
+                plataformas: "PC",
                 price: "19.99$",
                 gen: "MMO"
-            }, {id: "../img/re.jpg", name: "Rebirth", plataformas: "PS3,PS4,XBOX360, XBOX ONE", price: "19.99$",  gen: "MMO"}]
+            }, {id: "/prj3/img/re.jpg", name: "Rebirth", plataformas: "PS4", price: "19.99$",  gen: "MMO"}]
         },
         {
             name: "cars",
             img: [{
-                id: "../img/dirt.jpg",
+                id: "/prj3/img/dirt.jpg",
                 name: "Dirt Rally",
-                plataformas: "PS3,PS4,XBOX360, XBOX ONE",
+                plataformas: "PS4,PC",
                 price: "19.99$",
                 gen: "Conducción",
             }, {
-                id: "../img/cars.jpg",
+                id: "/prj3/img/cars.jpg",
                 name: "Cars",
-                plataformas: "PS3,PS4,XBOX360, XBOX ONE",
+                plataformas: "PS2",
                 price: "19.99$",
                 gen: "Conducción"
             }, {
-                id: "../img/f1.jpg",
+                id: "/prj3/img/f1.jpg",
                 name: "F1",
-                plataformas: "PS3,PS4,XBOX360, XBOX ONE",
+                plataformas: "PC,PS4",
                 price: "19.99$",
                 gen: "Conducción"
-            }, {id: "../img/moto.jpg", name: "Moto GP19", plataformas: "PS3,PS4,XBOX360, XBOX ONE", price: "19.99$", gen: "Conducción"}]
+            }, {id: "/prj3/img/moto.jpg", name: "Moto GP19", plataformas: "PS3,PS4", price: "19.99$", gen: "Conducción"}]
         },
         {
             name: "fight",
             img: [{
-                id: "../img/kakarot.jpg",
+                id: "/prj3/img/kakarot.jpg",
                 name: "Kakarot",
-                plataformas: "PS3,PS4,XBOX360, XBOX ONE",
+                plataformas: "PS4,PC",
                 price: "19.99$",
                 gen: "Lucha"
             }, {
-                id: "../img/tenkiachi3.jpg",
+                id: "/prj3/img/tenkiachi3.jpg",
                 name: "Tenkiachi3",
-                plataformas: "PS3,PS4,XBOX360, XBOX ONE",
+                plataformas: "PS2,WII",
                 price: "19.99$",
                 gen: "Lucha"
             }, {
-                id: "../img/sf.jpg",
+                id: "/prj3/img/sf.jpg",
                 name: "StreetFighter",
-                plataformas: "PS3,PS4,XBOX360, XBOX ONE",
+                plataformas: ",PC",
                 price: "19.99$",
                 gen: "Lucha"
-            }, {id: "../img/naruto.jpg", name: "Naruto", plataformas: "PS3,PS4,XBOX360, XBOX ONE", price: "19.99$", gen: "Lucha"}]
+            }, {id: "/prj3/img/naruto.jpg", name: "Naruto", plataformas: "XBOXONE", price: "19.99$", gen: "Lucha"}]
         }
     ];
 
@@ -158,8 +158,8 @@ function Recomendados() {
             //  ¡¡¡¡NOTA: LOS aleatorio... CON math.random DEBEN SER ACTUALIUZADOS PARA USAR ESAS IMAGENES YA QUE ESTAN AHORA SOLO PARA 4 GENEROS CON MAX 4 imagenes)
             // PD: AUMENTAR k < 35 PARA MAYOR NUMERO DE COMBINACIONES QUE PERMITIRAN MÁS IMAGENES ABAJO, IGUAL EN EL for loop DE ABAJO.
             for (k = 0; k < 35; k++) {
-                let aleatorioFila = Math.floor(Math.random() * 3); //MAXIMA FILA
-                let aleatorioColumna = Math.floor(Math.random() * 3); //MAXIMA COLUMNA
+                let aleatorioFila = Math.floor(Math.random() * 4); //MAXIMA FILA, AL PARECER AQUI EL PRIMERO NO ES 0, ES 1 !!!!
+                let aleatorioColumna = Math.floor(Math.random() * 4); //MAXIMA COLUMNA, AL PARECER AQUI EL PRIMERO DEL ARRAY ES 1!!!
                 arr.push(aleatorioFila + " " + aleatorioColumna);
 
                 arrFinal = arr.filter((item, index) => {
@@ -234,11 +234,11 @@ function Recomendados() {
         divGlobal.style.float = "left";
 
         let divImage = document.createElement("div");
-        divImage.className = "col-md-7";
+        divImage.className = "col-md-1";
         divImage.style.float = "left";
 
         let aside = document.createElement("aside");
-        aside.className = "col-md-5";
+        aside.className = "col-md-11";
         aside.style.marginRight = "30px";
         aside.style.float = "left";
         aside.style.marginLeft = "15px";
@@ -284,13 +284,13 @@ function Recomendados() {
                 </div>
 
                 <div className="col-md-6" style={{float: "left"}}>
-                    <div id="nuevo">
+                    <div id="nuevo" style={{ display: "none"}}>
 
                         <div className={"col-md-6"} style={{marginTop: 30, float: "left"}}>
-                            <div className={"col-md-8"} style={{float: "left"}}>
-                                <img src="../img/forza.jpg" alt="" height="250" width="250"/>
+                            <div className={"col-md-1"} style={{float: "left"}}>
+                                <img src="/prj3/img/forza.jpg" alt="" height="250" width="250"/>
                             </div>
-                            <aside className={"col-md-4"} style={{marginRight: 40, marginLeft: 20, float: "left"}}>
+                            <aside className={"col-md-11"} style={{marginRight: 40, marginLeft: 20, float: "left"}}>
                                 <p>Forza</p>
                                 <p>Plataformas: XBOX ONE, PC </p>
                                 <button onClick={CARS}>Me gusta</button>
@@ -298,10 +298,10 @@ function Recomendados() {
                         </div>
 
                         <div className={"col-md-6"} style={{marginTop: 30, float: "left"}}>
-                            <div className={"col-md-8"} style={{float: "left"}}>
-                                <img src="../img/destiny2.jpg" alt="" height="250" width="250"/>
+                            <div className={"col-md-1"} style={{float: "left"}}>
+                                <img src="/prj3/img/destiny2.jpg" alt="" height="250" width="250"/>
                             </div>
-                            <aside className={"col-md-4"} style={{marginRight: 40, marginLeft: 20, float: "left"}}>
+                            <aside className={"col-md-11"} style={{marginRight: 40, marginLeft: 20, float: "left"}}>
                                 <p>Destiny 2</p>
                                 <p>Plataformas: PS4, XBOX ONE,PC</p>
                                 <button onClick={MMO}>Me gusta</button>
@@ -309,10 +309,10 @@ function Recomendados() {
                         </div>
 
                         <div className={"col-md-6"} style={{marginTop: 30, float: "left"}}>
-                            <div className={"col-md-8"} style={{float: "left"}}>
-                                <img src="../img/project.jpg" alt="" height="250" width="250"/>
+                            <div className={"col-md-1"} style={{float: "left"}}>
+                                <img src="/prj3/img/project.jpg" alt="" height="250" width="250"/>
                             </div>
-                            <aside className={"col-md-4"} style={{marginRight: 40, marginLeft: 20, float: "left"}}>
+                            <aside className={"col-md-11"} style={{marginRight: 40, marginLeft: 20, float: "left"}}>
                                 <p>Project Cars 3</p>
                                 <p>Plataformas: PS4, XBOX ONE, PC</p>
                                 <button onClick={CARS}>Me gusta</button>
@@ -320,10 +320,10 @@ function Recomendados() {
                         </div>
 
                         <div className={"col-md-6"} style={{marginTop: 30, float: "left"}}>
-                            <div className={"col-md-8"} style={{float: "left"}}>
-                                <img src="../img/mk11.jpg" alt="" height="250" width="250"/>
+                            <div className={"col-md-1"} style={{float: "left"}}>
+                                <img src="/prj3/img/mk11.jpg" alt="" height="250" width="250"/>
                             </div>
-                            <aside className={"col-md-4"} style={{marginRight: 40, marginLeft: 20, float: "left"}}>
+                            <aside className={"col-md-11"} style={{marginRight: 40, marginLeft: 20, float: "left"}}>
                                 <p>Mortal Kombat 11</p>
                                 <p>PLATAFORMAS: PS4, XBOX ONE, PC</p>
                                 <button onClick={FIGHT}>Me gusta</button>
@@ -332,25 +332,25 @@ function Recomendados() {
 
                     </div>
 
-                    <div id="viejo">
+                    <div id="viejo" style={{ display: "none"}}>
 
                         <div className={"col-md-6"} style={{marginTop: 30, float: "left"}}>
-                            <div className={"col-md-8"} style={{float: "left"}}>
-                                <img src="../img/need.jpg" alt="" height="250" width="250"/>
+                            <div className={"col-md-1"} style={{float: "left"}}>
+                                <img src="/prj3/img/need.jpg" alt="" height="250" width="250"/>
                             </div>
-                            <aside className={"col-md-4"} style={{marginRight: 40, marginLeft: 20, float: "left"}}>
+                            <aside className={"col-md-11"} style={{marginRight: 40, marginLeft: 20, float: "left"}}>
                                 <p>Undercover</p>
-                                <p>Plataformas: PS3, XBOX360 </p>
+                                <p>Plataformas: PS3</p>
                                 <button onClick={CARS}>Me gusta</button>
                             </aside>
                         </div>
 
 
                         <div className={"col-md-6"} style={{marginTop: 30, float: "left"}}>
-                            <div className={"col-md-8"} style={{float: "left"}}>
-                                <img src="../img/tenkiachi3.jpg" alt="" height="250" width="250"/>
+                            <div className={"col-md-1"} style={{float: "left"}}>
+                                <img src="/prj3/img/tenkiachi3.jpg" alt="" height="250" width="250"/>
                             </div>
-                            <aside className={"col-md-4"} style={{marginRight: 40, marginLeft: 20, float: "left"}}>
+                            <aside className={"col-md-11"} style={{marginRight: 40, marginLeft: 20, float: "left"}}>
                                 <p>DB TB3</p>
                                 <p>PLATAFORMAS: PS2, WII </p>
                                 <button onClick={FIGHT}>Me gusta</button>
@@ -358,10 +358,10 @@ function Recomendados() {
                         </div>
 
                         <div className={"col-md-6"} style={{marginTop: 30, float: "left"}}>
-                            <div className={"col-md-8"} style={{float: "left"}}>
-                                <img src="../img/jstars.jpg" alt="" height="250" width="250"/>
+                            <div className={"col-md-1"} style={{float: "left"}}>
+                                <img src="/prj3/img/jstars.jpg" alt="" height="250" width="250"/>
                             </div>
-                            <aside className={"col-md-4"} style={{marginRight: 40, marginLeft: 20, float: "left"}}>
+                            <aside className={"col-md-11"} style={{marginRight: 40, marginLeft: 20, float: "left"}}>
                                 <p>JSTARS</p>
                                 <p>PLATAFORMAS: DS</p>
                                 <button onClick={FIGHT}>Me gusta</button>
@@ -369,10 +369,10 @@ function Recomendados() {
                         </div>
 
                         <div className={"col-md-6"} style={{marginTop: 30, float: "left"}}>
-                            <div className={"col-md-8"} style={{float: "left"}}>
-                                <img src="../img/planet.jpg" alt="" height="250" width="250"/>
+                            <div className={"col-md-1"} style={{float: "left"}}>
+                                <img src="/prj3/img/planet.jpg" alt="" height="250" width="250"/>
                             </div>
-                            <aside className={"col-md-4"} style={{marginRight: 40, marginLeft: 20, float: "left"}}>
+                            <aside className={"col-md-11"} style={{marginRight: 40, marginLeft: 20, float: "left"}}>
                                 <p>Planetside 2</p>
                                 <p>PLATAFORMAS: PS4, PC</p>
                                 <button onClick={MMO}>Me gusta</button>
@@ -383,7 +383,7 @@ function Recomendados() {
 
                 </div>
 
-                <aside className="col-md-6" style={{float: "left"}} >
+                <aside className="col-md-6" style={{float: "right"}} >
 
 
                     <div id="make">
