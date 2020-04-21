@@ -1,16 +1,8 @@
-const webpack = require('webpack');
 const HtmlWebPackPlugin = require("html-webpack-plugin");
 
 module.exports = {
     module: {
         rules: [
-            {
-                test: /\.css$/,
-                use: [
-                    'style-loader',
-                    'css-loader'
-                ]
-            },
             {
                 test: /\.(js|jsx)$/,
                 exclude: /node_modules/,
@@ -27,7 +19,7 @@ module.exports = {
                 ]
             },
             {
-                test: /\.(woff2?|jpe?g|png|gif|ico|json)$/,
+                test: /\.(woff2?|jpe?g|png|gif|ico)$/,
                 use: {
                     loader: 'file-loader',
                     options: {
@@ -56,8 +48,9 @@ module.exports = {
         kilianfuentes: "./src/std/kilianfuentes.js",
         msegui: "./src/std/msegui.js",
         mflores: "./src/std/mflores.js",
-        topics: "./src/prj1/topics.js",
-        viajes: "./src/prj2/viajes.js"
+        aalonso: "./src/std/aalonso.js",
+
+
     },
     plugins: [
         new HtmlWebPackPlugin({
@@ -124,12 +117,14 @@ module.exports = {
             template: "./src/std/mflores.html",
             chunks: ['mflores'],
             filename: "./mflores.html"
-        }),
-        new HtmlWebPackPlugin({
-            template: "./src/prj1/topics.html",
-            chunks: ['topics'],
-            filename: "./topics.html"
         })
+
+        new HtmlWebPackPlugin({
+            template: "./src/std/aalonso.html",
+            chunks: ['aalonso'],
+            filename: "./aalonso.html"
+        })
+
 
     ],
     devServer: {
