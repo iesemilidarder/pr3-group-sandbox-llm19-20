@@ -49,6 +49,7 @@ module.exports = {
         msegui: "./src/std/msegui.js",
         mflores: "./src/std/mflores.js",
         aalonso: "./src/std/aalonso.js",
+        topics: "./src/prj1/topics.js"
 
 
     },
@@ -116,16 +117,13 @@ module.exports = {
         new HtmlWebPackPlugin({
             template: "./src/std/mflores.html",
             chunks: ['mflores'],
-            filename: "./mflores.html"
-        })
-
+            filename: "./mflores.html",
+        }),
         new HtmlWebPackPlugin({
-            template: "./src/std/aalonso.html",
-            chunks: ['aalonso'],
-            filename: "./aalonso.html"
+            template: "./src/prj1/topics.html",
+            chunks: ['topics'],
+            filename: "./topics.html"
         })
-
-
     ],
     devServer: {
         hot: true,
