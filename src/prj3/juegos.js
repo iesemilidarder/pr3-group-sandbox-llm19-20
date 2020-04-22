@@ -11,14 +11,24 @@ import Myslider from "./components/Myslider";
 function App() {
     return (
         <div>
-            <MyHeader/>
-            <MyNav/>
-            <MyForm/>
-            <div style={{float: "left"}}>
-                <Myslider/>
-                <Recomendados/>
-                <Myfooter/>
+
+            <div className="row">
+                <MyHeader/>
             </div>
+
+            <div className="row">
+               <div className="col-md-12">
+                   <Myslider/>
+               </div>
+            </div>
+
+            <div className="row" style={{marginTop: 20}}>
+                <div style={{ float: "left"}}>
+                    <Recomendados/>
+                </div>
+            </div>
+
+            <Myfooter/>
         </div>
 
     )
