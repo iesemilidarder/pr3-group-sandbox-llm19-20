@@ -6,6 +6,7 @@ import Recomendados from "./components/Recomendados";
 import MyHeader from "./components/MyHeader";
 import MyNav from "./components/MyNav";
 import MyForm from "./components/MyForm";
+import Myfooter from "./components/Myfooter";
 
 function App() {
     return (
@@ -14,6 +15,7 @@ function App() {
             <MyNav/>
             <div style={{float: "left"}}>
                 <Recomendados/>
+                <Myfooter/>
             </div>
         </div>
 
