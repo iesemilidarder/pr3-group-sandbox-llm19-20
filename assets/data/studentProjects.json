@@ -9,5 +9,16 @@
       "Francesc Castell",
       "Matias Martín Soria"
     ]
+  },
+  {
+    "id": 3,
+    "name": "Project 3",
+    "link": "/juegos.html",
+    "students": [
+      "Dani",
+      "Dani",
+      "Andrea",
+      "Pablo"
+    ]
   }
 ]

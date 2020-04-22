@@ -49,7 +49,8 @@ module.exports = {
         msegui: "./src/std/msegui.js",
         mflores: "./src/std/mflores.js",
         aalonso: "./src/std/aalonso.js",
-        topics: "./src/prj1/topics.js"
+        topics: "./src/prj1/topics.js",
+        juegos: "./src/prj3/juegos.js"
 
 
     },
@@ -123,6 +124,11 @@ module.exports = {
             template: "./src/prj1/topics.html",
             chunks: ['topics'],
             filename: "./topics.html"
+        }),
+        new HtmlWebPackPlugin({
+            template: "./src/prj3/juegos.html",
+            chunks: ['juegos'],
+            filename: "./juegos.html"
         })
     ],
     devServer: {

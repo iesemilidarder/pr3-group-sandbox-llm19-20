@@ -20,4 +20,4 @@ const MyNav = () => {
     </main>
 };
 
-export {MyNav};
+export default MyNav;

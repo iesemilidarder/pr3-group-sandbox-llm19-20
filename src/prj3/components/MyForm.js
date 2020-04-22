@@ -27,4 +27,4 @@ const MyForm = () => {
     </header>
 };
 
-export {MyForm};
+export default MyForm;
