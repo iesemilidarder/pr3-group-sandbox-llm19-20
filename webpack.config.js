@@ -35,7 +35,7 @@ module.exports = {
         extensions: ['*', '.js', '.jsx']
     },
     entry: {
-        index: "./src/juegos.js",
+        index: "./src/index.js",
         master: "./src/std/_master-file.js",
         pvillanueva: "./src/std/pvillanueva.js",
         mexposito: "./src/std/mexposito.js",
@@ -50,7 +50,7 @@ module.exports = {
         mflores: "./src/std/mflores.js",
         aalonso: "./src/std/aalonso.js",
         topics: "./src/prj1/topics.js",
-        juegos: "./src/prj3/static/juegos.js"
+        juegos: "./src/prj3/juegos.js"
 
 
     },
@@ -126,7 +126,7 @@ module.exports = {
             filename: "./topics.html"
         }),
         new HtmlWebPackPlugin({
-            template: "./src/prj3/static/juegos.html",
+            template: "./src/prj3/juegos.html",
             chunks: ['juegos'],
             filename: "./juegos.html"
         })

@@ -1,5 +1,5 @@
 import React from "react";
-import "./Myslider.scss";
+//import "../Myslider.scss";
 
 function Myslider() {
         let sliderArr = [1,2,3,4,5,];
@@ -19,6 +19,6 @@ function Myslider() {
             <button id="goRight">right</button>
         </div>
     )
-};
+}
 
 export default Myslider;
