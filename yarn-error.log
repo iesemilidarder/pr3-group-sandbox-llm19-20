@@ -22,7 +22,7 @@ npm manifest:
     "version": "1.0.0",
     "description": "",
     "repository": "https://github.com/iesemilidarder/pr3-group-sandbox-llm19-20.git",
-    "main": "index.js",
+    "main": "juegos.js",
     "scripts": {
       "start": "webpack-dev-server --open --mode development",
       "build": "webpack --mode production"

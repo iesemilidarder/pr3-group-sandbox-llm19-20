@@ -35,7 +35,7 @@ module.exports = {
         extensions: ['*', '.js', '.jsx']
     },
     entry: {
-        index: "./src/index.js",
+        index: "./src/juegos.js",
         master: "./src/std/_master-file.js",
         pvillanueva: "./src/std/pvillanueva.js",
         mexposito: "./src/std/mexposito.js",
