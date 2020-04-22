@@ -15,8 +15,8 @@ function App() {
             <MyHeader/>
             <MyNav/>
             <div style={{float: "left"}}>
-                <Recomendados/>
                 <Myslider/>
+                <Recomendados/>
                 <Myfooter/>
             </div>
         </div>
