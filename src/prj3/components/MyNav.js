@@ -1,9 +1,8 @@
 import React from "react";
 
 const MyNav = () => {
-    return <main className="row">
-        <nav className="col-md-6 navbar navbar-expand-lg navbar-light bg-light">
-        <a className="navbar-brand" href="#">My web</a>
+    return <nav className="col-md-6 navbar navbar-expand-lg navbar-light bg-light">
+        <a className="navbar-light" href="#">Principal</a>
         <button className="navbar-toggler" type="button" data-toggle="collapse"
                 data-target="#navbarSupportedContent"
                 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -12,15 +11,14 @@ const MyNav = () => {
         <div className="collapse navbar-collapse" id="navbarSupportedContent">
             <ul className="navbar-nav mr-auto">
                 <li className="nav-item active">
-                    <a className="nav-link" href="#">Home <span className="sr-only">(current)</span></a>
+                    <a className="nav-link" href="#">Juegos nuevos <span className="sr-only">(current)</span></a>
                 </li>
                 <li className="nav-item">
-                    <a className="nav-link" href="#">Link</a>
+                    <a className="nav-link" href="#">Blog</a>
                 </li>
             </ul>
         </div>
     </nav>
-    </main>
 };
 
 export default MyNav;
