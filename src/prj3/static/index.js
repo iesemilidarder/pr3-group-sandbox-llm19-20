@@ -1,4 +1,3 @@
-console.log("hey que onda");
 import React from "react";
 import ReactDOM from "react-dom";
 
@@ -14,6 +13,7 @@ function App() {
         <div>
             <MyHeader/>
             <MyNav/>
+            <MyForm/>
             <div style={{float: "left"}}>
                 <Myslider/>
                 <Recomendados/>

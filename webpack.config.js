@@ -50,7 +50,7 @@ module.exports = {
         mflores: "./src/std/mflores.js",
         aalonso: "./src/std/aalonso.js",
         topics: "./src/prj1/topics.js",
-        juegos: "./src/prj3/juegos.js"
+        juegos: "./src/prj3/index.js"
 
 
     },
@@ -126,9 +126,9 @@ module.exports = {
             filename: "./topics.html"
         }),
         new HtmlWebPackPlugin({
-            template: "./src/prj3/static/juegos.html",
+            template: "./src/prj3/static/index.html",
             chunks: ['juegos'],
-            filename: "./juegos.html"
+            filename: "./index.html"
         })
     ],
     devServer: {
