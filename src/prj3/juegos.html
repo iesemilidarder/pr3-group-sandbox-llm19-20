@@ -5,8 +5,25 @@
     <title>Game store</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
 </head>
-<body id="main" class="container">
+<body  class="container">
+<header class="row">
+    <div class="col-md-2">
+        <img src="/prj3/img/logo.webp" alt="Logo" width="60"/>
+    </div>
+    <div class="col-md-4">
+        <MyNav/>
+    </div>
+    <form id="application" class="col-md-5">
+        <input class="btn btn-primary" type="button" value="Inicia sesión"/>
+        <input aria-label="usser" class="form-control my-3" type="text" name="usser" placeholder="Nombre usuario"/>
+        <input aria-label="pass" class="form-control my-3" type="password" name="pass" placeholder="Contraseña"/>
+    </form>
+    <div class="col-md-4">
+        <input class="btn btn-secondary" type="button" value="Registrate"/>
 
+    </div>
+</header>
+<div id="main"/>
 </body>
 
 </html>
