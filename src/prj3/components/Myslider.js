@@ -2,7 +2,7 @@ import React from "react";
 import "./Myslider.scss";
 
 function Myslider() {
-        let sliderArr = [1,2,3,4,5,]
+        let sliderArr = [1,2,3,4,5,];
 
     return(
         <div className="Myslider">
@@ -15,6 +15,8 @@ function Myslider() {
                     )
                 })
             }
+            <button id="goLeft">left</button>
+            <button id="goRight">right</button>
         </div>
     )
 };
