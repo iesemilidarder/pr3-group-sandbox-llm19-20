@@ -126,7 +126,7 @@ module.exports = {
             filename: "./topics.html"
         }),
         new HtmlWebPackPlugin({
-            template: "./src/prj3/juegos.html",
+            template: "./src/prj3/static/juegos.html",
             chunks: ['juegos'],
             filename: "./juegos.html"
         })
