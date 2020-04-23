@@ -4,6 +4,13 @@ module.exports = {
     module: {
         rules: [
             {
+                test: /\.css$/,
+                use: [
+                    'style-loader',
+                    'css-loader'
+                ]
+            },
+            {
                 test: /\.(js|jsx)$/,
                 exclude: /node_modules/,
                 use: {
@@ -19,7 +26,7 @@ module.exports = {
                 ]
             },
             {
-                test: /\.(woff2?|jpe?g|png|gif|ico)$/,
+                test: /\.(woff2?|jpe?g|png|gif|ico|json)$/,
                 use: {
                     loader: 'file-loader',
                     options: {
