@@ -1,11 +1,11 @@
 import React,{useState} from "react";
 import "../Myslider.scss";
 import ImgComp from "./ImgComp";
-import i1 from "../pics/Foto1.jpg";
-import i2 from "../pics/Foto2.jpeg";
-import i3 from "../pics/Foto3.jpg";
-import i4 from "../pics/Foto4.png";
-import i5 from "../pics/Foto5.jpg";
+import i1 from "../../../assets/prj3/img/f1.jpg";
+import i2 from "../../../assets/prj3/img/moto.jpg";
+import i3 from "../../../assets/prj3/img/project.jpg";
+import i4 from "../../../assets/prj3/img/planet.jpg";
+import i5 from "../../../assets/prj3/img/black.jpg";
 
 function Myslider() {
     const [x,setX] = useState(0);
