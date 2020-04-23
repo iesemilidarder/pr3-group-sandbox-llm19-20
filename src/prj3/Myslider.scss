@@ -1,5 +1,4 @@
 #Myslider{
-  border:1px solid red;
   position: relative;
   width: 100%;
   height: 100vh;
@@ -9,11 +8,14 @@
   display: flex;
   align-items: center;
   overflow: hidden;
+  background: black;
+  i{
+    font-size: 2vw;
+  }
 }
 
 #slide{
   position: relative;
-  border:1px solid blue;
   min-width: 100%;
   height: 80%;
   transition: 0.5s;
@@ -27,6 +29,16 @@
   width: 10%;
   height: 80%;
   background: none;
+  border: none;
+  outline: none;
+  transition: 0.5s;
+  &:hover{
+    background: black;
+    cursor: pointer;
+    i{
+      color:whitesmoke;
+    }
+  }
 }
 
 .goLeft{

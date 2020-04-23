@@ -1,11 +1,21 @@
 import React,{useState} from "react";
+import "../Myslider.scss";
 import ImgComp from "./ImgComp";
-//import "../Myslider.scss";
-import i1 from "../pics/fortnite.jpg";
+import i1 from "../pics/Foto1.jpg";
+import i2 from "../pics/Foto2.jpeg";
+import i3 from "../pics/Foto3.jpg";
+import i4 from "../pics/Foto4.png";
+import i5 from "../pics/Foto5.jpg";
 
 function Myslider() {
-    let sliderArr = [<ImgComp src={i1}>, 2, 3, 4, 5,];
-    const [x,setX] = useState(0)
+    const [x,setX] = useState(0);
+    let sliderArr = [
+        <ImgComp src={i1} />,
+        <ImgComp src={i2} />,
+        <ImgComp src={i3} />,
+        <ImgComp src={i4} />,
+        <ImgComp src={i5} />,
+    ];
     const goLeft = () => {
         x === 0 ? setX(-100 * (sliderArr.length - 1)) : setX(x + 100);
     };
@@ -24,8 +34,12 @@ function Myslider() {
                     )
                 })
             }
-            <button id="goLeft" onClick={goLeft}>left</button>
-            <button id="goRight" onClick={goRight}>right</button>
+            <button id="goLeft" onClick={goLeft}>
+                <i className="fas fa-chevron-left"/>
+            </button>
+            <button id="goRight" onClick={goRight}>
+                <i className="fas fa-chevron-right"/>
+            </button>
         </div>
     )
 }
