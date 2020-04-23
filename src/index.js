@@ -3,7 +3,7 @@ import ReactDOM from "react-dom";
 import StudentListLink from "./components/StudentListLink";
 import ProjectMenu from "./components/ProjectMenu";
 import ProjectMenuAlternative from "./components/ProjectMenuAlternative";
-//import "./index.css";
+import "./index.css";
 
 function MyStudentsFirstReactApp() {
     return <div>
