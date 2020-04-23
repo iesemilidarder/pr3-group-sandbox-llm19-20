@@ -5,6 +5,7 @@ import PabloApp from "./Components/PabloApp";
 const wrapper = document.getElementById("main");
 wrapper ? ReactDOM.render(<PabloApp/>, wrapper) : false;
 
+
 /*
 function function1() {
     console.log("Hi! Im Pablo");
