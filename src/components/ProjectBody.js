@@ -9,7 +9,8 @@ const ProjectBody = () => {
             <div id="menu" className="row">
                 <div className="col-6">
                     <h2>Student List</h2>
-                    <StudentListLink/></div>
+                    <StudentListLink/>
+                </div>
                 <div className="col-6">
                     <h2>Projects</h2>
                     <StudentProjectsMenu/>

@@ -7,12 +7,14 @@ import "./index.css";
 
 function MyStudentsFirstReactApp() {
     return <>
-        <ProjectHeader/>
-        <ProjectBody/>
+        <div className="container content">
+            <ProjectHeader/>
+            <ProjectBody/>
+        </div>
         <ProjectFooter/>
     </>
 }
 
 //TODO check: Aquí tenéis una forma chula de evitar el error mediante "bicondicional" (es un if)
-const wrapper = document.getElementById("main");
+const wrapper = document.getElementById("root");
 wrapper ? ReactDOM.render(<MyStudentsFirstReactApp/>, wrapper) : false;
