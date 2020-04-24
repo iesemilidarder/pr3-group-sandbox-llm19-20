@@ -7,6 +7,7 @@ class MyFirstComponentProps extends React.Component {
         this.state = {
             name: props.name
         };
+        this.onLocalClick = this.props.onClick.bind(this);
     }
     onLocalClick(){
         this.props.onClick();
@@ -16,6 +17,11 @@ class MyFirstComponentProps extends React.Component {
         return (
             <div>Hola soy {this.state.name}
             <button onClick={this.onLocalClick}>Dame</button>
+                <ul>
+                {data.map(item=>{
+                    return <li key={`li-${item}`}>{item}</li>
+                })}
+                </ul>
             </div>
         );
     }
@@ -25,4 +31,7 @@ MyFirstComponentProps.propTypes = {
     name: PropTypes.string.isRequired,
     info: PropTypes.array,
     onClick: PropTypes.func
+};
+MyFirstComponentProps.defaultProps = {
+    info: []
 };

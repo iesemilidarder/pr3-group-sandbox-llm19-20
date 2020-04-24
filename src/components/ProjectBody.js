@@ -21,7 +21,7 @@ const ProjectBody = () => {
             </div>
         </article>
         <aside className="col-4">
-            <MyFirstComponentProps name={"Don pimpon"} onClick={()=>{alert(1)}}/>
+            <MyFirstComponentProps name={"Don pimpon"} onClick={()=>{alert(1)}} info={[1,2,3]}/>
         </aside>
     </main>);
 };
