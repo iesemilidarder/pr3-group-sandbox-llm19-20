@@ -3,6 +3,8 @@ node_modules
 package-lock.json
 master-bundle.js
 index-bundle.js
+*.xmind
+/dist/*
 /dist/dcastañeda-bundle.js
 /dist/dsalanova-bundle.js
 /dist/index-bundle.js

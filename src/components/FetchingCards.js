@@ -6,7 +6,7 @@ import {useFetch} from "./hooks";
  * @returns {*}
  * @constructor
  */
-function ProjectMenuAlternative() {
+function FetchingCards() {
     const [items, loading] = useFetch("data/cardExample.json");
     return (
         <div className="container">
@@ -24,4 +24,4 @@ function ProjectMenuAlternative() {
     );
 }
 
-export default ProjectMenuAlternative;
+export default FetchingCards;
