@@ -1,10 +1,11 @@
 import React from 'react';
 
-class Clock extends React.Component {
+class ActivationClock extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            time: new Date().toLocaleString()
+            initTime: new Date(),
+            time: new Date()
         };
     }
 
@@ -21,17 +22,17 @@ class Clock extends React.Component {
 
     tick() {
         this.setState({
-            time: new Date().toLocaleString()
+            time: new Date()
         });
     }
 
     render() {
+        const viewTime = Math.floor((this.state.time - this.state.initTime) / 1000);
         return (
             <span className="App-clock">
-                {this.state.time}
+                {viewTime}s.
             </span>
         );
     }
 }
-
-export default Clock;
+export default ActivationClock;
