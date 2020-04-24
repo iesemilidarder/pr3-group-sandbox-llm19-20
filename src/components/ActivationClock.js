@@ -3,9 +3,10 @@ import React from 'react';
 class ActivationClock extends React.Component {
     constructor(props) {
         super(props);
+        const now = new Date();
         this.state = {
-            initTime: new Date(),
-            time: new Date()
+            initTime: now,
+            time: now
         };
     }
 
