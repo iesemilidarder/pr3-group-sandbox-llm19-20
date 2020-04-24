@@ -84,7 +84,7 @@ function IndexMain() {
                     <h3 className="col-12">
                         Lorem ip Aperiam ea eos minus officiis soluta?
                     </h3>
-
+                    <MatiasProps name={"Don PImpom"}/>
 
                 </div>
             </aside>
