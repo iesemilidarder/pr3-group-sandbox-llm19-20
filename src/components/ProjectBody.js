@@ -2,6 +2,7 @@ import React from "react";
 import StudentListLink from "./StudentListLink";
 import StudentProjectsMenu from "./StudentProjectsMenu";
 import FetchingCards from "./FetchingCards";
+import MyFirstComponentProps from "./MyFirstComponentProps";
 
 const ProjectBody = () => {
     return (<main className="row">
@@ -20,11 +21,7 @@ const ProjectBody = () => {
             </div>
         </article>
         <aside className="col-4">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid cupiditate doloremque eius enim
-                error est
-                expedita explicabo harum in iure, iusto, labore magni maiores quaerat, reiciendis repudiandae
-                similique
-                tempora tenetur.</p>
+            <MyFirstComponentProps name={"Don pimpon"} onClick={()=>{alert(1)}}/>
         </aside>
     </main>);
 };
