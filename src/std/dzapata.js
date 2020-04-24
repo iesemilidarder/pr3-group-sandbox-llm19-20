@@ -1,7 +1,3 @@
-async function getUserAsync(name) {
-    try {
-
-
 
 
 
