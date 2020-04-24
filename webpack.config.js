@@ -49,6 +49,7 @@ module.exports = {
         fcastell: "./src/std/fcastell.js",
         jques: "./src/std/jques.js",
         jzarco: "./src/std/jzarco.js",
+        dzapata: "./src/std/dzapata.js",
         dcastaneda: "./src/std/dcastaneda.js",
         tamer: "./src/std/tamer.js",
         dsalanova: "./src/std/dsalanova.js",
@@ -76,6 +77,11 @@ module.exports = {
             template: "./src/std/pvillanueva.html",
             chunks: ['pvillanueva'],
             filename: "./pvillanueva.html"
+        }),
+        new HtmlWebPackPlugin({
+            template: "./src/std/dzapata.html",
+            chunks: ['dzapata'],
+            filename: "./dzapata.html"
         }),
         new HtmlWebPackPlugin({
             template: "./src/std/mexposito.html",
