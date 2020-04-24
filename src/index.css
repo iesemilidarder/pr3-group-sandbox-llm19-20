@@ -1,3 +1,6 @@
 .myHeaderLogo {
     background-color: beige;
 }
+.footer {
+    flex-shrink: 0;
+}
