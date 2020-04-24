@@ -1,20 +1,15 @@
 import React,{useState} from "react";
-import "../Myslider.scss";
+//import "../Myslider.scss";
 import ImgComp from "./ImgComp";
-import i1 from "../../../assets/prj3/img/f1.jpg";
-import i2 from "../../../assets/prj3/img/moto.jpg";
-import i3 from "../../../assets/prj3/img/project.jpg";
-import i4 from "../../../assets/prj3/img/planet.jpg";
-import i5 from "../../../assets/prj3/img/black.jpg";
 
 function Myslider() {
     const [x,setX] = useState(0);
     let sliderArr = [
-        <ImgComp src={i1} />,
-        <ImgComp src={i2} />,
-        <ImgComp src={i3} />,
-        <ImgComp src={i4} />,
-        <ImgComp src={i5} />,
+        <ImgComp src="/assets/prj3/img/f1.jpg" />,
+        <ImgComp src="/assets/prj3/img/moto.jpg" />,
+        <ImgComp src="/assets/prj3/img/project.jpg" />,
+        <ImgComp src="/assets/prj3/img/planet.jpg" />,
+        <ImgComp src="/assets/prj3/img/black.jpg" />,
     ];
     const goLeft = () => {
         x === 0 ? setX(-100 * (sliderArr.length - 1)) : setX(x + 100);
