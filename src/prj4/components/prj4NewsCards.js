@@ -1,8 +1,8 @@
+import React from 'react';
 import {useFetch} from "./hooks";
 
-
 function NewsCard() {
-    const [items, loading] = useFetch("src/prj4/components/CardNewsIndex.json");
+    const [items, loading] = useFetch("src/prj4/components/prj4CardNewsIndex.json");
     return (
         <div className="container">
             <div className="row">
