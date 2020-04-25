@@ -1,8 +1,8 @@
 import {useFetch} from "./hooks";
 
 
-function NewsCard() {
-    const [items, loading] = useFetch("src/prj4/components/CardNewsIndex.json");
+function UpdateCard() {
+    const [items, loading] = useFetch("src/prj4/components/UpdatesCards.js");
     return (
         <div className="container">
             <div className="row">
@@ -35,7 +35,7 @@ function NewsCard() {
     );
 }
 
-export default NewsCard;
+export default UpdateCard;
 
 
 
