@@ -1,0 +1,17 @@
+[
+  {
+    "id": 1,
+    "name": "News1",
+    "content": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque, voluptatibus."
+  },
+  {
+    "id": 2,
+    "name": "News2",
+    "profile": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora, voluptatem!"
+  },
+  {
+    "id": 3,
+    "name": "News3",
+    "profile": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit, labore."
+  }
+]

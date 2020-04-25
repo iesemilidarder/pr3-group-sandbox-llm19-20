@@ -23,3 +23,4 @@ yarn.lock
 dist
 chat
 2avoid
+/src/std/2avoid
