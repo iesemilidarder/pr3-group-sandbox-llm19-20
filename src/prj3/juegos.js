@@ -4,13 +4,13 @@ import ReactDOM from "react-dom";
 import Recomendados from "./components/Recomendados";
 import MyNav from "./components/MyNav";
 import Myfooter from "./components/Myfooter";
-import Myslider from "./components/Myslider";
+//import Myslider from "./components/Myslider";
 
 function App() {
     return (
         <div>
             <div style={{float: "left"}}>
-                <Myslider/>
+                /*<Myslider/>*/
                 <Recomendados/>
                 <Myfooter/>
             </div>
