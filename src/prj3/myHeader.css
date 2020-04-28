@@ -1,0 +1,30 @@
+.navigator{
+    border-radius: 15px;
+}
+nav li{
+    list-style: none;
+    margin: 15px;
+    padding: 20px;
+}
+nav ul{
+    display: inline-flex;
+}
+nav h1{
+    font-size: 1em;
+    color: #ffffff;
+}
+
+
+header{
+    max-height: 100px;
+    background-color: #890707;
+}
+
+header li{
+    list-style: none;
+    margin: 15px;
+    padding: 20px;
+}
+header ul{
+    display: inline-flex;
+}
