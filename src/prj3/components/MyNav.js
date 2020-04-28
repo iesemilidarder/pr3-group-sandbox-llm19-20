@@ -1,5 +1,5 @@
 import React from "react";
-import "../myHeader.css";
+import "../myheader.css";
 
 const MyNav = () => {
     return <nav>

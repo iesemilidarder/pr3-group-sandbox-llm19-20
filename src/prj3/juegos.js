@@ -6,12 +6,13 @@ import Myfooter from "./components/Myfooter";
 import MyHeader from "./components/MyHeader";
 import Myslider from "./components/Myslider";
 
+
 function App() {
     return (
         <div>
             <div>
                 <MyHeader/>
-                <div style={{background :"blue"}}>
+                <div>
                     <Myslider/>
                     <Recomendados/>
                     <Myfooter/>
