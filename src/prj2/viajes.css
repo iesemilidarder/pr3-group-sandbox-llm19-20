@@ -1,6 +1,8 @@
-.body{
-    background-image: url("https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.besthdwallpaper.com%2Fel-mejor%2Fnubes-rojas-tg_es-1584&psig=AOvVaw1VVSc_4szn8G4uaK2Kq-Sr&ust=1588069440155000&source=images&cd=vfe&ved=0CAMQjB1qFwoTCKjLxOyxiOkCFQAAAAAdAAAAABAD");
+.main{
+    background-image: url("/src/prj2/images/violet-sky-with-red-clouds.jpg");
     background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
     background-color: transparent;
     width: 1920px;
     height: 1980px;
@@ -11,9 +13,13 @@
     background-repeat: no-repeat;
 }
 
+.footer{
+    background-color: lightseagreen;
+}
 
-
-
+/*.div{
+    background-color: lightseagreen;
+}*/
 /*.main{
     background-image: url("/src/prj2/images/cielo_rojo.png");
     width: 1920px;
