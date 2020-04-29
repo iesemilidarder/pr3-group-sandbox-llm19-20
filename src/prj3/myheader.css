@@ -1,0 +1,39 @@
+
+nav li{
+    list-style: none;
+    margin: 15px;
+    padding: 20px;
+}
+nav ul{
+    display: inline-flex;
+}
+nav h1{
+    font-size: 1em;
+    color: #ffffff;
+
+}
+
+
+header{
+    background-color: #2f2f2f;
+    border-radius: 15px;
+    max-height: 150px;
+    box-shadow: #000000;
+
+}
+
+header li{
+    list-style: none;
+    margin: 15px;
+    padding-bottom: 50px;
+}
+header ul{
+
+    width: 25px;
+    display: inline-flex;
+}
+
+img {
+    float: inherit;
+}
+

@@ -23,7 +23,7 @@ function Myslider() {
             {
                 sliderArr.map((item,index)=>{
                     return(
-                        <div key={index} className="slide" style={{transform:`translateX(${X}%})`}}>
+                        <div key={index} className="slide" style={{transform:`translateX(${x}%})`}}>
                             {item}
                         </div>
                     )

@@ -269,9 +269,10 @@ function Recomendados() {
         document.getElementById("make").innerHTML = "";
     }
 
+
     return (
         <div>
-            <header>
+            <header >
                 <div  style={{ marginLeft: 45 }}>
                     <div className={"col-md-6"} style={{float: "left"}}>
                         <button onClick={nuevo}>Nuevos</button>
