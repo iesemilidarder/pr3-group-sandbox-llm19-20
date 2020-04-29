@@ -1,6 +1,7 @@
 import React from "react";
 import MyNav from "./MyNav";
 import "../myheader.css";
+import LoginForm from "./LoginForm";
 
 const MyHeader = () => {
     return <header>
@@ -15,13 +16,10 @@ const MyHeader = () => {
                             <MyNav/>
                         </li>
                         <li>
-                            <form id="application" className="col-md-2">
-                                <input aria-label="usser" className="form-control my-3" type="text" name="usser" placeholder="Nombre usuario"/>
-                                <input aria-label="pass" className="form-control my-3" type="password" name="pass" placeholder="Contraseña"/>
-                            </form>
+                            <LoginForm/>
                         </li>
-                        <li>
-                            <input className="btn btn-primary" type="button" value="Inicia sesión"/>
+                        <li >
+                            <input style={{ marginBottom: 25}} className="btn btn-primary" type="button" value="Inicia sesión"/>
                             <input className="btn btn-secondary" type="button" value="Registrate"/>
                         </li>
                     </ul>
@@ -33,4 +31,3 @@ const MyHeader = () => {
     </header>
 };
 export default MyHeader;
-
