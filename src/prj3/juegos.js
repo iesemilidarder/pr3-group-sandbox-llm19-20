@@ -5,6 +5,7 @@ import Recomendados from "./components/Recomendados";
 import Myfooter from "./components/Myfooter";
 import MyHeader from "./components/MyHeader";
 import Myslider from "./components/Myslider";
+import MyAside from "./components/MyAside";
 
 
 function App() {
@@ -28,3 +29,4 @@ ReactDOM.render(
     <App/>,
     document.getElementById('main')
 );
+

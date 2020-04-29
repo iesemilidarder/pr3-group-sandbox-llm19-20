@@ -1,9 +1,31 @@
 .main{
-    /*background-image: url("/src/prj2/images/cielo_rojo.png");
+    background-image: url("/src/prj2/images/violet-sky-with-red-clouds.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-color: transparent;
+    width: 1920px;
+    height: 1980px;
+}
+
+.jumbotron{
+    background-image: url("./images/nubes.jpg");
+    background-repeat: no-repeat;
+}
+
+.footer{
+    background-color: lightseagreen;
+}
+
+/*.div{
+    background-color: lightseagreen;
+}*/
+/*.main{
+    background-image: url("/src/prj2/images/cielo_rojo.png");
     width: 1920px;
     height: 1980px;
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center center;*/
+    background-position: center center;
     background-color: lightseagreen;
-}
+}*/
