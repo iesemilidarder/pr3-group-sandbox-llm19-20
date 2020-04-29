@@ -16,7 +16,7 @@ const MyHeader = () => {
                             <MyNav/>
                         </li>
                         <li>
-                            <MyLog/>
+                            <MyLog id="login"/>
                         </li>
 
                     </ul>
