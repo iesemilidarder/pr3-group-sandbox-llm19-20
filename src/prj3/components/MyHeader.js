@@ -1,7 +1,7 @@
 import React from "react";
 import MyNav from "./MyNav";
 import "../myheader.css";
-import LoginForm from "./LoginForm";
+import MyLog from "./MyLog";
 
 const MyHeader = () => {
     return <header>
@@ -16,12 +16,9 @@ const MyHeader = () => {
                             <MyNav/>
                         </li>
                         <li>
-                            <LoginForm/>
+                            <MyLog/>
                         </li>
-                        <li >
-                            <input style={{ marginBottom: 25}} className="btn btn-primary" type="button" value="Inicia sesión"/>
-                            <input className="btn btn-secondary" type="button" value="Registrate"/>
-                        </li>
+
                     </ul>
 
                 </div>
