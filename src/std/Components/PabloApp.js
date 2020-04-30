@@ -1,4 +1,6 @@
 import React from "react";
+/*/import PabloProps from "../2avoid/pvillanueva";*/
+
 const HeaderPvillanueva = () => {
     return(
         <div>
@@ -98,6 +100,7 @@ const PabloApp = () => {
             <HeaderPvillanueva/>
             <MainPvillanueva/>
             <FooterPvillanueva/>
+            <PabloProps name={"Pape"} onClick={()=>{alert(1)}} info={[1,2,3]}/>
         </div>
         )
 };

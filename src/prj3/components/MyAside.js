@@ -1,53 +1,21 @@
 import React from "react";
+//import "../MyAside.css"; TODO: Donde esta este fichero? Hace que TODO falle!
 
-class MyAside extends React.Component {
-    constructor(props) {
-        super(props);
-        this.state = {
-            projects: []
-        };
-    }
-
-    componentDidMount() {
-        fetch("data/userNames.json")
-            .then(data => data.json())
-            .then(data => {
-                this.setState({projects: data});
-            });
-    }
-
-    render() {
-        const projects = this.state.projects;
-        return (
-            <aside className="col-3">
-                {projects.map(item => {
-                    return <div key={item.id}>
-                        <button className="mt-3 mb-4">
-                            /*Agregar elementos del button Pendiente */
-                        </button>
-                    </div>
-                })}
+/*
+                    // TODO: ¿PQ DEJAIS ESTE CODIGO? Guarros! ;)
+                    <ul>
+                        <section> </section>
+                        <section> </section>
+                    </ul>*/
+const MyAside = () => {
+    return (
+        <div>
+            <aside>
+                {/*TODO El tag h2 se tiene que cerrar!*/}
+                <h2>Tendencias</h2>
             </aside>
-        );
-    }
-}
-
-/*Agregar función asyn para que devuleva los elementos del userName.json*/
-
-/*Resolver porque no me pilla el export MyAside*/
+        </div>
+    );
+};
 
 export default MyAside;
-
-
-
-
-
-
-
-
-
-
-
-
-
-

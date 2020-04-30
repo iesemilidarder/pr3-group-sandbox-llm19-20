@@ -2,8 +2,6 @@ import React from "react";
 import ReactDOM from "react-dom";
 //import "./fcastell.css";
 
-console.log("Francesc Castell");
-
 const MyHeader = () => {
     return <div>
         <header className="row" style={{'backgroundColor': 'blue'}}>
@@ -15,7 +13,7 @@ const MyHeader = () => {
                 <button className="navbar-toggler" type="button" data-toggle="collapse"
                         data-target="#navbarSupportedContent"
                         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span className="navbar-toggler-icon"></span>
+                    <span className="navbar-toggler-icon"/>
                 </button>
                 <div className="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul className="navbar-nav mr-auto">
@@ -88,7 +86,7 @@ const MyFooter = () => {
                 <button className="navbar-toggler" type="button" data-toggle="collapse"
                         data-target="#navbarSupportedContent"
                         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span className="navbar-toggler-icon"></span>
+                    <span className="navbar-toggler-icon"/>
                 </button>
                 <div className="collapse navbar-collapse" id="footerbarSupportedContent">
                     <ul className="navbar-nav mr-auto">
@@ -107,12 +105,15 @@ const MyFooter = () => {
     </div>
 };
 
-const WebPage = () => {
-    return <div>
-        <MyHeader/>
-        <MyMain/>
-        <MyFooter/>
-    </div>
-};
-const wrapper = document.getElementById("page");
-wrapper ? ReactDOM.render(<WebPage/>, wrapper) : false;
+function MyApp() {
+    return <>
+        <div className="container content">
+            <MyHeader/>
+            <MyMain/>
+            <MyFooter/>
+        </div>
+    </>
+}
+
+const wrapper = document.getElementById("root");
+wrapper ? ReactDOM.render(<MyApp/>, wrapper) : false;

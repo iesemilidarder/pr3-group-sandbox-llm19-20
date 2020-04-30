@@ -1,9 +1,9 @@
+/*
+$usuario = $_POST[<<>>];
+$pass = $_POST[<<>>];
 
-$usuario = $_POST['usuario'];
-$pass = $_POST['pass'];
-
-if($usuario === '' || $pass=== ''){
-    echo json_encode('error');
+if(<<>> || <<>> ){
+    echo json_encode(<<>>);
 }else{
-    echo json_encode('Correcto: <br>Usuario:'.$usuario.'<br>Pass:'.$pass);
-}
+    echo json_encode('Correcto: <br>Usuario:'.<<>>>>.'<br>Pass:'.<<>>);
+}*/

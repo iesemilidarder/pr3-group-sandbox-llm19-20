@@ -1,0 +1,17 @@
+[
+  {
+    "id": 1,
+    "name": "Update1",
+    "content": "Interfaz actualizada"
+  },
+  {
+    "id": 2,
+    "name": "Update2",
+    "profile": "Mejoras de rendimiento"
+  },
+  {
+    "id": 3,
+    "name": "Update3",
+    "profile": "Arreglo de bugs generales"
+  }
+]
