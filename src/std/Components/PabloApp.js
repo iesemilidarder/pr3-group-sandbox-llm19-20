@@ -1,5 +1,5 @@
 import React from "react";
-import PabloProps from "../2avoid/pvillanueva";
+/*/import PabloProps from "../2avoid/pvillanueva";*/
 
 const HeaderPvillanueva = () => {
     return(

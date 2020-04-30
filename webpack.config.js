@@ -1,4 +1,6 @@
-const HtmlWebPackPlugin = require("html-webpack-plugin");
+const path = require('path');
+const HtmlWebPackPlugin = require('html-webpack-plugin');
+const MiniCSSExtractPlugin = require('mini-css-extract-plugin');
 
 module.exports = {
     module: {
@@ -6,8 +8,21 @@ module.exports = {
             {
                 test: /\.css$/,
                 use: [
-                    'style-loader',
+                    //REMOVED https://github.com/webpack-contrib/style-loader/issues/461 'style-loader',
                     'css-loader'
+                ]
+            },
+            {
+                test: /\.scss$/i,
+                use: [
+                    // Creates `style` nodes from JS strings
+                    //REMOVED https://github.com/webpack-contrib/style-loader/issues/461 'style-loader',
+                    // Creates `style` nodes from JS strings
+                    'style-loader',
+                    // Translates CSS into CommonJS
+                    'css-loader',
+                    // Compiles Sass to CSS
+                    'sass-loader',
                 ]
             },
             {
@@ -58,7 +73,8 @@ module.exports = {
         mflores: "./src/std/mflores.js",
         aalonso: "./src/std/aalonso.js",
         topics: "./src/prj1/topics.js",
-        juegos: "./src/prj3/juegos.js"
+        juegos: "./src/prj3/juegos.js",
+        viajes: "./src/prj2/viajes.js"
 
 
     },
@@ -142,6 +158,11 @@ module.exports = {
             template: "./src/prj3/juegos.html",
             chunks: ['juegos'],
             filename: "./juegos.html"
+        }),
+        new HtmlWebPackPlugin({
+            template: "./src/prj2/viajes.html",
+            chunks: ['viajes'],
+            filename: "./viajes.html"
         })
     ],
     devServer: {
