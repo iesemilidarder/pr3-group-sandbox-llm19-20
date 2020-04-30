@@ -1,5 +1,23 @@
-import React, { useState, useEffect } from 'react';
-import {useFetch} from "../components/hooks";
+import React from "react";
+import ReactDOM from "react-dom";
+import Myheader from "./components/Myheader";
+import Mymain from "./components/Mymain";
+import Myfooter from "./components/Myfooter";
+import "./viajes.css";
+
+function MyApp() {
+    return <div>
+        <Myheader/>
+        <Mymain/>
+        <Myfooter/>
+    </div>
+}
+
+const wrapper = document.getElementById("page");
+wrapper ? ReactDOM.render(<MyApp/>, wrapper) : false;
+
+// import React, { useState, useEffect } from 'react';
+// import {useFetch} from "../components/hooks";
 //import aixos from 'aixos';
 
 /*
@@ -27,7 +45,7 @@ function App() {
 
 export default App;*/
 
-function ProjectMenuAlternative() {
+/*function ProjectMenuAlternative() {
     const [items, loading] = useFetch("assets/data/studentProjects.json");
     return (
         <div className="container">
@@ -45,4 +63,4 @@ function ProjectMenuAlternative() {
     );
 }
 
-export default ProjectMenuAlternative;
+export default ProjectMenuAlternative;*/
