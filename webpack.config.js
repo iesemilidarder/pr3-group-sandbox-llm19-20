@@ -6,7 +6,7 @@ module.exports = {
             {
                 test: /\.css$/,
                 use: [
-                    'style-loader',
+                    //REMOVED https://github.com/webpack-contrib/style-loader/issues/461 'style-loader',
                     'css-loader'
                 ]
             },

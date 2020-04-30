@@ -12,7 +12,7 @@ const Mymain = () => {
             <div className="container shadow p-3 mb-5 bg-white rounded my-4">
                 <form>
                     <div className="row">
-                        <i className="fas fa-plane-departure ml-3" style={{'font-size': '20px;'}}></i>
+                        <i className="fas fa-plane-departure ml-3" style={{'font-size': '20px;'}}/>
                         <h3 className="mx-3">Vuelos.</h3>
                     </div>
                     <div className="row">

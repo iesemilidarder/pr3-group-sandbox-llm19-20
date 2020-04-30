@@ -6,7 +6,7 @@ const Myfooter = () => {
             <footer className="row">
                 <p>My Game Store</p>
             </footer>
-            </div>
+        </div>
     )
 };
 

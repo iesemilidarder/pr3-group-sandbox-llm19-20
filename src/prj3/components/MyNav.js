@@ -1,5 +1,5 @@
 import React from "react";
-import "../myheader.css";
+import "../myheader.css";//TODO Cuantas veces quieres incluir el css, 400?
 
 const MyNav = () => {
     return <nav>

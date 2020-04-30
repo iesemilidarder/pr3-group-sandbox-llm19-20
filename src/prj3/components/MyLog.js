@@ -1,7 +1,7 @@
 import React from "react";
 import {useForm} from "react-hook-form";
-import "../myheader.css";
-import "../mylogin.css";
+import "../myheader.css";//TODO El css en el mismo sitio que el componente. No tiene sentido lo que escribes
+import "../mylogin.css";//TODO El css en el mismo sitio que el componente. No tiene sentido lo que escribes
 
 function MyLog() {
     const {register, handleSubmit, watch, errors} = useForm();

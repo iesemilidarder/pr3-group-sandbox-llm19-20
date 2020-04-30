@@ -1,5 +1,6 @@
-.main{
-    background-image: url("/src/prj2/images/violet-sky-with-red-clouds.jpg");
+.main {
+    /* TODO mira como he puesto las imagenes:*/
+    background-image: url("/prj2/violet-sky-with-red-clouds.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
@@ -8,12 +9,12 @@
     height: 1980px;
 }
 
-.jumbotron{
-    background-image: url("./images/nubes.jpg");
+.jumbotron {
+    background-image: url("/prj2/nubes.jpg");
     background-repeat: no-repeat;
 }
 
-.footer{
+.footer {
     background-color: lightseagreen;
 }
 
