@@ -20,5 +20,16 @@
       "Andrea",
       "Pablo"
     ]
+  },
+  {
+    "id": 2,
+    "name": "Project 2",
+    "link": "/viajes.html",
+    "students": [
+      "Toni Amer",
+      "Matias Flores",
+      "Marta Seguí",
+      "David Zapata"
+    ]
   }
 ]

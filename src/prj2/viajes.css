@@ -1,0 +1,18 @@
+.main {
+    background-image: url("img/violet-sky-with-red-clouds.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-color: transparent;
+    width: 1920px;
+    height: 1980px;
+}
+
+.jumbotron {
+    background-image: url("img/nubes.jpg");
+    background-repeat: no-repeat;
+}
+
+.footer {
+    background-color: lightseagreen;
+}
