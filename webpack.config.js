@@ -163,6 +163,11 @@ module.exports = {
             template: "./src/prj2/viajes.html",
             chunks: ['viajes'],
             filename: "./viajes.html"
+        }),
+        new HtmlWebPackPlugin({
+            template: "./src/prj4/prj4INDEX",
+            chunks: ['spotify'],
+            filename: "./prj4INDEX.html"
         })
     ],
     devServer: {
