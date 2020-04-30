@@ -5,7 +5,7 @@ class FormRules extends React.Component {
         super(props);
         this.state = {
             person: {
-                name: "",
+                username: "",
                 surname: ""
             },
             dbNames: ["berto", "pablo"]
@@ -16,7 +16,7 @@ class FormRules extends React.Component {
     componentDidMount() {
         this.setState({
             person: {
-                name: "pepito",
+                username: "pepito",
                 surname: "palotes"
             }
         });
@@ -37,11 +37,11 @@ class FormRules extends React.Component {
 
     render() {
         return (
-            <div>
+            <form>
                 <div>
                     <label htmlFor="name">Name</label>
-                    <input id={"name"} name={"name"}
-                           type="text" value={this.state.person.name}
+                    <input id={"name"} name={"username"}
+                           type="text" value={this.state.person.username}
                            onChange={this.handleChange}/>
                 </div>
                 <div>
@@ -50,7 +50,7 @@ class FormRules extends React.Component {
                            type="text" value={this.state.person.surname}
                            onChange={this.handleChange}/>
                 </div>
-            </div>
+            </form>
         );
     }
 }
