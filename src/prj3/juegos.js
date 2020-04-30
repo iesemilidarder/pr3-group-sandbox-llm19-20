@@ -6,8 +6,6 @@ import Myfooter from "./components/Myfooter";
 import MyHeader from "./components/MyHeader";
 import Myslider from "./components/Myslider";
 
-
-
 function App() {
     return (
         <div>

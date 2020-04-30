@@ -1,5 +1,5 @@
 import React,{useState} from "react";
-//import "../Myslider.scss";
+//import "Myslider.scss";
 import ImgComp from "./ImgComp";
 
 function Myslider() {

@@ -1,6 +1,5 @@
 .main {
-    /* TODO mira como he puesto las imagenes:*/
-    background-image: url("/prj2/violet-sky-with-red-clouds.jpg");
+    background-image: url("img/violet-sky-with-red-clouds.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
@@ -10,23 +9,10 @@
 }
 
 .jumbotron {
-    background-image: url("/prj2/nubes.jpg");
+    background-image: url("img/nubes.jpg");
     background-repeat: no-repeat;
 }
 
 .footer {
     background-color: lightseagreen;
 }
-
-/*.div{
-    background-color: lightseagreen;
-}*/
-/*.main{
-    background-image: url("/src/prj2/images/cielo_rojo.png");
-    width: 1920px;
-    height: 1980px;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
-    background-color: lightseagreen;
-}*/

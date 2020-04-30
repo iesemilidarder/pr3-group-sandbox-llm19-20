@@ -1,4 +1,6 @@
-const HtmlWebPackPlugin = require("html-webpack-plugin");
+const path = require('path');
+const HtmlWebPackPlugin = require('html-webpack-plugin');
+const MiniCSSExtractPlugin = require('mini-css-extract-plugin');
 
 module.exports = {
     module: {
@@ -8,6 +10,15 @@ module.exports = {
                 use: [
                     //REMOVED https://github.com/webpack-contrib/style-loader/issues/461 'style-loader',
                     'css-loader'
+                ]
+            },
+            {
+                test: /\.scss$/i,
+                use: [
+                    // Creates `style` nodes from JS strings
+                    //REMOVED https://github.com/webpack-contrib/style-loader/issues/461 'style-loader',
+                    // Compiles Sass to CSS
+                    'sass-loader',
                 ]
             },
             {
