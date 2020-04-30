@@ -3,7 +3,7 @@ import ReactDOM from "react-dom";
 import Myheader from "./components/Myheader";
 import Mymain from "./components/Mymain";
 import Myfooter from "./components/Myfooter";
-import "./viajes.css";
+ import "./viajes.css";
 
 function MyApp() {
     return <div>

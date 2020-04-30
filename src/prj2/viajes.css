@@ -1,5 +1,5 @@
-.main{
-    background-image: url("/src/prj2/images/violet-sky-with-red-clouds.jpg");
+.main {
+    background-image: url("img/violet-sky-with-red-clouds.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
@@ -8,24 +8,11 @@
     height: 1980px;
 }
 
-.jumbotron{
-    background-image: url("./images/nubes.jpg");
+.jumbotron {
+    background-image: url("img/nubes.jpg");
     background-repeat: no-repeat;
 }
 
-.footer{
+.footer {
     background-color: lightseagreen;
 }
-
-/*.div{
-    background-color: lightseagreen;
-}*/
-/*.main{
-    background-image: url("/src/prj2/images/cielo_rojo.png");
-    width: 1920px;
-    height: 1980px;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
-    background-color: lightseagreen;
-}*/

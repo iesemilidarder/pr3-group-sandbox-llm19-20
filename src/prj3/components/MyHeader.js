@@ -1,6 +1,6 @@
 import React from "react";
 import MyNav from "./MyNav";
-import "../myheader.css";
+import "../myheader.css";//TODO El css en el mismo sitio que el componente. No tiene sentido lo que escribes
 import MyLog from "./MyLog";
 
 const MyHeader = () => {
