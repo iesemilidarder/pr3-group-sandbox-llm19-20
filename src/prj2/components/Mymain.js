@@ -6,9 +6,7 @@ const Mymain = () => {
             <div className="container">
                 <div className="jumbotron my-3">
                     <h1 className="display-4">Bienvenidos a EmiliAirlines!</h1>
-                    <p className="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra
-                        attention
-                        to featured content or information.</p>
+                    <p className="lead">Aquí encontrarás los mejores vuelos al mejor precio, en viajes Emili tenemos conocimiento de todos los vuelos nacionales e internacionales, viajes Emili mas preparados que la mili.</p>
                 </div>
             </div>
             <div className="container shadow p-3 mb-5 bg-white rounded my-4">

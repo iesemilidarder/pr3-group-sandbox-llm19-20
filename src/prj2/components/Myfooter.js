@@ -6,11 +6,11 @@ const Myfooter = () => {
             <div className="container">
                 <div className="row text-center">
                     <div className="col my-4 mx-4">
-                        <h5>Some Footer</h5>
+                        <h5>Aviso Legal EmiliAirlines</h5>
                         <a href="#" className="stretched-link">Información Legal y Terminos de protección de datos. </a>
                     </div>
                     <div className="col my-4 mx-4">
-                        <h5>Some ExtraFooter</h5>
+                        <h5>Contact EmiliAirlines</h5>
                         <p><i className="fas fa-phone"
                               style="font-size: 17px; margin-right: 5px;"></i><span>EmiliAirlines PhoneNum</span>
                         </p>
@@ -18,7 +18,7 @@ const Myfooter = () => {
                     </div>
                     <div className="col my-4 mx-4">
                         <h5>Some ExtraExtraFooter</h5>
-                        <p>EmiliAirlines SocialMedia:</p>
+                        <p>EmiliAirlines SocialMedia</p>
                         <i className="fab fa-twitter-square mx-1" style="font-size: 25px;"></i>
                         <i className="fab fa-facebook-square mx-1" style="font-size: 25px;"></i>
                         <i className="fab fa-linkedin mx-1" style="font-size: 25px;"></i>
