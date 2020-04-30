@@ -1,6 +1,10 @@
 import React from "react";
 
 class FormRules extends React.Component {
+    /**
+     * Iniciamos los valores de estado y asociamos la funcion (binding)
+     * @param props
+     */
     constructor(props) {
         super(props);
         this.state = {
@@ -13,6 +17,9 @@ class FormRules extends React.Component {
         this.handleChange = this.handleChange.bind(this);
     }
 
+    /**
+     * Simulamos una carga de datos posterior al render
+     */
     componentDidMount() {
         this.setState({
             person: {
@@ -22,6 +29,13 @@ class FormRules extends React.Component {
         });
     }
 
+    /**
+     * Obtiene el estado previo
+     * , modifica el valor con el obtenido del input
+     * , y luego...si son más de 4 char busca en los "dbnames" para encontrar si hay coincidencia
+     * , al final modifica el estado del componente
+     * @param event
+     */
     handleChange(event) {
         let person = this.state.person;
         person[event.target.name] = event.target.value;
@@ -35,6 +49,10 @@ class FormRules extends React.Component {
         this.setState({person: person});
     }
 
+    /**
+     * Renderiza el componente y asocia el cambio del input a la funcion.
+     * @returns {*}
+     */
     render() {
         return (
             <form>
