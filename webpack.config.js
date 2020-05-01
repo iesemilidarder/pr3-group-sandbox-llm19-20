@@ -74,7 +74,8 @@ module.exports = {
         aalonso: "./src/std/aalonso.js",
         topics: "./src/prj1/topics.js",
         juegos: "./src/prj3/juegos.js",
-        viajes: "./src/prj2/viajes.js"
+        viajes: "./src/prj2/viajes.js",
+        spotify: "./src/prj4/prj4.js"
 
 
     },
@@ -165,9 +166,9 @@ module.exports = {
             filename: "./viajes.html"
         }),
         new HtmlWebPackPlugin({
-            template: "./src/prj4/prj4INDEX",
+            template: "./src/prj4/prj4.html",
             chunks: ['spotify'],
-            filename: "./prj4INDEX.html"
+            filename: "./spotify.html"
         })
     ],
     devServer: {

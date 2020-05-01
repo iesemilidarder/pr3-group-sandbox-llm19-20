@@ -1,7 +1,33 @@
 import React from 'react';
-import {useFetch} from "./hooks";
-import NewsCard from "";
-import UpdateCard from "";
+import {useForm} from "react-hook-form";
+import ReactDOM from "react-dom";
+
+let renderCount = 0;
+
+function App() {
+    const {register, handleSubmit} = useForm();
+    renderCount++;
+
+    const onSubmit = data => console.log(data);
+
+    return (
+        <form onSubmit={onSubmit}>
+            <label>First Name</label>
+            <input name="firstName"/>
+
+            <label>Last Name</label>
+            <input name="lastName"/>
+            <p>Render Counter: {renderCount} </p>
+
+            <button>Submit</button>
+
+        </form>
+    )
+}
+const wrapper = document.getElementById("root");
+wrapper ? ReactDOM.render(<App/>, wrapper) : false;
+/*
+todo pasar a react
 
 <body className="bg-secondary">
 <div className="header">
@@ -40,4 +66,4 @@ import UpdateCard from "";
     <!-- JS UnderBar -->
 </footer>
 </br>
-</body>
+</body>*/

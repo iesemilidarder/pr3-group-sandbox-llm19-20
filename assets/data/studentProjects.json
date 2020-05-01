@@ -31,5 +31,16 @@
       "Marta Seguí",
       "David Zapata"
     ]
+  },
+  {
+    "id": 4,
+    "name": "Project 4",
+    "link": "/spotify.html",
+    "students": [
+      "Javi Z.",
+      "Kilian",
+      "Alex",
+      "Francesc G."
+    ]
   }
 ]
