@@ -13,15 +13,10 @@ function App() {
     return (
         <div onCanPlay={App} aria-colindex={App}>
         <form onSubmit={onSubmit}>
-            <label>Genero</label>
-            <input name="genero"/>
+            <label>Musica</label>
+            <input name="Musica"/>
 
-            <label>Playlist</label>
-            <input name="playlist"/>
-            <p>Veces buscada: {renderCount} </p>
-
-            <button>Buscar Genero</button>
-            <button>Buscar Playlist</button>
+            <button>Buscar Musica</button>
 
         </form>
         </div>
