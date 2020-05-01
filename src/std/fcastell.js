@@ -1,6 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom";
-//import "./fcastell.css";
+import FormRules from "./Components/FormRules.js";
 
 const MyHeader = () => {
     return <div>
@@ -104,7 +104,6 @@ const MyFooter = () => {
         </footer>
     </div>
 };
-
 function MyApp() {
     return <>
         <div className="container content">
