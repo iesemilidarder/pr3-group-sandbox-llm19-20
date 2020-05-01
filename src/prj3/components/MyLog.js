@@ -23,17 +23,11 @@ function MyLog() {
                 "password": "123456"
             }
         ];
-
         console.log(users);
-
-
     }
     let onSubmit = data => {
         console.log(data);
     };
-
-
-
     return (
         <form onSubmit={handleSubmit(onSubmit)}>
             <ul>

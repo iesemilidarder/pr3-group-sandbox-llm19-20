@@ -1,7 +1,8 @@
 import React from "react";
 import ReactDOM from "react-dom";
+import FormRules from "./Components/FormRules";
 
-class Clock extends React.Component {
+class ClockApp extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
@@ -26,6 +27,7 @@ class Clock extends React.Component {
             <div>
                 <h1>Hello, world!</h1>
                 <h2>It is {formatDate}.</h2>
+                <FormRules/>
                 <ul>
                     {clients.map(i => {
                         return <li key={"client" + i.id}>{i.name}</li>
@@ -37,4 +39,4 @@ class Clock extends React.Component {
 }
 
 const wrapper = document.getElementById("mainContainer");
-wrapper ? ReactDOM.render(<Clock/>, wrapper) : false;
+wrapper ? ReactDOM.render(<ClockApp/>, wrapper) : false;
