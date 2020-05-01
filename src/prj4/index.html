@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Spotify</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <script src="components/NewsCards.js"></script>
+    <script src="components/UpdatesCards.js"></script>
+    <script src="components/CardNewsIndex.json"></script>
+    <script src="components/CardUpdatesIndex.json"></script>
+    <script>
+        new UISearch( document.getElementById( 'sb-search' ) );
+    </script>
+</head>
+<body class="bg-info">
+<header>
+    <div class="container-fluid">
+        <nav class="row navbar navbar-dark bg-dark">
+            <div class="col-6">
+                <span class="navbar-brand text-success" href="#"><B>MUSIC</B></span>
+            </div>
+            <div class="col-6">
+                <form action="#" class="content float-right">
+                    <input type="submit" class="float-right bg-secondary border-dark" onclick="document.location='login.html'" value="Sign up"/>
+                    <input type="submit" class="float-right bg-success border-dark" onclick="document.location='login.html'" value="Log in"/>
+                </form>
+            </div>
+        </nav>
+    </div>
+</header>
+<main>
+    <div class="container">
+        <br>
+        <div class="row">
+            <div class="col-10">
+                <input class="form-control border-success" type="search" placeholder="Search by name of song or artist" aria-label="Search">
+            </div>
+            <div class="row">
+                <div class="col-2">
+                    <button class="btn bg-success border border-dark" type="submit" onclick="document.location='Results.html'">Search</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+<footer>
+esto es el footerr
+</footer>
+</body>
+</html>
