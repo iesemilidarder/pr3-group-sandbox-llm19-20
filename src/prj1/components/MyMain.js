@@ -59,7 +59,6 @@ class MyMain extends React.Component {
                 </div>
             </main>
         );
-
     }
 }
 
