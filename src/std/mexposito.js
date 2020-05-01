@@ -1,6 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import FormRules from "./2avoid/FormRules";
+//import FormRules from "./2avoid/FormRules";
 
 class MiguelApp extends React.Component {
     constructor(props) {
