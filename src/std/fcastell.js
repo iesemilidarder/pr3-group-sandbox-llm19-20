@@ -1,6 +1,5 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import FormRules from "./Components/FormRules.js";
 
 const MyHeader = () => {
     return <div>
@@ -31,7 +30,6 @@ const MyHeader = () => {
         </header>
     </div>
 };
-
 const MyMain = () => {
     return <div>
         <main className="row">
@@ -77,7 +75,6 @@ const MyMain = () => {
         </main>
     </div>
 };
-
 const MyFooter = () => {
     return <div>
         <footer className="row">
@@ -104,14 +101,35 @@ const MyFooter = () => {
         </footer>
     </div>
 };
-function MyApp() {
-    return <>
-        <div className="container content">
-            <MyHeader/>
-            <MyMain/>
-            <MyFooter/>
-        </div>
-    </>
+
+class MyApp extends React.Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+            counter: 0
+        };
+        this.Add = this.Add.bind(this);
+    }
+
+    Add(e) {
+        this.setState((prevState, props) => {
+            return {counter: prevState.counter + 1}
+        });
+    };
+
+    render() {
+        return <>
+            <div className="container content">
+                <MyHeader/>
+                <MyMain/>
+                <MyFooter/>
+                <div>
+                    <p> You're clicked {this.state.counter} times</p>
+                    <button onClick={this.Add}>Suma</button>
+                </div>
+            </div>
+        </>
+    }
 }
 
 const wrapper = document.getElementById("root");
