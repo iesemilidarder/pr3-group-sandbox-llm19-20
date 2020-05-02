@@ -1,6 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import FormRules from "./2avoid/FormRules";
+/*
+import FormRules from "./2avoid/FormRules"
 
 class MiguelApp extends React.Component {
     constructor(props) {
@@ -40,6 +41,8 @@ class MiguelApp extends React.Component {
 
 const wrapper = document.getElementById("main");
 wrapper ? ReactDOM.render(<MiguelApp/>, wrapper) : false;
+
+ */
 /*
 
 function CreateMyHeader() {
