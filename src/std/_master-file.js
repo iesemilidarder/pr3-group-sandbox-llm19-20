@@ -1,6 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import FormRules from "./Components/FormRules";
+import Clicker from "./Components/Clicker";
 
 class ClockApp extends React.Component {
     constructor(props) {
@@ -27,6 +28,7 @@ class ClockApp extends React.Component {
             <div>
                 <h1>Hello, world!</h1>
                 <h2>It is {formatDate}.</h2>
+                <Clicker/>
                 <FormRules/>
                 <ul>
                     {clients.map(i => {
