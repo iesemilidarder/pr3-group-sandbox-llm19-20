@@ -108,10 +108,10 @@ class MyApp extends React.Component {
         this.state = {
             counter: 0
         };
-        this.Add = this.Add.bind(this);
+        this.add = this.add.bind(this);
     }
 
-    Add(e) {
+    add(e) {
         this.setState((prevState, props) => {
             return {counter: prevState.counter + 1}
         });
@@ -125,7 +125,7 @@ class MyApp extends React.Component {
                 <MyFooter/>
                 <div>
                     <p> You're clicked {this.state.counter} times</p>
-                    <button onClick={this.Add}>Suma</button>
+                    <button onClick={this.add}>Suma</button>
                 </div>
             </div>
         </>
