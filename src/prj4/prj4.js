@@ -11,19 +11,18 @@ function App() {
     const onSubmit = data => console.log(data);
 
     return (
+        <div onCanPlay={App} aria-colindex={App}>
         <form onSubmit={onSubmit}>
-            <label>First Name</label>
-            <input name="firstName"/>
+            <label>Musica</label>
+            <input name="Musica"/>
 
-            <label>Last Name</label>
-            <input name="lastName"/>
-            <p>Render Counter: {renderCount} </p>
-
-            <button>Submit</button>
+            <button>Buscar Musica</button>
 
         </form>
+        </div>
     )
 }
+
 const wrapper = document.getElementById("root");
 wrapper ? ReactDOM.render(<App/>, wrapper) : false;
 /*
