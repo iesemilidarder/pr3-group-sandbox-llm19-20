@@ -1,6 +1,5 @@
 import React from "react";
-import ReactDOM from "react-dom";
-
+//import ReactDOM from "react-dom";
 
 class MyMain extends React.Component {
     ingredients;
@@ -8,6 +7,7 @@ class MyMain extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
+            selectedRecipe: "",
             projects: []
         };
     }
@@ -17,7 +17,6 @@ class MyMain extends React.Component {
             .then(data => data.json())
             .then(data => {
                 this.setState({projects: data});
-                console.log(data)
             });
     }
 
@@ -35,13 +34,15 @@ class MyMain extends React.Component {
                     </ol>
                     <p className="mt-4">{item.description}</p>
                 </div>;
-                ReactDOM.render(Recipe, document.getElementById("content"))
+                //ReactDOM.render(Recipe, document.getElementById("content"))
+                this.setState({selectedRecipe: Recipe});
             }
         });
         window.scroll(0, 0);
     }
 
     render() {
+        const selectedRecipeHTML = this.state.selectedRecipe;
         return (
             <main className="row">
                 <aside style={{backgroundColor: "#D3E6CF"}} className="col-3">
@@ -56,6 +57,7 @@ class MyMain extends React.Component {
                 </aside>
                 <div style={{backgroundColor: "#FDFDFA"}} id="content" className="col-9">
                     <h1 className="mt-5">Clicka en la Receta que más te guste!!</h1>
+                    <div>{selectedRecipeHTML}</div>
                 </div>
             </main>
         );
