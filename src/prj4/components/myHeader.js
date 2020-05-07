@@ -1,8 +1,8 @@
 import React from "react";
 
+
 const myHeader = () => {
-    return <body className="bg-info">
-    <header id="myHeader">
+    return <header id="myHeader">
         <div className="container-fluid">
             <nav className="row navbar navbar-dark bg-dark">
                 <div className="col-6">
@@ -19,5 +19,6 @@ const myHeader = () => {
             </nav>
         </div>
     </header>
-    </body>
-}
+};
+
+export default myHeader();

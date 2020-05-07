@@ -8,7 +8,8 @@ const myMain = () => {
             </div>
             <div class="row">
                 <div class="col-10">
-                    <input class="form-control border-success" type="search" placeholder="Search by name of song or artist"
+                    <input class="form-control border-success" type="search"
+                           placeholder="Search by name of song or artist"
                            aria-label="Search"/>
                 </div>
                 <div class="col-2">
@@ -19,6 +20,6 @@ const myMain = () => {
             </div>
         </div>
     </main>
-}
+};
 
 export default myMain();
