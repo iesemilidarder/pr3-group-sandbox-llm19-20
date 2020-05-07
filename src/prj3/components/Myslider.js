@@ -5,11 +5,11 @@ import ImgComp from "./ImgComp";
 function Myslider() {
     const [x,setX] = useState(0);
     let sliderArr = [
-        <ImgComp src="/assets/prj3/img/f1.jpg" />,
-        <ImgComp src="/assets/prj3/img/moto.jpg" />,
-        <ImgComp src="/assets/prj3/img/project.jpg" />,
-        <ImgComp src="/assets/prj3/img/planet.jpg" />,
-        <ImgComp src="/assets/prj3/img/black.jpg" />,
+        <ImgComp src="/prj3/img/f1.jpg" />,
+        <ImgComp src="/prj3/img/moto.jpg" />,
+        <ImgComp src="/prj3/img/project.jpg" />,
+        <ImgComp src="/prj3/img/planet.jpg" />,
+        <ImgComp src="/prj3/img/black.jpg" />,
     ];
     const goLeft = () => {
         x === 0 ? setX(-100 * (sliderArr.length - 1)) : setX(x + 100);

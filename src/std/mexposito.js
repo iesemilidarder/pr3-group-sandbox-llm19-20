@@ -1,5 +1,49 @@
 import React from "react";
 import ReactDOM from "react-dom";
+/*
+import FormRules from "./2avoid/FormRules"
+
+class MiguelApp extends React.Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+            date: new Date(),
+            customers: []
+        };
+    }
+
+    componentDidMount() {
+        fetch("data/cardExample.json")
+            .then(data => data.json())
+            .then(data => {
+                this.setState({date: new Date(), customers: data});
+            });
+    }
+
+    render() {
+        const date = this.state.date;
+        const clients = this.state.customers;
+        const formatDate = date.getTime();
+        return (
+            <div>
+                <h1>Hello, world!</h1>
+                <h2>It is {formatDate}.</h2>
+                <FormRules/>
+                <ul>
+                    {clients.map(i => {
+                        return <li key={"client" + i.id}>{i.name}</li>
+                    })}
+                </ul>
+            </div>
+        );
+    }
+}
+
+const wrapper = document.getElementById("main");
+wrapper ? ReactDOM.render(<MiguelApp/>, wrapper) : false;
+
+ */
+/*
 
 function CreateMyHeader() {
     return <header id="CreateMyHeader" className="row bg-primary">
@@ -118,8 +162,8 @@ function MiguelApp() {
     </div>
 }
 
-const MiguelBody = document.getElementById("main");
-MiguelBody ? ReactDOM.render(<MiguelApp/>, MiguelBody) : false;
+
+ */
 
 /*
 const myMusic = (container, title) => {
