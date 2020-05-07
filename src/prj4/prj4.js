@@ -1,6 +1,7 @@
 import React from 'react';
 import {useForm} from "react-hook-form";
 import ReactDOM from "react-dom";
+import construct from "@babel/runtime/helpers/esm/construct";
 
 let renderCount = 0;
 
