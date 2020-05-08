@@ -1,7 +1,35 @@
 import React from "react";
 import ReactDOM from "react-dom";
 
-console.log("Hi! I'm Marta");
+class MartaApp extends React.Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+            counter: 0
+        };
+        this.handleAdd=this.handleAdd.bind(this);
+    }
+
+    handleAdd(e) {
+        const counter = this.state.counter;
+        this.setState({counter: counter + 1});
+    }
+
+    render() {
+        return <>
+            <div className="container content">
+                has clickado {this.state.counter} veces
+            </div>
+            <div><button onClick={this.handleAdd}>suma</button></div>
+        </>
+    }
+
+}
+
+
+const wrapper = document.getElementById("mainContainer");
+wrapper ? ReactDOM.render(<MartaApp/>, wrapper) : false;
+/*
 
 function function1() {
     console.log("hola1")
@@ -22,6 +50,7 @@ const myRender = (container) => {
     `;
 };
 myRender("mainContainer");
+*/
 
 
 /*
