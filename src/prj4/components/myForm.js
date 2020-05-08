@@ -32,4 +32,4 @@ const myForm = () => {
     );
 };
 
-export default myForm();
+export default myForm;
