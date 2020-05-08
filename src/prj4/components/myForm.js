@@ -1,5 +1,5 @@
 import React from "react";
-import { useForm } from "react-hook-form";
+import {useForm} from "react-hook-form";
 
 const myForm = () => {
     const { handleSubmit, register, errors } = useForm();
@@ -31,4 +31,5 @@ const myForm = () => {
         </form>
     );
 };
+
 export default myForm();

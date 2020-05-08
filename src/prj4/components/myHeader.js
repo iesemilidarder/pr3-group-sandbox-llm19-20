@@ -6,7 +6,7 @@ const myHeader = () => {
         <div className="container-fluid">
             <nav className="row navbar navbar-dark bg-dark">
                 <div className="col-6">
-                    <span className="navbar-brand text-success" href="#"><B>MUSIC</B></span>
+                    <span className="navbar-brand text-success"><B>MUSIC</B></span>
                 </div>
                 <div className="col-6">
                     <form action="#" className="content float-right">
@@ -21,4 +21,4 @@ const myHeader = () => {
     </header>
 };
 
-export default myHeader();
+export default myHeader;
