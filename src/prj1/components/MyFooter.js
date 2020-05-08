@@ -1,8 +1,7 @@
 import React from "react";
 
-const message = () => alert("Vas a acceder a otro Sitio Web");
-
 const MyFooter = () => {
+    const message = () => alert("Vas a acceder a otro Sitio Web");
     return <div>
         <footer className="footer-copyright text-center py-3">
             <h5 className="text-success">© 2020 Copyright - Topics Foot </h5>
@@ -21,4 +20,5 @@ const MyFooter = () => {
         </footer>
     </div>
 };
+
 export default MyFooter;

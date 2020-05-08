@@ -6,13 +6,13 @@ import ProjectFooter from "./components/ProjectFooter";
 import "./index.css";
 
 function MyStudentsFirstReactApp() {
-    return <>
-        <div className="container content">
-            <ProjectHeader/>
-            <ProjectBody/>
-        </div>
-        <ProjectFooter/>
-    </>
+return <>
+    <div className="container content">
+        <ProjectHeader/>
+        <ProjectBody/>
+    </div>
+    <ProjectFooter/>
+</>
 }
 
 //TODO check: Aquí tenéis una forma chula de evitar el error mediante "bicondicional" (es un if)

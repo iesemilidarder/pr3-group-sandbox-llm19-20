@@ -1,6 +1,8 @@
 import React from 'react';
 import {useForm} from "react-hook-form";
 import ReactDOM from "react-dom";
+import myHeader from "./components/myHeader";
+import myMain from "./components/myMain";
 
 let renderCount = 0;
 
@@ -11,15 +13,19 @@ function App() {
     const onSubmit = data => console.log(data);
 
     return (
-        <div onCanPlay={App} aria-colindex={App}>
-        <form onSubmit={onSubmit}>
-            <label>Musica</label>
-            <input name="Musica"/>
+        <div>
+            <myHeader/>
 
-            <button>Buscar Musica</button>
+            <form onSubmit={onSubmit}>
+                <label>Musica</label>
+                <input name="Musica"/>
 
-        </form>
+                <button>Buscar Musica</button>
+                <myMain/>
+
+            </form>
         </div>
+
     )
 }
 
