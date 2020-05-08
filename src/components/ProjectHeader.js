@@ -1,7 +1,13 @@
 import React from "react";
 import Clock from "./Clock";
+import CutriSlider from "./CutriSlider";
 
 const ProjectHeader = () => {
+    const myImages =["https://api.adorable.io/avatars/170/JohnDoe.png"
+        ,"https://api.adorable.io/avatars/170/PepitoPalotes.png"
+        ,"https://api.adorable.io/avatars/170/HollyMolli.png"]
+    const myImages2 = ["https://picsum.photos/400/250"
+        , "https://picsum.photos/400/250", "https://picsum.photos/400/250"];
     return (
         <header className="row ">
             <div className="col-sm-2 myHeaderLogo">
@@ -30,6 +36,9 @@ const ProjectHeader = () => {
                 <div><Clock/></div>
             </div>
             <div className="col-sm-2"><img src="/images/callus.jpg" alt="call us" width="40"/></div>
+            <div className="col-md-12">
+                <CutriSlider images={myImages} height={200}/>
+            </div>
         </header>
     );
 };

@@ -6,6 +6,7 @@ function Recomendados() {
     let mmo = "";
     let cars = "";
     let fight = "";
+
     let paramc = "";
     let k = "";
     let arrFinal = [];
@@ -14,10 +15,10 @@ function Recomendados() {
 // OBJETOS CON GENEROS(SE PUEDEN AÑADIR MAS), Y num="" PORQUE MAS ADELANTE LE METERE LOS CLICKS TOTALES,
 // ¡¡¡¡¡NOTA: PARA CADA GENERO SE NECESITA SUS RESPECTIVAS IMAGENES y su funcion de sumar!!!!!!!.
     let gen = [
-        {name: "rpg", num: "-1", id: "0"},
-        {name: "mmo", num: "-1", id: "1"},
-        {name: "cars", num: "-1", id: "2"},
-        {name: "fight", num: "-1", id: "3"}
+        {name: "rpg", num: "0", id: "0"},
+        {name: "mmo", num: "0", id: "1"},
+        {name: "cars", num: "0", id: "2"},
+        {name: "fight", num: "0", id: "3"}
     ];
     let images = [{
         name: "rpg",
@@ -158,7 +159,7 @@ function Recomendados() {
             //  ¡¡¡¡NOTA: LOS aleatorio... CON math.random DEBEN SER ACTUALIUZADOS PARA USAR ESAS IMAGENES YA QUE ESTAN AHORA SOLO PARA 4 GENEROS CON MAX 4 imagenes)
             // PD: AUMENTAR k < 35 PARA MAYOR NUMERO DE COMBINACIONES QUE PERMITIRAN MÁS IMAGENES ABAJO, IGUAL EN EL for loop DE ABAJO.
             for (k = 0; k < 35; k++) {
-                let aleatorioFila = Math.floor(Math.random() * 4); //MAXIMA FILA, AL PARECER AQUI EL PRIMERO NO ES 0, ES 1 !!!!
+                let aleatorioFila = Math.floor(Math.random() * 4) ; //MAXIMA FILA, AL PARECER AQUI EL PRIMERO NO ES 0, ES 1 !!!!
                 let aleatorioColumna = Math.floor(Math.random() * 4); //MAXIMA COLUMNA, AL PARECER AQUI EL PRIMERO DEL ARRAY ES 1!!!
                 arr.push(aleatorioFila + " " + aleatorioColumna);
 
@@ -187,14 +188,13 @@ function Recomendados() {
         } else
             // EN CASO DE DARLE ME GUSTA MAS DE 1 VEZ A ALGUN JUEGO DEL MISMO GENERO NOS RECOMENDARÁ JUEGOS DE DICHO GÉNERO
         {
-
+            // TODO : CAMBIAR === Y TIPO-VALOR
             for (let imagenFila = 0, imagenColumna = 0; imagenFila <= max.id; imagenFila++) {
                 if (imagenFila == max.id) {
                     make(imagenFila, imagenColumna);
                     imagenColumna++;
                     for (paramc = 1; paramc < Object.keys(images[imagenFila].img).length; paramc++) {
                         make(imagenFila, paramc);
-                        imagenColumna++;
                     }
                     break;
                 }
