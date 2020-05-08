@@ -16,7 +16,6 @@ function App() {
                     <Recomendados/>
                     <Myfooter/>
                 </div>
-
             </div>
         </div>
 
