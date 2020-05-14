@@ -1,5 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
+import Player from "react-howler-player";
 class CutriSlider extends React.Component {
     constructor(props) {
         super(props);
@@ -34,6 +35,11 @@ class CutriSlider extends React.Component {
         const url = this.state.currentImage;
         return (
             <div className={"container-fluid"}>
+                <Player
+                    src={['http://goldfirestudios.com/proj/howlerjs/sound.ogg']}
+                    isDark={true}
+                    // onTimeUpdate={timeUpdate}
+                />
                 <div className="row">
                     {currentPosition}
                     <img className={"col"}

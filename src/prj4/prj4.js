@@ -2,7 +2,7 @@ import React from 'react';
 import {useForm} from "react-hook-form";
 import ReactDOM from "react-dom";
 import myHeader from "./components/myHeader";
-import myMain from "./components/myMain";
+import myForm from "./components/myForm";
 
 let renderCount = 0;
 
@@ -15,13 +15,12 @@ function App() {
     return (
         <div>
             <myHeader/>
-
+            <myForm/>
             <form onSubmit={onSubmit}>
                 <label>Musica</label>
                 <input name="Musica"/>
 
                 <button>Buscar Musica</button>
-                <myMain/>
 
             </form>
         </div>

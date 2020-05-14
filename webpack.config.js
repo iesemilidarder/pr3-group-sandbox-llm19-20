@@ -75,7 +75,10 @@ module.exports = {
         topics: "./src/prj1/topics.js",
         juegos: "./src/prj3/juegos.js",
         viajes: "./src/prj2/viajes.js",
-        spotify: "./src/prj4/prj4.js"
+        spotify: "./src/prj4/prj4.js",
+        spoti1: "./src/music-store-pr1/index.js",
+        spoti2: "./src/music-store-pr2/index.js",
+        spoti3: "./src/music-store-pr3/index.js"
 
 
     },
@@ -169,6 +172,19 @@ module.exports = {
             template: "./src/prj4/prj4.html",
             chunks: ['spotify'],
             filename: "./spotify.html"
+        }), new HtmlWebPackPlugin({
+            template: "./src/music-store-pr1/index.html",
+            chunks: ['spoti1'],
+            filename: "./spoti1.html"
+        }), new HtmlWebPackPlugin({
+            template: "./src/music-store-pr2/index.html",
+            chunks: ['spoti2'],
+            filename: "./spoti2.html"
+        }),
+        new HtmlWebPackPlugin({
+            template: "./src/music-store-pr3/index.html",
+            chunks: ['spoti3'],
+            filename: "./spoti3.html"
         })
     ],
     devServer: {
