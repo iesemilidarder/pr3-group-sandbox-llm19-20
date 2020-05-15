@@ -4,11 +4,13 @@ import ProjectHeader from "./components/ProjectHeader";
 import ProjectBody from "./components/ProjectBody";
 import ProjectFooter from "./components/ProjectFooter";
 import "./index.css";
+import Spotis from "./components/Spotis";
 
 function MyStudentsFirstReactApp() {
 return <>
     <div className="container content">
         <ProjectHeader/>
+        <Spotis/>
         <ProjectBody/>
     </div>
     <ProjectFooter/>
