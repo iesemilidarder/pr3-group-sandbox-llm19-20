@@ -22,4 +22,4 @@ const myMain = () => {
     </main>
 };
 
-export default myMain();
+export default myMain;
