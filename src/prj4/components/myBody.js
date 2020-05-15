@@ -1,9 +1,9 @@
 import React from "react";
 
 
-const myHeader = () => {
+const myBody = () => {
     return <body className="bg-info" id="myHeader">
     </body>
 };
 
-export default myHeader();
+export default myBody;
