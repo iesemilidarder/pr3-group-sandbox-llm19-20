@@ -12,15 +12,19 @@ class TopicsMain extends React.Component {
     componentDidMount() {
     }
 
-    //al buscar saldría esto.
-    cositafina = (e) => {
-        if (confirm("Este buscador no busca, es pirata c:")) {
-            alert("¡Gracias por aceptar!");
-        } else {
-            alert("¡Gracias por cancelar!");
+    // todo Quiero que sea el buscador el botón este pero sale al principio, si alguien sabe que me ayude porfi, está donde el otro todo.
+    genero() {
+//Ingresamos un mensaje a mostrar
+        let genero = prompt("¿Cuál es tu género favorito?", "");
+//Detectamos si el usuario ingreso un valor
+        if (genero != null){
+            alert("Tu genero  favorito es " + genero);
         }
-        return false;
-    };
+//Detectamos si el usuario NO ingreso un valor
+        else {
+            alert("No me vaciles y pon algo");
+        }
+    }
 
 
     render() {
@@ -29,14 +33,9 @@ class TopicsMain extends React.Component {
                 <div className="input-group row">
                     <div className="input-group-prepend">
                     </div>
-                    <input type="text" className="form-control" aria-label="Text input with radio button"
-                           placeholder="Busca aquí tu música favorita...">
-
-                    </input>
                     <div>
-                        <button onClick={this.cositafina()} type="button" className="btn btn-primary"
-                                data-toggle="button" aria-pressed="false" value="Click para ver mensaje">
-                            Buscar
+                       todo  <button onClick={this.genero()} type="button" className="btn btn-primary" data-toggle="button" aria-pressed="false" value="Click para ver mensaje">
+                            Buscar tu musica favorita clickando aquí
                         </button>
                     </div>
                 </div>
