@@ -1,6 +1,6 @@
 import React from "react";
 
-class BlankClassComponent extends React.Component {
+class TopicsMain extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
@@ -13,10 +13,23 @@ class BlankClassComponent extends React.Component {
 
     render() {
         return (
-            <>
-            </>
+            <div>
+                <div className="input-group">
+                    <div className="input-group-prepend">
+                    </div>
+                    <input type="text" className="form-control" aria-label="Text input with radio button" placeholder="Busca aquí tu música favorita...">
+
+                    </input>
+                    <div>
+                        <button type="button" className="btn btn-dark">Buscar</button>
+                    </div>
+                </div>
+
+            </div>
+
+
         );
     }
 }
 
-export default BlankClassComponent;
+export default TopicsMain;
