@@ -10,9 +10,6 @@ class TopicsMain extends React.Component {
         };
     }
 
-    //TODO ALBERTO ODIA LOS ALERT :( me jodió
-
-
     componentDidMount() {
     }
     reiniciarBusqueda () {
