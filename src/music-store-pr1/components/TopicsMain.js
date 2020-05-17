@@ -9,11 +9,12 @@ class TopicsMain extends React.Component {
         };
     }
 
+    //TODO ALBERTO ODIA LOS ALERT :(
+
+
     componentDidMount() {
     }
-
-    // todo está sin acabar,  me tenia que ir jz, sale al principio,quiero que salgaal pulsar boton.
-    genero() {
+   genero() {
 //Ingresamos un mensaje a mostrar
         let genero = prompt("¿Cuál es tu género favorito?", "");
 //Detectamos si el usuario ingreso un valor
@@ -38,7 +39,7 @@ class TopicsMain extends React.Component {
 
                     </input>
                     <div>
-                        <button onClick={this.genero()} type="button" className="btn btn-primary" data-toggle="button" aria-pressed="false" value="Click para ver mensaje">
+                        <button onClick={this.genero} type="button" className="btn btn-primary" data-toggle="button" aria-pressed="false" value="Click para ver mensaje">
                             Buscar
                         </button>
                     </div>

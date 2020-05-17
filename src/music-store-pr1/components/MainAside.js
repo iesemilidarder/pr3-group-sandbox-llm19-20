@@ -13,15 +13,16 @@ class MainAside extends React.Component {
 
     render() {
         return (
-            <ol>
-                <li>Categorias</li>
-                <li>Biblioteca</li>
-                <li>Playlist</li>
-                <li>Podcasts</li>
-                <li>Generos</li>
-                <li>La que no me invento</li>
-            </ol>
-        );
+            <div>
+                <p className="h2 text-muted">Tu Biblioteca</p>
+            <ul className="list-group list-group-flush">
+                <li className="list-group-item">Perfil</li>
+                <li className="list-group-item">Generos</li>
+                <li className="list-group-item">Playlist</li>
+                <li className="list-group-item">Configuracion</li>
+            </ul>
+            </div>
+        )
     }
 }
 

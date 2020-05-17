@@ -1,21 +1,24 @@
 import React, {useState} from "react";
 import {useForm} from "react-hook-form";
-import ReactDOM from "react-dom";
 
 export default function HeaderLogin(props) {
     const [logged, setLogged] = useState(false);
     const {register, handleSubmit, watch, errors} = useForm();
+    let user="";
     const onSubmit = data => {
         if (data.username && data.password) {
             const {username, password} = data;
             console.log(data);
             if (username === "test" && password === "test") {
                 setLogged(true);
+                user=username;
             }
         }
     };
     if (logged) {
-        return (<h3>Bienvenido</h3>);
+        return(
+            <h3>Bienvenido {user}</h3>
+        );
     } else {
         return (
             <div id="logged">
