@@ -35,6 +35,53 @@ class TopicsMain extends React.Component {
 }
 
 
+//he puesto esto de peliculas para poner algo mas dinámico y no solo ser de musica y ofrecer así a nuestros clientes un cambio por si están aburrido
+    //si es una shit lo quito xD
+    busquedaApi (){
+        swal({
+            title: 'Buscar peliculas si existen, por si quieres cambiar',
+            text:  'Buscar una pelicula, p.e "La La Land".',
+            content: "input",
+            button: {
+                text: "Buscar!",
+                closeModal: false,
+            },
+        })
+            .then(name => {
+                if (!name) throw null;
+
+                return fetch(`https://itunes.apple.com/search?term=${name}&entity=movie`);
+            })
+            .then(results => {
+                return results.json();
+            })
+            .then(json => {
+                const movie = json.results[0];
+
+                if (!movie) {
+                    return swal("Me sabe mal pero...", "Está pelicula no consta en nuestras memorias");
+                }
+
+                const name = movie.trackName;
+                const imageURL = movie.artworkUrl100;
+
+                swal({
+                    title: "Aquí está tu tesoro:",
+                    text: name,
+                    icon: imageURL,
+                });
+            })
+            .catch(err => {
+                if (err) {
+                    swal("Oh no!", "No existe ningún resultado!", "error");
+                } else {
+                    swal.stopLoading();
+                    swal.close();
+                }
+            });
+    }
+
+
 
     render() {
         return (
@@ -47,13 +94,18 @@ class TopicsMain extends React.Component {
 
                     </input>
                     <div>
-                        <button onClick={this.genero} type="button" className="btn btn-primary" data-toggle="button" aria-pressed="false" value="Click para ver mensaje">
+                        <button type="button" className="btn btn-outline-primary" data-toggle="button" aria-pressed="false" value="Click para ver mensaje">
                             Buscar
                         </button>
                     </div>
                     <div>
-                        <button onClick={this.reiniciarBusqueda} type="button" className="btn btn-primary" data-toggle="button" aria-pressed="false" value="Click para ver mensaje">
+                        <button onClick={this.reiniciarBusqueda} type="button" className="btn btn-outline-secondary" data-toggle="button" aria-pressed="false" value="Click para ver mensaje">
                             Reiniciar
+                        </button>
+                    </div>
+                    <div>
+                        <button onClick={this.busquedaApi}type="button" className="btn btn-outline-primary" value="Peliculas">
+                            Peliculas
                         </button>
                     </div>
                 </div>
