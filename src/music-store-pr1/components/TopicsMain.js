@@ -12,7 +12,7 @@ class TopicsMain extends React.Component {
     componentDidMount() {
     }
 
-    // todo Quiero que sea el buscador el botón este pero sale al principio, si alguien sabe que me ayude porfi, está donde el otro todo.
+    // todo está sin acabar,  me tenia que ir jz, sale al principio,quiero que salgaal pulsar boton.
     genero() {
 //Ingresamos un mensaje a mostrar
         let genero = prompt("¿Cuál es tu género favorito?", "");
@@ -33,9 +33,13 @@ class TopicsMain extends React.Component {
                 <div className="input-group row">
                     <div className="input-group-prepend">
                     </div>
+                    <input type="text" className="form-control" aria-label="Text input with radio button"
+                           placeholder="Busca aquí tu música favorita...">
+
+                    </input>
                     <div>
-                       todo  <button onClick={this.genero()} type="button" className="btn btn-primary" data-toggle="button" aria-pressed="false" value="Click para ver mensaje">
-                            Buscar tu musica favorita clickando aquí
+                        <button onClick={this.genero()} type="button" className="btn btn-primary" data-toggle="button" aria-pressed="false" value="Click para ver mensaje">
+                            Buscar
                         </button>
                     </div>
                 </div>
