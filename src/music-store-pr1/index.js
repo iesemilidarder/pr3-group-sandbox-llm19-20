@@ -1,10 +1,11 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import "./index.css";
+import TopicsHeader from "./components/TopicsHeader";
 
 function MyStudentsFirstReactApp() {
     return <div className="container content">
-        Hey
+        <TopicsHeader/>
     </div>
 }
 
