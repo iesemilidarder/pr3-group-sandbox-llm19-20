@@ -13,7 +13,8 @@ class BlankClassComponent extends React.Component {
 
     render() {
         return (
-            <></>
+            <>
+            </>
         );
     }
 }
