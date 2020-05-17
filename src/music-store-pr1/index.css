@@ -6,3 +6,9 @@ body {
     height: 100%;
     font-family: sans-serif;
 }
+
+.colores {
+    font-weight: bold;
+    color: #339900;
+    filter: blur();
+}

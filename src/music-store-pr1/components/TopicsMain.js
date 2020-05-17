@@ -11,6 +11,16 @@ class TopicsMain extends React.Component {
     componentDidMount() {
     }
 
+    //al buscar saldría esto.
+    cositafina = (e) => {
+        if (confirm("Este buscador no busca, es pirata c:")) {
+            alert("¡Gracias por aceptar!");
+        } else {
+            alert("¡Gracias por cancelar!");
+        }
+        return false;
+    };
+
 
     render() {
         return (
@@ -22,7 +32,7 @@ class TopicsMain extends React.Component {
 
                     </input>
                     <div>
-                        <button  type="button" className="btn btn-primary" data-toggle="button" aria-pressed="false">
+                        <button onClick={this.cositafina()} type="button" className="btn btn-primary" data-toggle="button" aria-pressed="false" value="Click para ver mensaje">
                             Buscar
                         </button>
                     </div>
