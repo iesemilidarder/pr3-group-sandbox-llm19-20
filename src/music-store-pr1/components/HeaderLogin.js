@@ -45,12 +45,6 @@ export default function CutriLogin(props) {
                         {errors.password && <span>This field is required</span>}
                     </div>
                 </div>
-                <div className="row" style={{paddingTop: "15px"}}>
-                    <div className="col">
-                        <input type="submit" value={"Do login!"} className="btn btn-lg btn-primary btn-block"/>
-                        <p className="mt-5 mb-3 text-muted">&copy; 2020 My ninja student rules!</p>
-                    </div>
-                </div>
             </form>
         );
     }
