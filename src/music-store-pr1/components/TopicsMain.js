@@ -1,5 +1,6 @@
 import React from "react";
 import MainAside from "./MainAside";
+import swal from "sweetalert";
 
 class TopicsMain extends React.Component {
     constructor(props) {
@@ -9,23 +10,33 @@ class TopicsMain extends React.Component {
         };
     }
 
-    //TODO ALBERTO ODIA LOS ALERT :(
+    //TODO ALBERTO ODIA LOS ALERT :( me jodió
 
 
     componentDidMount() {
     }
-   genero() {
-//Ingresamos un mensaje a mostrar
-        let genero = prompt("¿Cuál es tu género favorito?", "");
-//Detectamos si el usuario ingreso un valor
-        if (genero != null){
-            alert("Tu genero  favorito es " + genero);
-        }
-//Detectamos si el usuario NO ingreso un valor
-        else {
-            alert("No me vaciles y pon algo");
-        }
-    }
+    reiniciarBusqueda () {
+        {}
+        swal({
+            title: "Estas seguro de reiniciar tus busquedas?",
+            text: "Una vez reiniciadas no volverás a tener ninguna búsqueda anterior",
+            icon: "warning",
+            buttons: true,
+            dangerMode: true,
+        })
+            .then((willDelete) => {
+                if (willDelete) {
+                    swal("Poof! Tu inventario de música se reinició!", {
+                        icon: "success",
+                    });
+                } else {
+                    swal("Tu inventario de música se mantiene intacto... por ahora!", {
+                        icon: "success",
+                    });
+                }
+            });
+}
+
 
 
     render() {
@@ -41,6 +52,11 @@ class TopicsMain extends React.Component {
                     <div>
                         <button onClick={this.genero} type="button" className="btn btn-primary" data-toggle="button" aria-pressed="false" value="Click para ver mensaje">
                             Buscar
+                        </button>
+                    </div>
+                    <div>
+                        <button type={this.reiniciarBusqueda()} type="button" className="btn btn-primary" data-toggle="button" aria-pressed="false" value="Click para ver mensaje">
+                            Reiniciar
                         </button>
                     </div>
                 </div>

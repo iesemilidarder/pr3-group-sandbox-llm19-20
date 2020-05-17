@@ -12,3 +12,12 @@ body {
     color: #339900;
     filter: blur();
 }
+
+.swal-button {
+    padding: 7px 19px;
+    border-radius: 2px;
+    background-color: #4962B3;
+    font-size: 12px;
+    border: 1px solid #3e549a;
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.3);
+}
