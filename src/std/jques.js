@@ -1,10 +1,10 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import ComponetProps from "./2avoid/ComponetProps";
-import Card from "./2avoid/Card";
-import Form from "./2avoid/Form";
-import SliderCutre from "./2avoid/SliderCutre";
-import LoginCutre from "./2avoid/LoginCutre";
+//import ComponetProps from "./2avoid/ComponetProps";
+//import Card from "./2avoid/Card";
+//import Form from "./2avoid/Form";
+//import SliderCutre from "./2avoid/SliderCutre";
+//import LoginCutre from "./2avoid/LoginCutre";
 const MyHeader = () => {
     const myImages =["https://picsum.photos/400/250","https://dummyimage.com/400x250/000/fff","https://www.quilt-ys.com/wp-content/uploads/2020/05/covidfree-400x250.jpg"];
     return <div>

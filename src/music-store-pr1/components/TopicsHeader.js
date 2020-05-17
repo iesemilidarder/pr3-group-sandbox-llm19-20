@@ -1,4 +1,5 @@
 import React from "react";
+import HeaderLogin from "./HeaderLogin";
 
 class TopicsHeader extends React.Component {
     constructor(props) {
@@ -13,7 +14,13 @@ class TopicsHeader extends React.Component {
 
     render() {
         return (
-            <div>
+            <div className="row">
+                <div className="col-6">
+
+                </div>
+                <div className="col-6">
+                    <HeaderLogin/>
+                </div>
 
             </div>
         );
