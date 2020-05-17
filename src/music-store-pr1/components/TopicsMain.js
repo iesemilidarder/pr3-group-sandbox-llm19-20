@@ -52,7 +52,7 @@ class TopicsMain extends React.Component {
                         </button>
                     </div>
                     <div>
-                        <button type={this.reiniciarBusqueda()} type="button" className="btn btn-primary" data-toggle="button" aria-pressed="false" value="Click para ver mensaje">
+                        <button onClick={this.reiniciarBusqueda} type="button" className="btn btn-primary" data-toggle="button" aria-pressed="false" value="Click para ver mensaje">
                             Reiniciar
                         </button>
                     </div>
