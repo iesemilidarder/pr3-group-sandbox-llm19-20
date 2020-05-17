@@ -2,7 +2,11 @@ import React from "react";
 import ReactDOM from "react-dom";
 import ComponetProps from "./2avoid/ComponetProps";
 import Card from "./2avoid/Card";
+import Form from "./2avoid/Form";
+import SliderCutre from "./2avoid/SliderCutre";
+import LoginCutre from "./2avoid/LoginCutre";
 const MyHeader = () => {
+    const myImages =["https://picsum.photos/400/250","https://dummyimage.com/400x250/000/fff","https://www.quilt-ys.com/wp-content/uploads/2020/05/covidfree-400x250.jpg"];
     return <div>
         <header className="row">
             <div className="col-md-2">
@@ -28,6 +32,9 @@ const MyHeader = () => {
             <div className="col-sm-2">Contact 555-333210</div>
             <div className="col-sm-2"><img src="/images/callus.jpg" height="40" width="40" alt="callus"/></div>
         </header>
+        <div className="col-12">
+            <SliderCutre images={myImages}/>
+        </div>
     </div>
 };
 const MyMain = () => {
@@ -37,7 +44,7 @@ const MyMain = () => {
                 <div className="row">
                     <div className="col-8">
                         <h2>Title</h2>
-                        <p><ComponetProps name={"Joan"}/></p>
+                        <ComponetProps name={"Joan"}/>
                         <section>
                             <h3>title</h3>
                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium, aliquid asperiores
@@ -61,6 +68,7 @@ const MyMain = () => {
                         </section>
                         <section>
                             <Card title={"Hola"} description={"holaaaaa"}/>
+                            <Form/>
                         </section>
                     </div>
                     <div className="col-4">
@@ -122,13 +130,13 @@ const MyFooter = () => {
         </footer>
     </div>
 };
-
-
 const MyApp = () => {
     return <div>
-        <MyHeader/>
-        <MyMain/>
-        <MyFooter/>
+        <LoginCutre>
+            <MyHeader/>
+            <MyMain/>
+            <MyFooter/>
+        </LoginCutre>
     </div>
 };
 const wrapper = document.getElementById("root");
