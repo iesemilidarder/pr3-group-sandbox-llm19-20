@@ -13,10 +13,10 @@ class TopicsFooter extends React.Component {
 
     render() {
         return (
-            <div>
+            <footer className="footer-copyright text-center py-3">
                  <p>Copyright 2020</p>
                 <p>Spotifi del Grupo 1 to guapo</p>
-            </div>
+            </footer>
         );
     }
 }
