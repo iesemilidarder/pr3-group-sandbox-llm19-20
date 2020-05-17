@@ -9,16 +9,13 @@ export default function HeaderLogin(props) {
         if (data.username && data.password) {
             const {username, password} = data;
             console.log(data);
-            let hi = <h3>Bienvenido {username}</h3>;
-            ReactDOM.render(hi, document.getElementById('logged')
-            );
             if (username === "test" && password === "test") {
                 setLogged(true);
             }
         }
     };
     if (logged) {
-        return (<>{props.children}</>);
+        return (<h3>Bienvenido</h3>);
     } else {
         return (
             <div id="logged">
@@ -28,7 +25,7 @@ export default function HeaderLogin(props) {
                             <label htmlFor="inputEmail" className="sr-only">
                                 Email address
                             </label>
-                            <input name="username" ref={register} id="inputEmail"
+                            <input name="username" defaultValue="test" ref={register} id="inputEmail"
                                    className="form-control" placeholder="Username" required autoFocus/>
                         </div>
                         <div className="col">
