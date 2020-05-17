@@ -4,7 +4,7 @@ import "./index.css";
 
 function MyStudentsFirstReactApp() {
     return <div className="container content">
-        Este spoty mola en pr1
+        Hey
     </div>
 }
 
