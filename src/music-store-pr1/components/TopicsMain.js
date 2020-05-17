@@ -12,7 +12,6 @@ class TopicsMain extends React.Component {
     }
 
 
-
     render() {
         return (
             <div>
@@ -23,7 +22,7 @@ class TopicsMain extends React.Component {
 
                     </input>
                     <div>
-                        <button type="button" className="btn btn-primary" data-toggle="button" aria-pressed="false">
+                        <button  type="button" className="btn btn-primary" data-toggle="button" aria-pressed="false">
                             Buscar
                         </button>
                     </div>
