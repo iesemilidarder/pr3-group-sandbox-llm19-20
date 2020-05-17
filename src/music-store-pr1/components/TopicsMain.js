@@ -11,6 +11,10 @@ class TopicsMain extends React.Component {
     componentDidMount() {
     }
 
+    pulsar() {
+        alert("Hola!![aqui ponen lo que quieran que aparesca al pulsar el boton]");
+    }
+
     render() {
         return (
             <div>
@@ -21,8 +25,7 @@ class TopicsMain extends React.Component {
 
                     </input>
                     <div>
-                        <button type="button" className="btn btn-primary" data-toggle="button" aria-pressed="false"
-                                autocomplete="off">
+                        <button onClick={this.pulsar()} type="button" className="btn btn-primary" data-toggle="button" aria-pressed="false">
                             Buscar
                         </button>
                     </div>
