@@ -15,12 +15,12 @@ class MainAside extends React.Component {
         return (
             <div>
                 <p className="h2 text-muted">Tu Biblioteca</p>
-            <ul className="list-group list-group-flush">
-                <li className="list-group-item">Perfil</li>
-                <li className="list-group-item">Generos</li>
-                <li className="list-group-item">Playlist</li>
-                <li className="list-group-item">Configuracion</li>
-            </ul>
+                <ul className="list-group list-group-flush">
+                    <li className="list-group-item">Perfil</li>
+                    <li className="list-group-item">Generos</li>
+                    <li className="list-group-item">Playlist</li>
+                    <li className="list-group-item">Configuracion</li>
+                </ul>
             </div>
         )
     }
