@@ -92,7 +92,7 @@ class TopicsMain extends React.Component {
     render() {
         return (
             <div>
-                <div className="input-group row">
+                <div className="input-group row mb-4">
                     <div className="input-group-prepend">
                     </div>
                     <input type="text" className="form-control" aria-label="Text input with radio button"
@@ -116,10 +116,10 @@ class TopicsMain extends React.Component {
                     </div>
                 </div>
                 <div className="row">
-                    <main className="col-9">
+                    <main className="col-10 mb-">
                         <SongList/>
                     </main>
-                    <aside className="col-3">
+                    <aside className="col-2">
                         <MainAside/>
                     </aside>
 

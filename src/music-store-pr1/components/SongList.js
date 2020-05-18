@@ -1,4 +1,5 @@
 import React from "react";
+import Player from "react-howler-player";
 
 class SongList extends React.Component {
     constructor(props) {
@@ -9,7 +10,7 @@ class SongList extends React.Component {
     }
 
     componentDidMount() {
-        fetch("https://sandbox-mongo.herokuapp.com/api/rest/v1/songs")
+        fetch("topicsmusic/songs.json")
             .then(data => data.json())
             .then(data => {
                 this.setState({projects: data});
@@ -19,11 +20,20 @@ class SongList extends React.Component {
     render() {
         return (
             <div>
+            <div className="row">
                 {this.state.projects.map(item => {
-                    return<div key={item.id}>
-                        <h6>{item.title}</h6>
+                    return<div key={item.id} className="col mb-4" >
+                        <h5>{item.title}</h5>
+                        <img src={item.image} alt="coso"/>
+                        <Player
+                            src={[item.file]}
+                            isDark={true}
+                            // onTimeUpdate={timeUpdate}
+                        />
                     </div>
                 })}
+            </div>
+
             </div>
         );
     }
