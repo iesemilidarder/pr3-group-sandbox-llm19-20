@@ -82,6 +82,12 @@ class TopicsMain extends React.Component {
     }
 
 
+    musicApi() {
+        fetch(`https://github.com/soundcloud/java-api-wrapper/tree/master/src/examples/java/com/soundcloud/api/examples`)
+        }
+
+
+
     render() {
         return (
             <div>
@@ -93,7 +99,7 @@ class TopicsMain extends React.Component {
 
                     </input>
                     <div>
-                        <button type="button" className="btn btn-outline-primary" data-toggle="button" aria-pressed="false" value="Click para ver mensaje">
+                        <button onClick={this.musicApi} type="button" className="btn btn-outline-primary" data-toggle="button" aria-pressed="false" value="Click para ver mensaje">
                             Buscar
                         </button>
                     </div>
