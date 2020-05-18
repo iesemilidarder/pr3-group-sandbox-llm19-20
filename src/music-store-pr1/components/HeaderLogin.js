@@ -14,7 +14,7 @@ export default function HeaderLogin(props) {
                 .then(data => {
                     data.map(users => {
                         if (username === users.username && password === users.password) {
-                            setLogged(true, username);
+                            setLogged(true);
                         }
                     })
                 })
