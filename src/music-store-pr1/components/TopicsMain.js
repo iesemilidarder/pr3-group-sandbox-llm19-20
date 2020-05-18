@@ -1,6 +1,7 @@
 import React from "react";
 import MainAside from "./MainAside";
 import swal from "sweetalert";
+import SongList from "./SongList";
 
 class TopicsMain extends React.Component {
     constructor(props) {
@@ -116,7 +117,7 @@ class TopicsMain extends React.Component {
                 </div>
                 <div className="row">
                     <main className="col-9">
-                        <h1>Aqui ira la música</h1>
+                        <SongList/>
                     </main>
                     <aside className="col-3">
                         <MainAside/>

@@ -22,9 +22,7 @@ export default function HeaderLogin(props) {
     };
     if (logged) {
         return (
-            <>
                 <h3>Bienvenido {user}</h3>
-            </>
         );
     } else {
         return (
