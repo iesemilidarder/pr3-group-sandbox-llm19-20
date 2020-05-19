@@ -39,9 +39,9 @@ class Prueba extends React.Component {
                 <div>{this.state.resultado}</div>
                 <form>
                     <input id="buscador" name="buscador"/>
-                    <button onClick={this.handleBuscador}>Buscame!</button>
                     <div id="resultado"/>
                 </form>
+                <button onClick={this.handleBuscador}>Buscame!</button>
             </>
         );
     }

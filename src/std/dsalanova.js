@@ -1,13 +1,14 @@
 import React from 'react';
 import ReactDOM from "react-dom";
 
-import Slider from "./2avoid/Slider";
-import PropsComponent from "./2avoid/props";
-import Contador from "./2avoid/Contador";
-import LoginDani from "./2avoid/login";
-import LoginGuay from "./2avoid/LoginGuay";
+//import Slider from "./2avoid/Slider";
+//import PropsComponent from "./2avoid/props";
+//import Contador from "./2avoid/Contador";
+//import LoginDani from "./2avoid/login";
+//import LoginGuay from "./2avoid/LoginGuay";
 //import Anuncio from "./2avoid/Anuncios";
 //import Prueba from "./2avoid/Prueba";
+//import Body from "./2avoid/Body";
 function DaniApp(){
     /*const myImages = ["https://api.adorable.io/avatars/170/JohnDoe.png", "https://api.adorable.io/avatars/170/PepitoPalotes.png", "https://api.adorable.io/avatars/170/HollyMolli.png"];
     const name = ["Juda", "Kevin", "Marc"];
@@ -17,9 +18,10 @@ function DaniApp(){
 
     return(
       <div>
-         {/*<Anuncio/>
-         <Prueba/>*/}
-            dasdasd
+       {/*  <Anuncio/>
+         <Prueba/>
+*/}
+    asdsdasdas
       </div>
     );
 }
