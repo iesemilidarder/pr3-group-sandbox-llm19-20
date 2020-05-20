@@ -1,6 +1,6 @@
 import React from "react";
 import Player from "react-howler-player";
-import "../cursor.css";
+import "./cursor.css";
 
 class SongList extends React.Component {
     constructor(props) {
@@ -34,9 +34,9 @@ class SongList extends React.Component {
                 <div>
                     <Player src={[song]} isDark={true} palying={true}/>
                 </div>
-                <div className="row">
+                <div className="row mt-3">
                     {this.state.projects.map(item => {
-                        return <div className="col mb-4 " key={this.state.key++} onClick={() => this.play(item.file)}>
+                        return <div className="col mb-4 pointer" key={this.state.key++} onClick={() => this.play(item.file)}>
                             <h5>{item.title}</h5>
                             <img src={item.image} alt="coso" />
                         </div>
