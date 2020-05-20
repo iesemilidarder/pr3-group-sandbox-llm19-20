@@ -1,35 +1,35 @@
 import React from 'react';
-import {useForm} from "react-hook-form";
-import ReactDOM from "react-dom";
 import myHeader from "./components/myHeader";
 import myForm from "./components/myForm";
+import myFooter from "./components/myFooter";
+import myBody from "./components/myBody";
+import ReactDOM from "react-dom";
 
-let renderCount = 0;
 
 function App() {
-    const {register, handleSubmit} = useForm();
-    renderCount++;
-
-    const onSubmit = data => console.log(data);
-
     return (
         <div>
-            <myHeader/>
-            <myForm/>
-            <form onSubmit={onSubmit}>
-                <label>Musica</label>
-                <input name="Musica"/>
-
-                <button>Buscar Musica</button>
-
-            </form>
+            <div>
+                <myHeader/>
+                <div>
+                    <myBody/>
+                    <div>
+                    <myForm/>
+                    <div>
+                    <myFooter/>
+                    </div>
+                </div>
+                </div>
+            </div>
         </div>
 
     )
 }
 
-const wrapper = document.getElementById("root");
-wrapper ? ReactDOM.render(<App/>, wrapper) : false;
+ReactDOM.render(
+    <App/>,
+    document.getElementById('root')
+);
 /*
 todo pasar a react
 
