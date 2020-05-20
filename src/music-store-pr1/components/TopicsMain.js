@@ -13,8 +13,10 @@ class TopicsMain extends React.Component {
 
     componentDidMount() {
     }
-    reiniciarBusqueda () {
-        {}
+
+    reiniciarBusqueda() {
+        {
+        }
         swal({
             title: "Estas seguro de reiniciar tus busquedas?",
             text: "Una vez reiniciadas no volverás a tener ninguna búsqueda anterior",
@@ -33,15 +35,15 @@ class TopicsMain extends React.Component {
                     });
                 }
             });
-}
+    }
 
 
 //he puesto esto de peliculas para poner algo mas dinámico y no solo ser de musica y ofrecer así a nuestros clientes un cambio por si están aburrido
     //si es una shit lo quito xD
-    busquedaApi (){
+    busquedaApi() {
         swal({
             title: 'Buscar peliculas si existen, por si quieres cambiar',
-            text:  'Buscar una pelicula, p.e "La La Land".',
+            text: 'Buscar una pelicula, p.e "La La Land".',
             content: "input",
             button: {
                 text: "Buscar!",
@@ -85,8 +87,7 @@ class TopicsMain extends React.Component {
 
     musicApi() {
         fetch(`https://github.com/soundcloud/java-api-wrapper/tree/master/src/examples/java/com/soundcloud/api/examples`)
-        }
-
+    }
 
 
     render() {
@@ -100,17 +101,20 @@ class TopicsMain extends React.Component {
 
                     </input>
                     <div>
-                        <button onClick={this.musicApi} type="button" className="btn btn-outline-primary" data-toggle="button" aria-pressed="false" value="Click para ver mensaje">
+                        <button onClick={this.musicApi} type="button" className="btn btn-outline-primary"
+                                data-toggle="button" aria-pressed="false" value="Click para ver mensaje">
                             Buscar
                         </button>
                     </div>
                     <div>
-                        <button onClick={this.reiniciarBusqueda} type="button" className="btn btn-outline-secondary" data-toggle="button" aria-pressed="false" value="Click para ver mensaje">
+                        <button onClick={this.reiniciarBusqueda} type="button" className="btn btn-outline-secondary"
+                                data-toggle="button" aria-pressed="false" value="Click para ver mensaje">
                             Reiniciar
                         </button>
                     </div>
                     <div>
-                        <button onClick={this.busquedaApi}type="button" className="btn btn-outline-primary" value="Peliculas">
+                        <button onClick={this.busquedaApi} type="button" className="btn btn-outline-primary"
+                                value="Peliculas">
                             Peliculas
                         </button>
                     </div>
@@ -122,9 +126,7 @@ class TopicsMain extends React.Component {
                     <aside className="col-2">
                         <MainAside/>
                     </aside>
-
                 </div>
-
             </div>
 
 

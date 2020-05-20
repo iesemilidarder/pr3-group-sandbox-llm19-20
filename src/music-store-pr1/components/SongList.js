@@ -1,12 +1,16 @@
 import React from "react";
 import Player from "react-howler-player";
+import "../cursor.css";
 
 class SongList extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            projects: []
+            projects: [],
+            key: 1000,
+            player: ""
         };
+        this.play = this.play.bind(this);
     }
 
     componentDidMount() {
@@ -17,23 +21,30 @@ class SongList extends React.Component {
                 console.log(data)
             })
     };
+
+    play(file) {
+        this.setState((prevState, props) => {
+            return {
+                player: file
+            };
+        })
+    };
+
     render() {
+        let song = this.state.player;
         return (
             <div>
-            <div className="row">
-                {this.state.projects.map(item => {
-                    return<div key={item.id} className="col mb-4" >
-                        <h5>{item.title}</h5>
-                        <img src={item.image} alt="coso"/>
-                        <Player
-                            src={[item.file]}
-                            isDark={true}
-                            // onTimeUpdate={timeUpdate}
-                        />
-                    </div>
-                })}
-            </div>
-
+                <div>
+                    <Player src={[song]} isDark={true}/>
+                </div>
+                <div className="row">
+                    {this.state.projects.map(item => {
+                        return <div className="col mb-4 pointer" key={this.state.key++} onClick={() => this.play(item.file)}>
+                            <h5>{item.title}</h5>
+                            <img src={item.image} alt="coso" />
+                        </div>
+                    })}
+                </div>
             </div>
         );
     }

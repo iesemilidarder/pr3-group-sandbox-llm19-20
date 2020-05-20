@@ -14,7 +14,7 @@ class MainAside extends React.Component {
     render() {
         return (
             <div>
-                <p className="h2 text-muted">Tu Biblioteca</p>
+                <p className="h2 text-muted">Biblioteca</p>
                 <ul className="list-group list-group-flush">
                     <li className="list-group-item">Perfil</li>
                     <li className="list-group-item">Generos</li>
