@@ -8,10 +8,11 @@ class SongList extends React.Component {
         this.state = {
             projects: [],
             key: 1000,
-            player: ""
+            player: "/topicsmusic/songs/thrift shop.mp3"
         };
         this.play = this.play.bind(this);
     }
+
 
     componentDidMount() {
         fetch("topicsmusic/songs.json")
@@ -23,23 +24,19 @@ class SongList extends React.Component {
     };
 
     play(file) {
-        this.setState((prevState, props) => {
-            return {
-                player: file
-            };
-        })
-    };
+        this.setState({player: file});
+    }
 
     render() {
         let song = this.state.player;
         return (
             <div>
                 <div>
-                    <Player src={[song]} isDark={true}/>
+                    <Player src={[song]} isDark={true} palying={true}/>
                 </div>
                 <div className="row">
                     {this.state.projects.map(item => {
-                        return <div className="col mb-4 pointer" key={this.state.key++} onClick={() => this.play(item.file)}>
+                        return <div className="col mb-4 " key={this.state.key++} onClick={() => this.play(item.file)}>
                             <h5>{item.title}</h5>
                             <img src={item.image} alt="coso" />
                         </div>
