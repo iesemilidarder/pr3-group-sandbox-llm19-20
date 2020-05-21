@@ -23,7 +23,7 @@ export default function HeaderLogin(props) {
     if (logged) {
         return (
             <div className="mt-2">
-                <p className="text-center"><h3>Bienvenido {user}</h3></p>
+                <h3 className="text-center">Bienvenido {user}</h3>
             </div>
         );
     } else {

@@ -1,6 +1,6 @@
 import React from "react";
 import Player from "react-howler-player";
-import "./cursor.css";
+import "../../../assets/topicsmusic/cursor.css";
 
 class SongList extends React.Component {
     constructor(props) {
@@ -12,7 +12,6 @@ class SongList extends React.Component {
         };
         this.play = this.play.bind(this);
     }
-
 
     componentDidMount() {
         fetch("topicsmusic/songs.json")
