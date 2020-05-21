@@ -1,15 +1,31 @@
 [
   {
     "song": "a",
-    "url": "juda"
+    "url": "https://www.youtube.com/embed/JaPf-MRKITg?autoplay=1"
   },
   {
 
     "song": "b",
-    "url": "juan"
+    "url": "https://www.youtube.com/embed/8N_tupPBtWQ?autoplay=1"
   },
   {
     "song": "c",
-    "url": "pedro"
+    "url": "https://www.youtube.com/embed/-JaeBxYCI9k?autoplay=1"
+  },
+  {
+    "song": "d",
+    "url": "https://www.youtube.com/embed/eACohWVwTOc?autoplay=1"
+  },
+  {
+    "song": "e",
+    "url": "https://www.youtube.com/embed/xRRtOJqB8PU?autoplay=1"
+  },
+  {
+    "song": "f",
+    "url": "https://www.youtube.com/embed/ZbZSe6N_BXs?autoplay=1"
+  },
+  {
+    "song": "g",
+    "url": "https://www.youtube.com/embed/Jvb5v2xvsrA?autoplay=1"
   }
 ]
