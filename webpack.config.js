@@ -153,6 +153,15 @@ module.exports = {
             chunks: ['mflores'],
             filename: "./mflores.html",
         }),
+
+        new HtmlWebPackPlugin({
+            template: "./src/std/aalonso.html",
+            chunks: ['aalonso'],
+            filename: "./aalonso.html"
+        }),
+
+
+
         new HtmlWebPackPlugin({
             template: "./src/prj1/topics.html",
             chunks: ['topics'],
