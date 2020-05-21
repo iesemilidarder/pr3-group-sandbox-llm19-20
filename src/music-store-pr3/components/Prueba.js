@@ -45,16 +45,17 @@ class Prueba extends React.Component {
           this.setState((prevState) => {
               return {currentBanner: prevState.name[randomId]}
           });*/
-        const randomId = Math.floor(Math.random() * (this.props.banners.length - 1));
+        const randomId = Math.floor(Math.random() * (this.props.banners.length ));
         const randomNode =  Math.floor(Math.random() * 5);
         this.setState({currentBanner: this.props.banners[randomId], currentPosition: randomNode});
 
         let o = 1;
         for( o = 0  ; o <= 5; o ++){
             if( document.getElementById(""+ o +"").id == this.state.currentPosition ){
-                console.log("Seleccionado" + this.state.currentPosition )
+                console.log("Seleccionado" + this.state.currentPosition );
+                document.getElementById(""+o+"").style.display = "block";
             }else{
-                document.getElementById(""+o+"").src = "";
+                document.getElementById(""+o+"").style.display = "none";
                 console.log("no iguales");
                 console.log(document.getElementById(""+ o +"").id );
 
@@ -67,7 +68,7 @@ class Prueba extends React.Component {
     // CUANDO PULSO EL BOTON POR LO QUE SE VE EL DIV CON LA CANCION EN UNA MILESIMA DE SEGUNDO xD
     // Aqui LO DE song EN VEZ DE NOMBRES SERÁN url de YOUTUBE... Mirar song.json EN assets -> prj3 -> data
     handleBuscador(){
-        let j = 1;
+        let j = 0;
         for( j = 0  ; j <  Object.keys(this.state.data).length ; j ++){
             if(document.getElementById("buscador").value === this.state.data[j].song){
                 this.setState({resultado: this.state.data[j].song, url: this.state.data[j].url});
@@ -142,19 +143,19 @@ class Prueba extends React.Component {
                         </div>
                         <div className="row" style={{paddingTop: 25}}>
                             <div className="col-md-3">
-                                <p>sdasdasdasdas</p>
+                                <p>Género</p>
                                 <img id="2" src={currentBanner} alt="Imagen" width={120} height={120}/>
                             </div>
                             <div className="col-md-3">
-                                <p>sdasdasdasdas</p>
+                                <p>Género</p>
                                 <img id="3" src={currentBanner} alt="Imagen" width={120} height={120}/>
                             </div>
                             <div className="col-md-3">
-                                <p>sdasdasdasdas</p>
+                                <p>Género</p>
                                 <img id="4" src={currentBanner} alt="Imagen" width={120} height={120}/>
                             </div>
                             <div className="col-md-3">
-                                <p>sdasdasdasdas</p>
+                                <p>Género</p>
                                 <img id="5" src={currentBanner} alt="Imagen" width={120} height={120}/>
                             </div>
                         </div>
