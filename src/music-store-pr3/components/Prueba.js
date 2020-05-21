@@ -143,19 +143,19 @@ class Prueba extends React.Component {
                         </div>
                         <div className="row" style={{paddingTop: 25}}>
                             <div className="col-md-3">
-                                <p>sdasdasdasdas</p>
+                                <p>Género</p>
                                 <img id="2" src={currentBanner} alt="Imagen" width={120} height={120}/>
                             </div>
                             <div className="col-md-3">
-                                <p>sdasdasdasdas</p>
+                                <p>Género</p>
                                 <img id="3" src={currentBanner} alt="Imagen" width={120} height={120}/>
                             </div>
                             <div className="col-md-3">
-                                <p>sdasdasdasdas</p>
+                                <p>Género</p>
                                 <img id="4" src={currentBanner} alt="Imagen" width={120} height={120}/>
                             </div>
                             <div className="col-md-3">
-                                <p>sdasdasdasdas</p>
+                                <p>Género</p>
                                 <img id="5" src={currentBanner} alt="Imagen" width={120} height={120}/>
                             </div>
                         </div>
