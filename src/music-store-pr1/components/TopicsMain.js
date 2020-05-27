@@ -120,12 +120,7 @@ class TopicsMain extends React.Component {
                     </div>
                 </div>
                 <div className="row">
-                    <main className="col-10 mb-">
-                        <SongList/>
-                    </main>
-                    <aside className="col-2">
-                        <MainAside/>
-                    </aside>
+                    <SongList/>
                 </div>
             </div>
 
