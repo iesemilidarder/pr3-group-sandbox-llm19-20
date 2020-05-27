@@ -12,7 +12,7 @@ class SongList extends React.Component {
             Currentsong: 0,
             playing: false,
             volume: 1.0,
-            CurrentBtn: "btn btn-light"
+            CurrentBtn: "btn btn-light",
 
         };
         this.addList = this.addList.bind(this);
@@ -39,6 +39,8 @@ class SongList extends React.Component {
         this.state.player.push(file);
         console.log(this.state.list);
         console.log(this.state.player);
+        //Es solo para que forzar el render y que haga el map de la Lista de Reproducción
+        this.forceUpdate();
     };
 
     next() {
