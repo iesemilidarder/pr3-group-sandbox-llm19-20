@@ -1,4 +1,4 @@
-import React, {Component} from 'react'
+import React from 'react'
 import ReactHowler from 'react-howler'
 
 class SongList extends React.Component {
@@ -12,8 +12,6 @@ class SongList extends React.Component {
             Currentsong: 0,
             playing: false,
             volume: 1.0,
-            CurrentBtn: "btn btn-light",
-
         };
         this.addList = this.addList.bind(this);
         this.next = this.next.bind(this);
@@ -33,12 +31,9 @@ class SongList extends React.Component {
             });
     };
 
-
     addList(title, file) {
         this.state.list.push(title);
         this.state.player.push(file);
-        console.log(this.state.list);
-        console.log(this.state.player);
         //Es solo para que forzar el render y que haga el map de la Lista de Reproducción
         this.forceUpdate();
     };
@@ -72,7 +67,6 @@ class SongList extends React.Component {
         })
     };
 
-
     render() {
         let song = this.state.player;
         let number = this.state.Currentsong;
@@ -82,31 +76,32 @@ class SongList extends React.Component {
                     <div>
                         <ReactHowler autoPlay src={[song[number]]}
                                      playing={this.state.playing}
-                                     volume={this.state.volume}
-                        />
+                                     volume={this.state.volume}/>
                     </div>
-                    <div>
-                        <div className='volume'>
-                            <label>
-                                Volume:
+                    <div className="row">
+                        <div className='volume col-6'>
+                            <label> Volume:
                                 <span className='slider-container'>
-              <input
-                  type='range'
-                  min='0'
-                  max='1'
-                  step='.05'
-                  value={this.state.volume}
-                  onChange={e => this.setState({volume: parseFloat(e.target.value)})}
-                  style={{verticalAlign: 'bottom'}}
-              />
-            </span>
+                                  <input
+                                      type='range'
+                                      min='0'
+                                      max='1'
+                                      step='.05'
+                                      value={this.state.volume}
+                                      onChange={e => this.setState({volume: parseFloat(e.target.value)})}
+                                      style={{verticalAlign: 'bottom'}}
+                                  />
+                                </span>
                                 {this.state.volume.toFixed(2)}
                             </label>
+                            <button onClick={this.prev}>Previous</button>
+                            <button onClick={this.handlePlay}>Play</button>
+                            <button onClick={this.handlePause}>Pause</button>
+                            <button onClick={this.next}>Next</button>
                         </div>
-                        <button onClick={this.prev}>Previous</button>
-                        <button onClick={this.handlePlay}>Play</button>
-                        <button onClick={this.handlePause}>Pause</button>
-                        <button onClick={this.next}>Next</button>
+                        <div className="col-6">
+                            <h4>Estas escuchando {this.state.list[number]}</h4>
+                        </div>
                     </div>
                     <div className="row mt-3">
                         {this.state.projects.map(item => {
@@ -121,7 +116,8 @@ class SongList extends React.Component {
                 <aside className="col-2">
                     <h4>Lista de Reproducción</h4>
                     {this.state.list.map((song, i) => {
-                        return <button key={i} onClick={() => this.listClick(i)} type="button" className={this.state.CurrentBtn}>{song}</button>
+                        return <button key={i} onClick={() => this.listClick(i)} type="button"
+                                       className="btn btn-light">{song}</button>
                     })}
                 </aside>
             </main>
