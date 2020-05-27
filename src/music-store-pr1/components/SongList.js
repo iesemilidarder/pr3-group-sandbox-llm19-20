@@ -10,16 +10,16 @@ class SongList extends React.Component {
             player: [],
             list: [],
             Currentsong: 0,
-            playing: false,
+            playing: true,
             volume: 1.0,
+            play: "Pause",
+            playColor: "btn btn-warning btn-lg"
         };
         this.addList = this.addList.bind(this);
         this.next = this.next.bind(this);
         this.prev = this.prev.bind(this);
         this.listClick = this.listClick.bind(this);
         this.handlePlay = this.handlePlay.bind(this);
-        this.handlePause = this.handlePause.bind(this);
-
     }
 
     componentDidMount() {
@@ -39,16 +39,19 @@ class SongList extends React.Component {
     };
 
     next() {
-        this.setState((prevState) => {
-            return {Currentsong: prevState.Currentsong + 1}
-        })
-
+        if (this.state.Currentsong < this.state.player.length - 1 ) {
+            this.setState((prevState) => {
+                return {Currentsong: prevState.Currentsong + 1}
+            })
+        }
     };
 
     prev() {
-        this.setState((prevState) => {
-            return {Currentsong: prevState.Currentsong - 1}
-        })
+        if (this.state.Currentsong > 0) {
+            this.setState((prevState) => {
+                return {Currentsong: prevState.Currentsong - 1}
+            })
+        }
     }
 
     listClick(number) {
@@ -56,16 +59,13 @@ class SongList extends React.Component {
     }
 
     handlePlay() {
-        this.setState({
-            playing: true
-        })
+        if (this.state.playing === true) {
+            this.setState({playing: false, play: "Play", playColor: "btn btn-success btn-lg"});
+        } else {
+            this.setState({playing: true, play: "Pause", playColor: "btn btn-warning btn-lg"});
+        }
     }
 
-    handlePause() {
-        this.setState({
-            playing: false
-        })
-    };
 
     render() {
         let song = this.state.player;
@@ -74,13 +74,24 @@ class SongList extends React.Component {
             <main className="row">
                 <div className="col-10">
                     <div>
-                        <ReactHowler autoPlay src={[song[number]]}
+                        <ReactHowler src={[song[number]]}
                                      playing={this.state.playing}
                                      volume={this.state.volume}/>
                     </div>
-                    <div className="row">
-                        <div className='volume col-6'>
-                            <label> Volume:
+                    <div className="row mb-4">
+                        <div className='volume col-5'>
+                            <label className="d-flex justify-content-between">
+                                <button className="btn btn-secondary btn-lg" onClick={this.prev}>Previous</button>
+                                <button className={this.state.playColor}
+                                        onClick={this.handlePlay}>{this.state.play}</button>
+                                <button className="btn btn-secondary btn-lg" onClick={this.next}>Next</button>
+                            </label>
+                        </div>
+                        <div className="col-4">
+                            <h2 className="text-center">{this.state.list[number]}</h2>
+                        </div>
+                        <div className="col-3">
+                            <label className="d-flex justify-content-center"> Volume:
                                 <span className='slider-container'>
                                   <input
                                       type='range'
@@ -94,13 +105,6 @@ class SongList extends React.Component {
                                 </span>
                                 {this.state.volume.toFixed(2)}
                             </label>
-                            <button onClick={this.prev}>Previous</button>
-                            <button onClick={this.handlePlay}>Play</button>
-                            <button onClick={this.handlePause}>Pause</button>
-                            <button onClick={this.next}>Next</button>
-                        </div>
-                        <div className="col-6">
-                            <h4>Estas escuchando {this.state.list[number]}</h4>
                         </div>
                     </div>
                     <div className="row mt-3">
