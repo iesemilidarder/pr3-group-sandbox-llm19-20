@@ -9,10 +9,10 @@ class SongList extends React.Component {
             key: 1000,
             player: [],
             list: [],
-            Currentsong: 0,
+            CurrentSong: 0,
             playing: true,
             volume: 1.0,
-            play: "Pause",
+            play: "/topicsmusic/pause.png",
             playColor: "btn btn-warning btn-lg"
         };
         this.addList = this.addList.bind(this);
@@ -32,44 +32,47 @@ class SongList extends React.Component {
     };
 
     addList(title, file) {
-        this.state.list.push(title);
-        this.state.player.push(file);
-        //Es solo para que forzar el render y que haga el map de la Lista de Reproducción
-        this.forceUpdate();
+        if (file === this.state.player[this.state.player.length - 1]) {
+            console.log("no")
+        } else {
+            this.state.list.push(title);
+            this.state.player.push(file);
+            //Es solo para que forzar el render y que haga el map de la Lista de Reproducción
+            this.forceUpdate();
+        }
     };
 
     next() {
-        if (this.state.Currentsong < this.state.player.length - 1 ) {
+        if (this.state.CurrentSong < this.state.player.length - 1) {
             this.setState((prevState) => {
-                return {Currentsong: prevState.Currentsong + 1}
+                return {CurrentSong: prevState.CurrentSong + 1}
             })
         }
     };
 
     prev() {
-        if (this.state.Currentsong > 0) {
+        if (this.state.CurrentSong > 0) {
             this.setState((prevState) => {
-                return {Currentsong: prevState.Currentsong - 1}
+                return {CurrentSong: prevState.CurrentSong - 1}
             })
         }
     }
 
     listClick(number) {
-        this.setState({Currentsong: number});
+        this.setState({CurrentSong: number});
     }
 
     handlePlay() {
         if (this.state.playing === true) {
-            this.setState({playing: false, play: "Play", playColor: "btn btn-success btn-lg"});
+            this.setState({playing: false, play: "/topicsmusic/play.png", playColor: "btn btn-success btn-lg"});
         } else {
-            this.setState({playing: true, play: "Pause", playColor: "btn btn-warning btn-lg"});
+            this.setState({playing: true, play: "/topicsmusic/pause.png", playColor: "btn btn-warning btn-lg"});
         }
     }
 
-
     render() {
         let song = this.state.player;
-        let number = this.state.Currentsong;
+        let number = this.state.CurrentSong;
         return (
             <main className="row">
                 <div className="col-10">
@@ -81,30 +84,35 @@ class SongList extends React.Component {
                     <div className="row mb-4">
                         <div className='volume col-5'>
                             <label className="d-flex justify-content-between">
-                                <button className="btn btn-secondary btn-lg" onClick={this.prev}>Previous</button>
-                                <button className={this.state.playColor}
-                                        onClick={this.handlePlay}>{this.state.play}</button>
-                                <button className="btn btn-secondary btn-lg" onClick={this.next}>Next</button>
+                                <button className="btn btn-primary btn-lg" onClick={this.prev}>
+                                    <img src="/topicsmusic/prev.png" height="40" alt="play"/>
+                                </button>
+                                <button className={this.state.playColor} onClick={this.handlePlay}>
+                                    <img src={this.state.play} height="40" alt="play"/>
+                                </button>
+                                <button className="btn btn-primary btn-lg" onClick={this.next}>
+                                    <img src="/topicsmusic/next.png" height="40" alt="play"/>
+                                </button>
                             </label>
                         </div>
                         <div className="col-4">
                             <h2 className="text-center">{this.state.list[number]}</h2>
                         </div>
-                        <div className="col-3">
-                            <label className="d-flex justify-content-center"> Volume:
-                                <span className='slider-container'>
-                                  <input
-                                      type='range'
-                                      min='0'
-                                      max='1'
-                                      step='.05'
-                                      value={this.state.volume}
-                                      onChange={e => this.setState({volume: parseFloat(e.target.value)})}
-                                      style={{verticalAlign: 'bottom'}}
-                                  />
-                                </span>
-                                {this.state.volume.toFixed(2)}
-                            </label>
+                        <div className="col-3 ">
+                            <div className="row d-flex justify-content-center">
+                                <h6>Volume</h6>
+                                <h6 className="ml-3">{this.state.volume.toFixed(2)}</h6>
+                            </div>
+                            <div className="row d-flex justify-content-center">
+                                <input
+                                    type='range'
+                                    min='0'
+                                    max='1'
+                                    step='.05'
+                                    value={this.state.volume}
+                                    onChange={e => this.setState({volume: parseFloat(e.target.value)})}
+                                    style={{verticalAlign: 'bottom'}}/>
+                            </div>
                         </div>
                     </div>
                     <div className="row mt-3">
