@@ -6,22 +6,17 @@ import ReactDOM from "react-dom";
 //import Contador from "./2avoid/Contador";
 //import LoginDani from "./2avoid/login";
 //import LoginGuay from "./2avoid/LoginGuay";
-//import Anuncio from "./2avoid/Anuncios";
+
 //import Prueba from "./2avoid/Prueba";
+//import Header from "./2avoid/Header";
+
 //import Body from "./2avoid/Body";
 function DaniApp(){
-    /*const myImages = ["https://api.adorable.io/avatars/170/JohnDoe.png", "https://api.adorable.io/avatars/170/PepitoPalotes.png", "https://api.adorable.io/avatars/170/HollyMolli.png"];
-    const name = ["Juda", "Kevin", "Marc"];
-    const Title = () =>{
-      return <div> Componente con hooks</div>
-    };*/
-
     return(
       <div>
-       {/*  <Anuncio/>
-         <Prueba/>
-*/}
-    asdsdasdas
+       {/*   <Header/>
+          <Prueba/>*/}
+          dasdasdsa
       </div>
     );
 }
