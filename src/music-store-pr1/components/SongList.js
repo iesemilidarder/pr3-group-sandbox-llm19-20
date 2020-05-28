@@ -129,7 +129,7 @@ class SongList extends React.Component {
                     <h4>Lista de Reproducción</h4>
                     {this.state.list.map((song, i) => {
                         return <button key={i} onClick={() => this.listClick(i)} type="button"
-                                       className="btn btn-light">{song}</button>
+                                       className="btn btn-secondary col-12 mb-2">{song}</button>
                     })}
                 </aside>
             </main>
