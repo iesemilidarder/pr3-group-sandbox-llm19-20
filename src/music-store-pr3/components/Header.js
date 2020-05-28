@@ -1,5 +1,5 @@
 import React from "react";
-
+import Clock from "./Reloj";
 
 class Header extends React.Component {
     constructor(props) {
@@ -17,44 +17,62 @@ class Header extends React.Component {
             .then(users => users.json())
             .then(users => {
                 this.setState({users: users});
-                console.log(this.state.users);
+                //console.log(this.state.users);
             });
     }
 
     Loggin(){
-        let h = 1;
-        const {users} = this.state;
-        for( h = 0  ; h <= Object.keys(users).length ; h ++){
-            if(document.getElementById("usr").value === users[h].username && document.getElementById("pass").value === users[h].password){
-                this.setState({ name: "Sesion iniciada como"+ " " + users[h].username});
+        const {users, name} = this.state;
+        users.map( item => {
+            if (item.username === document.getElementById("usr").value && item.password === document.getElementById("pass").value ){
+                this.setState({ name: "Sesion iniciada como"+ " " + item.username, loggin: true});
             }
-        }
+        });
     }
 
     render() {
-        return (
-            <>
-                <div className="row">
-                    <div className="col-md-9">
-                        <div className="row">
-                            <div className="col-md-10" style={{float: "left"}}>
-                                <form>
-                                    <label>Usuario:<input id="usr" name="usr" type="text"/></label>
-                                    <label style={{marginLeft: 15}}>Contraseña:<input id="pass" name="pass"
-                                                                                      type="text" required={"pass"}/></label>
-                                </form>
-                            </div>
-                            <div className="col-md-2">
-                                <button onClick={this.Loggin}>Loggear</button>
-                            </div>
+        if(this.state.loggin){
+            const {name} = this.state;
+           return(
+               <div>
+                   <div className="row">
+                       <div className="col-md-5">
+                           <h3 id="user">{name}</h3>
+                       </div>
+                       <div className="col-md-7">
+                           <Clock/>
+                       </div>
+                   </div>
+                   <h4>Bienvenido :)</h4>
+               </div>
+           )
+        }else{
+            return (
+                <>
+                    <div className="row">
+                        <div className="col-md-9">
+                            <div className="row">
+                                <div className="col-md-10" style={{float: "left"}}>
+                                    <form>
+                                        <label>Usuario:<input id="usr" name="usr" type="text"/></label>
+                                        <label style={{marginLeft: 15}}>Contraseña:<input id="pass" name="pass"
+                                                                                          type="text" required={"pass"}/></label>
+                                    </form>
+                                </div>
+                                <div className="col-md-2">
+                                    <button onClick={this.Loggin}>Loggear</button>
+                                </div>
 
+                            </div>
+                        </div>
+                        <div className="col-md-3">
+                            <Clock/>
                         </div>
                     </div>
-                    <h3 id="user" className="col-md-3">{this.state.name}</h3>
+                </>
+            );
+        }
 
-                </div>
-            </>
-        );
     }
 }
 

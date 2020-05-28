@@ -1,6 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
-
+import Player from "react-howler-player";
 
 class Prueba extends React.Component {
     constructor(props) {
@@ -20,12 +20,12 @@ class Prueba extends React.Component {
         };
         this.handleBuscador = this.handleBuscador.bind(this);
     }
-    // duda para usar shouldComponentUpdate (?)
     componentDidMount() {
         fetch("prj3/data/songs.json")
             .then(data => data.json())
             .then(data => {
                 this.setState({data: data});
+                console.log(data);
             });
         if (this.state.interval === 1) {
             this.intervalID = setInterval(
@@ -33,7 +33,7 @@ class Prueba extends React.Component {
                 1000 * this.state.interval
             );
         }
-
+        document.getElementById("lista").style.display = "none";
     }
 
     componentWillUnmount() {
@@ -52,48 +52,53 @@ class Prueba extends React.Component {
         let o = 1;
         for( o = 0  ; o <= 5; o ++){
             if( document.getElementById(""+ o +"").id == this.state.currentPosition ){
-                console.log("Seleccionado" + this.state.currentPosition );
+                //console.log("Seleccionado" + this.state.currentPosition );
                 document.getElementById(""+o+"").style.display = "block";
             }else{
                 document.getElementById(""+o+"").style.display = "none";
-                console.log("no iguales");
-                console.log(document.getElementById(""+ o +"").id );
+                //console.log("no iguales");
+                //console.log(document.getElementById(""+ o +"").id );
 
             }
         }
-        console.log("------------------------------")
+        //console.log("------------------------------")
     }
 
-    // BUSCA LO QUE HAY EN DATA Y COMPRUEBA SI LO ESCRITO ES IGUAL QUE EL NOMBRE DE UNA CANCIÓN, PORBLEMA, RENDERIZA
-    // CUANDO PULSO EL BOTON POR LO QUE SE VE EL DIV CON LA CANCION EN UNA MILESIMA DE SEGUNDO xD
-    // Aqui LO DE song EN VEZ DE NOMBRES SERÁN url de YOUTUBE... Mirar song.json EN assets -> prj3 -> data
+    // BUSCA LO QUE HAY EN DATA Y COMPRUEBA SI LO ESCRITO ES IGUAL QUE EL NOMBRE DE UNA CANCIÓN
     handleBuscador(){
+        const {data} = this.state;
         let j = 0;
-        for( j = 0  ; j <  Object.keys(this.state.data).length ; j ++){
-            if(document.getElementById("buscador").value === this.state.data[j].song){
-                this.setState({resultado: this.state.data[j].song, url: this.state.data[j].url});
+        for( j = 0  ; j <  Object.keys(data).length ; j ++){
+            if(document.getElementById("buscador").value === data[j].song){
+                this.setState({resultado: data[j].song, url: data[j].url});
 
             }else{
 
             }
         }
     }
+
+    lista(){
+        document.getElementById("lista").style.display = "block";
+    }
+
     render() {
-        const {currentBanner} = this.state;
+        const {currentBanner,lista,url,data} = this.state;
         return (
             <div className="container" style={{paddingTop: 50}}>
                 <div className="row">
                     <div className="col-md-6" >
-                        <form>
-                            <input id="buscador" name="buscador"/>
-                            <div id="resultado"/>
-                        </form>
-                        <button onClick={this.handleBuscador}>Buscame!</button>
+                        <div className="row">
+                            <form>
+                                <input id="buscador" name="buscador"/>
+                                <div id="resultado"/>
+                            </form>
+                            <button onClick={this.handleBuscador}>Buscame!</button>
+                            <button onClick={this.lista}>Lista de canciones!!</button>
+                        </div>
                         <div   style={{paddingTop: 50}}>Cancion elegida:{this.state.resultado}</div>
                         <div>Url:{this.state.url}</div>
-                        <iframe width="450" height="315" src={this.state.url} frameBorder="0"
-                                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                                allowFullScreen/>
+                        <Player src={url} isDark={true}/>
                     </div>
                     <div className="col-md-6">
                         <h1>La página que has estado deseando</h1>
@@ -162,7 +167,17 @@ class Prueba extends React.Component {
                     </div>
 
                 </div>
-
+                <div className="row">
+                    <div id="lista">
+                        <h3>Nombre de canciones:</h3>
+                        {   data.map((item, index) => {
+                            return(
+                                    <ul className="row" key={`musica${index}`}>
+                                        <li className="col-md-1">{item.song}</li>
+                                    </ul>
+                            )})}
+                    </div>
+                </div>
             </div>
         );
     }
