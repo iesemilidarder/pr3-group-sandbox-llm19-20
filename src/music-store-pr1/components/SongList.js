@@ -81,7 +81,7 @@ class SongList extends React.Component {
                                      playing={this.state.playing}
                                      volume={this.state.volume}/>
                     </div>
-                    <div className="row mb-4">
+                    <div className="row mb-5">
                         <div className='volume col-5'>
                             <label className="d-flex justify-content-between">
                                 <button className="btn btn-primary btn-lg" onClick={this.prev}>
@@ -95,10 +95,10 @@ class SongList extends React.Component {
                                 </button>
                             </label>
                         </div>
-                        <div className="col-4">
-                            <h2 className="text-center">{this.state.list[number]}</h2>
+                        <div className="col-5">
+                            <h3 className="text-center">{this.state.list[number]}</h3>
                         </div>
-                        <div className="col-3 ">
+                        <div className="col-2 ">
                             <div className="row d-flex justify-content-center">
                                 <h6>Volume</h6>
                                 <h6 className="ml-3">{this.state.volume.toFixed(2)}</h6>
@@ -120,7 +120,7 @@ class SongList extends React.Component {
                             return <div className="col mb-4 pointer" key={this.state.key++}
                                         onClick={() => this.addList(item.title, item.file)}>
                                 <h5>{item.title}</h5>
-                                <img src={item.image}  alt="coso"/>
+                                <img src={item.image}  alt="coso" width="280" height="200"/>
                             </div>
                         })}
                     </div>

@@ -9,92 +9,99 @@
   {
     "title": "Thriller",
     "file": "/topicsmusic/songs/pop.mp3",
-    "image": "/topicsmusic/songs/michael.png",
+    "image": "/topicsmusic/songs/michael.jpg",
     "author": "El Checo",
     "style": "pop"
   },
   {
     "title": "Bangarang",
     "file": "/topicsmusic/songs/electro.mp3",
-    "image": "/topicsmusic/songs/bang.png",
+    "image": "/topicsmusic/songs/bang.jpg",
     "author": "Shrelex",
     "style": "elec"
   },
   {
     "title": "Novena Sinfonia",
     "file": "/topicsmusic/songs/clasic.mp3",
-    "image": "/topicsmusic/songs/beto.png",
+    "image": "/topicsmusic/songs/beto.jpg",
     "author": "Bechoven",
     "style": "clasic"
   },
   {
     "title": "Jailhouse Rock",
     "file": "/topicsmusic/songs/rock.mp3",
-    "image": "/topicsmusic/songs/elvis.png",
+    "image": "/topicsmusic/songs/elvis.jpg",
     "author": "Los Chunguitos",
     "style": "rock"
   },
   {
     "title": "Don't stop believing",
     "file": "/topicsmusic/songs/journey.mp3",
-    "image": "/topicsmusic/songs/journey.png",
+    "image": "/topicsmusic/songs/journey.jpg",
     "author": "Journey",
     "style": "rockpop"
   },
   {
     "title": "Boulevard of Broken Dreams",
     "file": "/topicsmusic/songs/greenday.mp3",
-    "image": "/topicsmusic/songs/greenday.png",
+    "image": "/topicsmusic/songs/greenday.jpg",
     "author": "greenday",
     "style": "rock"
   },
   {
     "title": "What's up",
     "file": "/topicsmusic/songs/4nb.mp3",
-    "image": "/topicsmusic/songs/4nb.png",
+    "image": "/topicsmusic/songs/4nb.jpg",
     "author": "4 non blondes",
     "style": "rock alternativo"
   },
   {
     "title": "Take on me",
     "file": "/topicsmusic/songs/a-ha.mp3",
-    "image": "/topicsmusic/songs/a-ha.png",
+    "image": "/topicsmusic/songs/a-ha.jpg",
     "author": "a-ha",
     "style": "pop"
   },
   {
     "title": "Take me to church",
     "file": "/topicsmusic/songs/hozier.mp3",
-    "image": "/topicsmusic/songs/hozier.png",
+    "image": "/topicsmusic/songs/hozier.jpg",
     "author": "hozier",
     "style": "pop"
   },
   {
     "title": "Believe",
     "file": "/topicsmusic/songs/imagine.mp3",
-    "image": "/topicsmusic/songs/Imagine.png",
+    "image": "/topicsmusic/songs/Imagine.jpg",
     "author": "imagine dragons",
     "style": "pop"
   },
   {
     "title": "Every breath you take",
     "file": "/topicsmusic/songs/police.mp3",
-    "image": "/topicsmusic/songs/police.png",
+    "image": "/topicsmusic/songs/police.jpg",
     "author": "the police",
     "style": "rock"
   },
   {
     "title": "Superstition",
     "file": "/topicsmusic/songs/stevie.mp3",
-    "image": "/topicsmusic/songs/stevie.png",
+    "image": "/topicsmusic/songs/stevie.jpg",
     "author": "stevie wonder",
     "style": "pop"
   },
   {
     "title": "Ride",
     "file": "/topicsmusic/songs/top.mp3",
-    "image": "/topicsmusic/songs/top.png",
+    "image": "/topicsmusic/songs/top.jpg",
     "author": "21 pilots",
     "style": "rock alternativo"
+  },
+  {
+    "title": "My Dick",
+    "file": "/topicsmusic/songs/littlebig.mp3",
+    "image": "/topicsmusic/songs/littlebig.jpg",
+    "author": "Little Big",
+    "style": "pop"
   }
 ]
