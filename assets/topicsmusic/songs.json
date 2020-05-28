@@ -9,99 +9,92 @@
   {
     "title": "Thriller",
     "file": "/topicsmusic/songs/pop.mp3",
-    "image": "/topicsmusic/songs/POP.png",
+    "image": "/topicsmusic/songs/michael.png",
     "author": "El Checo",
     "style": "pop"
   },
   {
     "title": "Bangarang",
     "file": "/topicsmusic/songs/electro.mp3",
-    "image": "/topicsmusic/songs/ELECTRO.png",
+    "image": "/topicsmusic/songs/bang.png",
     "author": "Shrelex",
     "style": "elec"
   },
   {
     "title": "Novena Sinfonia",
     "file": "/topicsmusic/songs/clasic.mp3",
-    "image": "/topicsmusic/songs/CLASIC.png",
+    "image": "/topicsmusic/songs/beto.png",
     "author": "Bechoven",
     "style": "clasic"
   },
   {
     "title": "Jailhouse Rock",
     "file": "/topicsmusic/songs/rock.mp3",
-    "image": "/topicsmusic/songs/ROCK.png",
+    "image": "/topicsmusic/songs/elvis.png",
     "author": "Los Chunguitos",
     "style": "rock"
   },
   {
-    "title": "Novena Sinfonia",
-    "file": "/topicsmusic/songs/clasic.mp3",
-    "image": "/topicsmusic/songs/CLASIC.png",
-    "author": "Bechoven",
-    "style": "clasic"
+    "title": "Don't stop believing",
+    "file": "/topicsmusic/songs/journey.mp3",
+    "image": "/topicsmusic/songs/journey.png",
+    "author": "Journey",
+    "style": "rockpop"
   },
   {
-    "title": "Thriller",
-    "file": "/topicsmusic/songs/pop.mp3",
-    "image": "/topicsmusic/songs/POP.png",
-    "author": "El Checo",
-    "style": "pop"
-  },
-  {
-    "title": "Jailhouse Rock",
-    "file": "/topicsmusic/songs/rock.mp3",
-    "image": "/topicsmusic/songs/ROCK.png",
-    "author": "Los Chunguitos",
+    "title": "Boulevard of Broken Dreams",
+    "file": "/topicsmusic/songs/greenday.mp3",
+    "image": "/topicsmusic/songs/greenday.png",
+    "author": "greenday",
     "style": "rock"
   },
   {
-    "title": "Bangarang",
-    "file": "/topicsmusic/songs/electro.mp3",
-    "image": "/topicsmusic/songs/ELECTRO.png",
-    "author": "Shrelex",
-    "style": "elec"
+    "title": "What's up",
+    "file": "/topicsmusic/songs/4nb.mp3",
+    "image": "/topicsmusic/songs/4nb.png",
+    "author": "4 non blondes",
+    "style": "rock alternativo"
   },
   {
-    "title": "Thriller",
-    "file": "/topicsmusic/songs/pop.mp3",
-    "image": "/topicsmusic/songs/POP.png",
-    "author": "El Checo",
+    "title": "Take on me",
+    "file": "/topicsmusic/songs/a-ha.mp3",
+    "image": "/topicsmusic/songs/a-ha.png",
+    "author": "a-ha",
     "style": "pop"
   },
   {
-    "title": "Bangarang",
-    "file": "/topicsmusic/songs/electro.mp3",
-    "image": "/topicsmusic/songs/ELECTRO.png",
-    "author": "Shrelex",
-    "style": "elec"
+    "title": "Take me to church",
+    "file": "/topicsmusic/songs/hozier.mp3",
+    "image": "/topicsmusic/songs/hozier.png",
+    "author": "hozier",
+    "style": "pop"
   },
   {
-    "title": "Novena Sinfonia",
-    "file": "/topicsmusic/songs/clasic.mp3",
-    "image": "/topicsmusic/songs/CLASIC.png",
-    "author": "Bechoven",
-    "style": "clasic"
+    "title": "Believe",
+    "file": "/topicsmusic/songs/imagine.mp3",
+    "image": "/topicsmusic/songs/Imagine.png",
+    "author": "imagine dragons",
+    "style": "pop"
   },
   {
-    "title": "Jailhouse Rock",
-    "file": "/topicsmusic/songs/rock.mp3",
-    "image": "/topicsmusic/songs/ROCK.png",
-    "author": "Los Chunguitos",
+    "title": "Every breath you take",
+    "file": "/topicsmusic/songs/police.mp3",
+    "image": "/topicsmusic/songs/police.png",
+    "author": "the police",
     "style": "rock"
   },
   {
-    "title": "Novena Sinfonia",
-    "file": "/topicsmusic/songs/clasic.mp3",
-    "image": "/topicsmusic/songs/CLASIC.png",
-    "author": "Bechoven",
-    "style": "clasic"
+    "title": "Superstition",
+    "file": "/topicsmusic/songs/stevie.mp3",
+    "image": "/topicsmusic/songs/stevie.png",
+    "author": "stevie wonder",
+    "style": "pop"
   },
   {
-    "title": "Thriller",
-    "file": "/topicsmusic/songs/pop.mp3",
-    "image": "/topicsmusic/songs/POP.png",
-    "author": "El Checo",
-    "style": "pop"
+    "title": "Ride",
+    "file": "/topicsmusic/songs/top.mp3",
+    "image": "/topicsmusic/songs/top.png",
+    "author": "21 pilots",
+    "style": "rock alternativo"
   }
 ]

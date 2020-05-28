@@ -120,7 +120,7 @@ class SongList extends React.Component {
                             return <div className="col mb-4 pointer" key={this.state.key++}
                                         onClick={() => this.addList(item.title, item.file)}>
                                 <h5>{item.title}</h5>
-                                <img src={item.image} alt="coso"/>
+                                <img src={item.image}  alt="coso"/>
                             </div>
                         })}
                     </div>
