@@ -33,7 +33,7 @@ class SongList extends React.Component {
 
     addList(title, file) {
         if (file === this.state.player[this.state.player.length - 1]) {
-            console.log("no")
+            this.setState({CurrentSong: this.state.player.length - 1});
         } else {
             this.state.list.push(title);
             this.state.player.push(file);
