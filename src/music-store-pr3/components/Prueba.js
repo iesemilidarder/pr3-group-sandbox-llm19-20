@@ -40,17 +40,13 @@ class Prueba extends React.Component {
         clearInterval(this.intervalID);
     }
 
-    generateBanner() {
-        /*  const randomId = Math.floor(Math.random() * (this.state.name.length - 1));
-          this.setState((prevState) => {
-              return {currentBanner: prevState.name[randomId]}
-          });*/
-        const randomId = Math.floor(Math.random() * (this.props.banners.length ));
-        const randomNode =  Math.floor(Math.random() * 5);
+    generateBanner() { //generador de anuncios random!!
+        const randomId = Math.floor(Math.random() * (this.props.banners.length)); // cogemos una posicion aleatoria de las canciones que tenemos en las props, pueden estar en este .js abajo donde las defaultProps o dentro del fichero "raiz"
+        const randomNode =  Math.floor(Math.random() * 5); // ESTO HAY QUE TENERLO EN CUENTA!! el 5 ese significa que hay 6 elementos con id=0, id=1, id=2... HAY QUE MARCARLE EL NUMERO MAXIMO DE ESAS id!! LO ENCONTRAREMOS ABAJO EN LOS TAG img
         this.setState({currentBanner: this.props.banners[randomId], currentPosition: randomNode});
 
         let o = 1;
-        for( o = 0  ; o <= 5; o ++){
+        for( o = 0  ; o <= 5; o ++){ //BUCLE PARA NO MOSTRAR AQUELLO QUE NO HAN SIDO ELEGIDOS POR EL randomNode de arriba
             if( document.getElementById(""+ o +"").id == this.state.currentPosition ){
                 //console.log("Seleccionado" + this.state.currentPosition );
                 document.getElementById(""+o+"").style.display = "block";
@@ -65,25 +61,43 @@ class Prueba extends React.Component {
     }
 
     // BUSCA LO QUE HAY EN DATA Y COMPRUEBA SI LO ESCRITO ES IGUAL QUE EL NOMBRE DE UNA CANCIÓN
+    // TAMBIEN SI ESCRIBES AUNQUE SEA UNA LETRA QUE SEA IGUAL QUE LA CANCION SE TE ENCONTRARÁ IGUALMENTE
+    // MUY CHULO EL .match
+    // FUNCIONA REGULAR CUANDO PONEMOS UNA CANCION QUE EXISTE Y CAMBIAMOS A UNA QUE NO Y LUEGO VOLVEMOS
+    // A UNA QUE SI, EL TEMPORIZADOR Y LA BARRA FUNCIONAN MAL, POR EL RESTO GUA!!
     handleBuscador(){
         const {data} = this.state;
         let j = 0;
+        let random = 0;
+        let arrS = [];
+        let arrU = [];
+        let valor = document.getElementById("buscador").value;
         for( j = 0  ; j <  Object.keys(data).length ; j ++){
-            if(document.getElementById("buscador").value === data[j].song){
-                this.setState({resultado: data[j].song, url: data[j].url});
-
-            }else{
-
+            if( data[j].song.match(valor)){ // el .match lanza true si lo que escribimos se encuentra dentro del titulo de nuestra song
+                arrS.push(data[j].song); // insertamos estos datos dentro de array para luego usarlos
+                arrU.push(data[j].url);
+            } else{
+                this.setState({url: "no existo"}); // en el caso de que el .match de false porque no encuentra ninguna coincidencia entre song y lo que escribimos pondrá una url no existente para que no funciones el Player
             }
         }
-    }
+        //
+        if(arrS.length > 1){  //Parte chula, si hay varias canciones con por ejemplo letra "a", trataremos de que tengan las mismas posibilidades de reproducirse ya que si no hicieramos esto cogeria la primera cancion enmpezando desde
+                                // abajo de nuestro fichero .json. Con esto hacemos que pueda salir cualquier cancion con esas letras !!! No se si se entiende... :(
 
-    lista(){
+            random = Math.floor(Math.random() * arrS.length); // random para elegir nombre de cancion y url de nuestras canciones con mismas letras
+            this.setState({resultado: arrS[random], url: arrU[random]});
+            //console.log("Hay mas de 1 en la array")
+        }else{
+            this.setState({resultado: arrS[0], url: arrU[0]}); // en caso de que solo haya uno porque la busqueda era única o completa se lanzará simepre el primero. Fasil!
+            //console.log("soy el else")
+        }
+    }
+    lista(){ // Cosa muuuuy sencilla!!
         document.getElementById("lista").style.display = "block";
     }
 
     render() {
-        const {currentBanner,lista,url,data} = this.state;
+        const {currentBanner,url,data} = this.state;
         return (
             <div className="container" style={{paddingTop: 50}}>
                 <div className="row">
