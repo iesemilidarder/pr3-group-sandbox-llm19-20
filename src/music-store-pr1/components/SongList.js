@@ -13,13 +13,17 @@ class SongList extends React.Component {
             playing: true,
             volume: 1.0,
             play: "/topicsmusic/pause.png",
-            playColor: "btn btn-warning btn-lg"
+            playColor: "btn btn-warning btn-lg",
+            searching: false,
+            result: ""
         };
         this.addList = this.addList.bind(this);
         this.next = this.next.bind(this);
         this.prev = this.prev.bind(this);
         this.listClick = this.listClick.bind(this);
         this.handlePlay = this.handlePlay.bind(this);
+        this.searching = this.searching.bind(this);
+        this.reload = this.reload.bind(this);
     }
 
     componentDidMount() {
@@ -70,6 +74,32 @@ class SongList extends React.Component {
         }
     }
 
+    searching() {
+        this.setState({searching: true});
+        let searchtext = document.getElementById("search").value;
+        let Result = "";
+        console.log(searchtext);
+        this.state.projects.map(item => {
+            if (searchtext === item.title) {
+                Result = <div className="col mb-4 pointer" key={this.state.key++}
+                        onClick={() => this.addList(item.title, item.file)}>
+                <h5>{item.title}</h5>
+                <img src={item.image}  alt="coso" width="280" height="200"/>
+            </div>;
+                this.setState({result: Result})
+            }
+        });
+        this.forceUpdate();
+    }
+
+    reload() {
+        this.setState({searching: false});
+        this.forceUpdate();
+        this.setState({result: ""})
+    }
+
+
+
     render() {
         let song = this.state.player;
         let number = this.state.CurrentSong;
@@ -115,14 +145,27 @@ class SongList extends React.Component {
                             </div>
                         </div>
                     </div>
+                    <input type="text" aria-label="Text input with radio button"
+                           placeholder="Busca" id="search"/>
+                    <button onClick={this.searching} type="button" className="btn btn-outline-primary"
+                            data-toggle="button" aria-pressed="false" value="Click para ver mensaje">
+                        Buscar
+                    </button>
+                    <button onClick={this.reload} type="button" className="btn btn-outline-primary"
+                            data-toggle="button" aria-pressed="false" value="Click para ver mensaje">
+                        Reiniciar
+                    </button>
                     <div className="row mt-3">
                         {this.state.projects.map(item => {
-                            return <div className="col mb-4 pointer" key={this.state.key++}
-                                        onClick={() => this.addList(item.title, item.file)}>
-                                <h5>{item.title}</h5>
-                                <img src={item.image}  alt="coso" width="280" height="200"/>
-                            </div>
+                            if (this.state.searching === false) {
+                                return <div className="col mb-4 pointer" key={this.state.key++}
+                                            onClick={() => this.addList(item.title, item.file)}>
+                                    <h5>{item.title}</h5>
+                                    <img src={item.image}  alt="coso" width="280" height="200"/>
+                                </div>;
+                            }
                         })}
+                        {this.state.result}
                     </div>
                 </div>
                 <aside className="col-2">
