@@ -54,9 +54,9 @@ class Header extends React.Component {
                             <div className="row">
                                 <div className="col-md-10" style={{float: "left"}}>
                                     <form>
-                                        <label>Usuario:<input id="usr" name="usr" type="text"/></label>
+                                        <label>Usuario:<input id="usr" name="usr" type="text" placeholder="Usuario"/></label>
                                         <label style={{marginLeft: 15}}>Contraseña:<input id="pass" name="pass"
-                                                                                          type="text" required={"pass"}/></label>
+                                                                                          type="text"  placeholder="Contraseña" required={"pass"}/></label>
                                     </form>
                                 </div>
                                 <div className="col-md-2">
