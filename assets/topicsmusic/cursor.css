@@ -16,3 +16,11 @@ body{
     padding-left: 35px;
     min-height: 100vh;
 }
+
+.play {
+    opacity: 1.0;
+}
+
+.play:hover{
+    opacity: 0.5;
+}

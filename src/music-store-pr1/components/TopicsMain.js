@@ -53,8 +53,8 @@ class TopicsMain extends React.Component {
                         icon: "success",
                     });
                     this.setState({searching: false});
+                    this.setState({result: ""});
                     this.forceUpdate();
-                    this.setState({result: ""})
                 } else {
                     swal("Tu inventario de música se mantiene intacto... por ahora!", {
                         icon: "success",
@@ -240,10 +240,10 @@ class TopicsMain extends React.Component {
                             <div className="row mt-3">
                                 {this.state.projects.map(item => {
                                     if (this.state.searching === false) {
-                                        return <div className="col mb-4 pointer" key={this.state.key++}
+                                        return <div className="col mb-4 pointer block" key={this.state.key++}
                                                     onClick={() => this.addList(item.title, item.file)}>
                                             <h5>{item.title}</h5>
-                                            <img src={item.image}  alt="coso" width="280" height="200"/>
+                                            <img src={item.image}  alt="coso" width="280" height="200" className="play"/>
                                         </div>;
                                     }
                                 })}
