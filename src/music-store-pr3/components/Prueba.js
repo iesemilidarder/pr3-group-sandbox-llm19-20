@@ -48,15 +48,11 @@ class Prueba extends React.Component {
         let o = 1;
         for( o = 0  ; o <= 5; o ++){ //BUCLE PARA NO MOSTRAR AQUELLO QUE NO HAN SIDO ELEGIDOS POR EL randomNode de arriba
             if( document.getElementById(""+ o +"").id == this.state.currentPosition ){
-                //console.log("Seleccionado" + this.state.currentPosition );
                 document.getElementById(""+o+"").style.display = "block";
             }else{
                 document.getElementById(""+o+"").style.display = "none";
-                //console.log("no iguales");
-                //console.log(document.getElementById(""+ o +"").id );
             }
         }
-        //console.log("------------------------------")
     }
 
     // BUSCA LO QUE HAY EN DATA Y COMPRUEBA SI LO ESCRITO ES IGUAL QUE EL NOMBRE DE UNA CANCIÓN
@@ -68,8 +64,8 @@ class Prueba extends React.Component {
         const {data} = this.state;
         let j = 0;
         let random = 0;
-        let arrS = [];
-        let arrU = [];
+        let arrS = []; // array con nombres de canciones
+        let arrU = []; // array con url de canciones
         let valor = document.getElementById("buscador").value;
         for( j = 0  ; j <  Object.keys(data).length ; j ++){
             if( data[j].song.match(valor)){ // el .match lanza true si lo que escribimos se encuentra dentro del titulo de nuestra song
@@ -77,13 +73,12 @@ class Prueba extends React.Component {
                 arrU.push(data[j].url);
             } else{
                 this.setState({url: "no existo"}); // en el caso de que el .match de false porque no encuentra ninguna coincidencia entre song y lo que escribimos pondrá una url no existente para que no funciones el Player
-                                                    // aunque se mantiene el tiempo de la anterior canción pero sin funcionar, que es lo que se busca
+                                                   // aunque se mantiene el tiempo de la anterior canción pero sin funcionar, que es lo que se busca
             }
         }
         if(arrS.length > 1){  //Parte chula, si hay varias canciones con por ejemplo letra "a", trataremos de que tengan las mismas posibilidades de reproducirse ya que si no hicieramos esto cogeria la primera cancion enmpezando desde
                                 // abajo de nuestro fichero .json. Con esto hacemos que pueda salir cualquier cancion con esas letras !!! No se si se entiende... :(. Teniendo en mente que cogerá la canción que tenga más similitud con
-                                //lo escrito. PRUEBA A ESCRIBIR "a" EN EL BUSCADOR!!
-
+                                //lo escrito. PRUEBA A ESCRIBIR "a" EN EL BUSCADOR!! NOTA: lo mismo pasa si no escribes nada, todos los datos se guardan.
             random = Math.floor(Math.random() * arrS.length); // random para elegir nombre de cancion y url de nuestras canciones con mismas letras. Siempre el nombre y la url tendrán la misma posición porque se
                                                                     // insertan al mismo tiempo
             this.setState({resultado: arrS[random], url: arrU[random]});
@@ -104,7 +99,7 @@ class Prueba extends React.Component {
     render() {
         const {currentBanner,url,data} = this.state;
         return (
-            <div className="container" style={{paddingTop: 50}}>
+            <div className="container" id="container" style={{paddingTop: 50}}>
                 <div className="row">
                     <div className="col-md-6" >
                         <div className="row">

@@ -6,7 +6,6 @@ import Header from "./components/Header";
 function MyStudentsFirstReactApp() {
     return <div className="container content">
         <Header/>
-
         <Prueba/>
     </div>
 }
