@@ -157,7 +157,7 @@ class TopicsMain extends React.Component {
         console.log(searchText);
         this.state.projects.map(item => {
             if (searchText === item.title) {
-                Result = <div className="col mb-4 pointer" key={this.state.key++}
+                Result = <div className="col-12 mb-4 pointer" key={this.state.key++}
                               onClick={() => this.addList(item.title, item.file)}>
                     <h5>{item.title}</h5>
                     <img src={item.image}  alt="coso" width="280" height="200"/>
