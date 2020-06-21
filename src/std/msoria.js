@@ -1,6 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom";
-/*
+
 console.log("Msoria");
 
 function component() {
@@ -11,7 +11,7 @@ function component() {
 }
 
 const f3 = function (container, title) {
-    //todo
+
 }
 
 const myRender = (container, title) => {
@@ -27,7 +27,7 @@ const myRender = (container, title) => {
 `;
     });
 };
-/*
+
 const mySidebar = (container) =>  {
     const template = `
           <h2>Java script</h2>
@@ -37,7 +37,7 @@ const mySidebar = (container) =>  {
 };
 mySidebar(".sidebar");
 
-*/
+
 const getPlaylist = async () => {
     let data = await fetch("https://sandbox-mongo.herokuapp.com/api/rest/v1/playlists");
     let jsonData = await data.json();
@@ -59,7 +59,7 @@ function Header() {
 }
 
 ReactDOM.render(<Header/>, document.getElementById("mainContainer"));
-*/
+
 function IndexMain() {
     return
     <article className="col-10">
@@ -84,7 +84,7 @@ function IndexMain() {
                     <h3 className="col-12">
                         Lorem ip Aperiam ea eos minus officiis soluta?
                     </h3>
-
+                    <MatiasProps name={"Don PImpom"}/>
 
                 </div>
             </aside>

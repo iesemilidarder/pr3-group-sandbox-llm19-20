@@ -1,8 +1,8 @@
-.myHeaderLogo {
-    background-color: beige;
-}
+
 html,
-body {
+.container {
     height: 100%;
     font-family: sans-serif;
+    background-image: url("https://kaikucaffelatte.com/blog/wp-content/uploads/2018/03/kaiku-caffe-latte-musica-2018-nueva.jpg");
+    background-color: #cccccc;
 }

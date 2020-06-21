@@ -1,0 +1,26 @@
+.pointer{
+    cursor: pointer;
+}
+
+
+body{
+    background-image: url("green-wallpaper.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+}
+
+.opacity{
+    background: rgba(0, 0, 0,.7);
+    padding-right: 35px;
+    padding-left: 35px;
+    min-height: 100vh;
+}
+
+.play {
+    opacity: 1.0;
+}
+
+.play:hover{
+    opacity: 0.5;
+}

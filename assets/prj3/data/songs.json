@@ -1,15 +1,18 @@
 [
   {
-    "song": "a",
-    "url": "juda"
+    "song": "lalala",
+    "url": "/prj3/canciones/lalala.mp3"
   },
   {
-
-    "song": "b",
-    "url": "juan"
+    "song": "happier",
+    "url": "/prj3/canciones/happier.mp3"
   },
   {
-    "song": "c",
-    "url": "pedro"
+    "song": "marcha imperial",
+    "url": "/prj3/canciones/imperial.mp3"
+  },
+  {
+    "song": "tusa",
+    "url": "/prj3/canciones/tusa.mp3"
   }
 ]

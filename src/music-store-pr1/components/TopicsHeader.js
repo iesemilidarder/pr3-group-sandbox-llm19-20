@@ -15,7 +15,7 @@ class TopicsHeader extends React.Component {
 
     render() {
         return (
-            <div className="row mb-3">
+            <header className="row mb-3">
                 <div className="col-6">
                     <div className="row">
                         <div className="col-12 "><h1>Bienvenido a TopicsMusic</h1></div>
@@ -25,7 +25,7 @@ class TopicsHeader extends React.Component {
                     <HeaderLogin/>
                 </div>
 
-            </div>
+            </header>
         );
     }
 }
